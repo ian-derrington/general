@@ -2,11 +2,32 @@
 - [ ] https://arxiv.org/pdf/2106.10189.pdf
 
 - [ ] [Alpha Fold Nature Paper](https://www.nature.com/articles/s41586-021-03828-1)
-
+Alphafold
+https://www.blopig.com/blog/2021/07/alphafold-2-is-here-whats-behind-the-structure-prediction-miracle/
 - [ ] [Foundation Models](https://arxiv.org/pdf/2108.07258.pdf)
+
 
 - [ ] [Structure-based protein function prediction using graph convolutional networks](https://www.nature.com/articles/s41467-021-23303-9.pdf)
 
-Where is the the information in neural networks?
+- [ ] [Effective gene expression prediction from sequence by integrating long-range interactions
+](https://www.nature.com/articles/s41592-021-01252-x#Sec18)
+
+
+https://towardsdatascience.com/bringing-bert-to-the-field-how-to-predict-gene-expression-from-corn-dna-9287af91fcf8
+https://jcheminf.biomedcentral.com/articles/10.1186/s13321-020-00423-w
+https://www.biorxiv.org/content/10.1101/2020.06.15.153643v1.full
+
+https://www.biorxiv.org/content/10.1101/2020.09.17.301879v1.full
+https://github.com/Shujun-He/Nucleic-Transformer
+https://www.google.com/search?q=nucleic+transformer+tensorflow&rlz=1C5GCEA_enUS972US973&oq=nucleic+transformer+tensorflow&aqs=chrome..69i57j33i160l2.4727j0j1&sourceid=chrome&ie=UTF-8
+
+## information 
+[Where is the the information in neural networks?](https://arxiv.org/pdf/1905.12213.pdf)
 "We establish a novel relation between the information in the weights and the effective information in the activations, and use this result to show that models with low (information) complexity not only generalize better, but are bound to learn invariant representations of future inputs."
-https://arxiv.org/pdf/1905.12213.pdf
+
+
+
+https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7355248/
+
+MSA transformer
+https://www.biorxiv.org/content/10.1101/2021.02.12.430858v1.full.pdf+html
