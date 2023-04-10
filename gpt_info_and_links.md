@@ -13,10 +13,12 @@ Also, please note that it will not include discussions evaluating GPT or other L
 # Papers / Codebases / Blogposts
 
 ## Surveys and General papers
+### Transformers
 - [Formal Algorithms for Transformers in 2023](https://arxiv.org/pdf/2207.09238.pdf)
 Important discussion revealing the components of Transformers.
 
 !!! note
+
   **Tasks:**
 
   * Chunking: breaking up into smaller chunks
@@ -61,9 +63,9 @@ Important discussion revealing the components of Transformers.
 ## Metrics:
 - Exact Match (EM) 
 
-## GPT: * 
-http://jalammar.github.io/illustrated-gpt2/
-  
+### GPT
+- [Five years of progress in GPTs](https://finbarrtimbers.substack.com/p/five-years-of-progress-in-gpts?utm_source=substack&utm_medium=email)
+Excellent summary of the progress of GPT over time, revealing core components, optimizations, and essential variations to the major Foundation model architectures.
 
 
 ## LLM Component concepts
@@ -73,6 +75,12 @@ http://jalammar.github.io/illustrated-gpt2/
 ### Scaling
 - [The 'Chinchilla' paper of 2022](https://arxiv.org/abs/2203.15556) This paper identifies scaling laws that help to understand the volume of data that is needed to obtain 'optimal' performance for a given LLM models size. Use of it in other areas, such as for Llama reveal that the models may have been under trained.
   - Primary take away: **"All three approaches suggest that as compute budget increases, model size andthe amount of training data should be increased in approximately equal proportions." **
+
+
+## GPT: * 
+http://jalammar.github.io/illustrated-gpt2/
+  
+
 
 ## Prompt engineering
 
@@ -84,9 +92,14 @@ http://jalammar.github.io/illustrated-gpt2/
 
 * [Language is not all you need](https://arxiv.org/pdf/2302.14045.pdf)
 
+## Memory Augmented
+* [Improving language models by retrieving from trillions of tokens](https://arxiv.org/pdf/2112.04426.pdf)
+
 ## Agentic, Recurrent and Pipelining GPT
 This section describes GPT that has been enabled with more 'agency' or the ability to do better.
-
+- [Language Models can Solve Computer Tasks](https://arxiv.org/pdf/2303.17491.pdf): 
+  - Explicit RCI: "Review your previous answer and find problems with your answer." --> "Based on the problems you found, improve your answer." **R**ecursively **C**riticizes and **I**mproves it s output. This sort of prompting outperforms Chain of Thought, and combined it works even better.  
+  - Implicit RCI: "
 - [HuggingGPT of 2023](https://arxiv.org/pdf/2303.17580.pdf) This paper describes a paradigm where ChatGPT is enabled with the ability to launch other ML models based on input. It does so by creating a Task list, then by identifying appropriate models, and then by executing them.
   - [Github repo known as JARVIS here](https://github.com/microsoft/JARVIS)
   - [TaskMatrix.ai](https://arxiv.org/abs/2303.16434) seemingly from the same authors. 
@@ -101,7 +114,11 @@ This section describes GPT that has been enabled with more 'agency' or the abili
   - [Langflow](https://github.com/logspace-ai/langflow) 
 
 ## Applications
+### Computer tasks
+
+
 ### Biology
+
 - [Evolutionary-scale prediction of atomic-level protein structure with a language model](https://www.science.org/doi/10.1126/science.ade2574) End to end Language model enabling structure sequence pairing, coupled with an equivariant transformer structure model at the end. 
 
 ### Societal simulations
