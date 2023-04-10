@@ -1,4 +1,8 @@
-This summarizes important research and survey papers and topics related to GPT-enabled technology
+This summarizes important research and survey papers and topics related to GPT-enabled technology.
+
+Please note that it will *not* focus the topic of AI Ethics.  While that is important, the information tends to be exceptionally verbose, and quite opinionated. 
+
+Also, please note that it will not include discussions evaluating GPT or other LLMs, their potential consciousnes, their performance on standardized human tests, etc as this will change within weeks to months and will be deprecated by the time you likely read this. 
 
 # Providers
 
@@ -78,13 +82,15 @@ This section describes GPT that has been enabled with more 'agency' or the abili
 - [HuggingGPT of 2023](https://arxiv.org/pdf/2303.17580.pdf) This paper describes a paradigm where ChatGPT is enabled with the ability to launch other ML models based on input. It does so by creating a Task list, then by identifying appropriate models, and then by executing them.
   - [Github repo known as JARVIS here](https://github.com/microsoft/JARVIS)
   - [TaskMatrix.ai](https://arxiv.org/abs/2303.16434) seemingly from the same authors. 
-- [AUTO GPT](https://github.com/Torantulino/Auto-GPT) ‼️
-- [ReAct](https://github.com/ysymyth/ReAct) ‼️
-  - [Github](https://github.com/ysymyth/ReAct) ‼️
+- ‼️ [AUTO GPT](https://github.com/Torantulino/Auto-GPT) 
+- ‼️ [BabyAGI](https://github.com/yoheinakajima/babyagi)
+- ‼️ [ReAct](https://arxiv.org/abs/2210.03629)
+  - [Github](https://github.com/ysymyth/ReAct) 
 - [Reflexion](Reflexion: an autonomous agent with dynamic memory and self-reflection): "Reflexion, an approach that endows an agent with dynamic memory and self-reflection capabilities to enhance its existing reasoning trace and task-specific action choice abilities"
   - [Github](https://github.com/noahshinn024/reflexion)
   - [Inspired github](https://github.com/GammaTauAI/reflexion-human-eval) 
-- [https://github.com/logspace-ai/langflow](Langflow)
+- [Langchain](https://python.langchain.com/en/latest/#): Data aware AI that is agentic. ‼️
+  - [Langflow](https://github.com/logspace-ai/langflow) 
 
 ## Applications
 ### Biology
