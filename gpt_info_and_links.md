@@ -65,6 +65,7 @@ Important discussion revealing the components of Transformers.
 http://jalammar.github.io/illustrated-gpt2/
   
 
+
 ## LLM Component concepts
 ### Tokenization
 - [Neural Machine Translation of Rare Words with Subword Units](https://arxiv.org/abs/1508.07909)
@@ -75,6 +76,13 @@ http://jalammar.github.io/illustrated-gpt2/
 
 ## Prompt engineering
 
+* [Prompt Engineering Guide](https://www.promptingguide.ai/)
+* [Best practices for prompt engineering](https://help.openai.com/en/articles/6654000-best-practices-for-prompt-engineering-with-openai-api)
+* [Chain of Thought Prompting Elicits Reasoning in Large Language Models](https://arxiv.org/abs/2201.11903)
+
+## Multimodal
+
+* [Language is not all you need](https://arxiv.org/pdf/2302.14045.pdf)
 
 ## Agentic, Recurrent and Pipelining GPT
 This section describes GPT that has been enabled with more 'agency' or the ability to do better.
