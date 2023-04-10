@@ -72,7 +72,7 @@ http://jalammar.github.io/illustrated-gpt2/
 ## Prompt engineering
 
 
-## Agentic and Recurrent GPT
+## Agentic, Recurrent and Pipelining GPT
 This section describes GPT that has been enabled with more 'agency' or the ability to do better.
 
 - [HuggingGPT of 2023](https://arxiv.org/pdf/2303.17580.pdf) This paper describes a paradigm where ChatGPT is enabled with the ability to launch other ML models based on input. It does so by creating a Task list, then by identifying appropriate models, and then by executing them.
@@ -84,7 +84,7 @@ This section describes GPT that has been enabled with more 'agency' or the abili
 - [Reflexion](Reflexion: an autonomous agent with dynamic memory and self-reflection): "Reflexion, an approach that endows an agent with dynamic memory and self-reflection capabilities to enhance its existing reasoning trace and task-specific action choice abilities"
   - [Github](https://github.com/noahshinn024/reflexion)
   - [Inspired github](https://github.com/GammaTauAI/reflexion-human-eval) 
-
+- [https://github.com/logspace-ai/langflow](Langflow)
 
 ## Applications
 ### Biology
