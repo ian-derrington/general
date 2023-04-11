@@ -116,6 +116,8 @@ This section describes GPT that has been enabled with more 'agency' or the abili
 ## Applications
 ### Computer tasks
 
+- [Looped Transformers as Programmable Computers](https://arxiv.org/pdf/2301.13196.pdf): "We demonstrate that
+a constant number of encoder layers can emulate basic computing blocks, including embedding edit operations, non-linear functions, function calls, program counters, and conditional branches. Using these building blocks, we emulate a small instruction-set computer."
 
 ### Biology
 
@@ -125,6 +127,7 @@ This section describes GPT that has been enabled with more 'agency' or the abili
 - [Generative Agents: Interactive Simulacra of Human Behavior](https://arxiv.org/pdf/2304.03442.pdf): 
   They gave 25 AI agents motivations & memory, and put them in a simulated town. Not only did they engage in complex behavior (including throwing a Valentine’s Day party) but the actions were rated more human than humans roleplaying.
   Demo: https://t.co/pYNF4BBveG
+  
   
   
 
