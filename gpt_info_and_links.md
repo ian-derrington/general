@@ -105,14 +105,23 @@ http://jalammar.github.io/illustrated-gpt2/
 * [Best practices for prompt engineering](https://help.openai.com/en/articles/6654000-best-practices-for-prompt-engineering-with-openai-api)
 * [Chain of Thought Prompting Elicits Reasoning in Large Language Models](https://arxiv.org/abs/2201.11903)
 
-## Multimodal
+
+## Improvements and Optimizations
+
+### Pruning
+- [SparseGPT: Massive Language Models Can Be Accurately Pruned in One-Shot](https://arxiv.org/abs/2301.00774) Remove 
+- 
+### Memory Augmented
+* [Improving language models by retrieving from trillions of tokens](https://arxiv.org/pdf/2112.04426.pdf)
+
+## Extensions
+
+### Multimodal
 
 * [Language is not all you need](https://arxiv.org/pdf/2302.14045.pdf)
 
-## Memory Augmented
-* [Improving language models by retrieving from trillions of tokens](https://arxiv.org/pdf/2112.04426.pdf)
 
-## Agentic, Recurrent and Pipelining GPT
+### Agentic, Recurrent and Pipelining GPT
 This section describes GPT that has been enabled with more 'agency' or the ability to do better.
 - [Language Models can Solve Computer Tasks](https://arxiv.org/pdf/2303.17491.pdf): 
   - Explicit RCI: "Review your previous answer and find problems with your answer." --> "Based on the problems you found, improve your answer." **R**ecursively **C**riticizes and **I**mproves it s output. This sort of prompting outperforms Chain of Thought, and combined it works even better.  
@@ -131,6 +140,15 @@ This section describes GPT that has been enabled with more 'agency' or the abili
   - [Langflow](https://github.com/logspace-ai/langflow) 
 
 ## Applications
+
+### Robotics
+
+- [CLAIRIFY](https://ac-rad.github.io/clairify/) Translates english to domain specific languages like robots. 
+  - https://arxiv.org/abs/2303.14100
+
+### Linked
+- [LinkBERT](https://github.com/michiyasunaga/LinkBERT)
+
 ### Computer tasks
 
 - [Looped Transformers as Programmable Computers](https://arxiv.org/pdf/2301.13196.pdf): "We demonstrate that
