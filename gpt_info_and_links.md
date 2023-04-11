@@ -136,8 +136,9 @@ This section describes GPT that has been enabled with more 'agency' or the abili
 - [Reflexion](Reflexion: an autonomous agent with dynamic memory and self-reflection): "Reflexion, an approach that endows an agent with dynamic memory and self-reflection capabilities to enhance its existing reasoning trace and task-specific action choice abilities"
   - [Github](https://github.com/noahshinn024/reflexion)
   - [Inspired github](https://github.com/GammaTauAI/reflexion-human-eval) 
-- [Langchain](https://python.langchain.com/en/latest/#): Data aware AI that is agentic. ‼️
-  - [Langflow](https://github.com/logspace-ai/langflow) 
+- ‼️[Langchain](https://python.langchain.com/en/latest/#): Data aware AI that is agentic.
+  - ‼️[Langflow](https://github.com/logspace-ai/langflow) 
+  - ‼️[Toolkit](https://www.toolkit.club/) Generates LangChain plugins
 
 ## Applications
 
@@ -157,6 +158,8 @@ a constant number of encoder layers can emulate basic computing blocks, includin
 ### Biology
 
 - [Evolutionary-scale prediction of atomic-level protein structure with a language model](https://www.science.org/doi/10.1126/science.ade2574) End to end Language model enabling structure sequence pairing, coupled with an equivariant transformer structure model at the end. 
+-  https://arxiv.org/pdf/2303.16416.pdf
+-  https://arxiv.org/abs/2304.02496
 
 ### Societal simulations
 - [Generative Agents: Interactive Simulacra of Human Behavior](https://arxiv.org/pdf/2304.03442.pdf): 
@@ -167,4 +170,5 @@ a constant number of encoder layers can emulate basic computing blocks, includin
 ## Interesting Companies:
 
 - [e2b](https://github.com/e2b-dev/e2b) Write documentation, get code. 
+- [Codium](https://www.codium.ai/blog/codiumai-powered-by-testgpt-accounces-beta-and-raised-11m/?utm_source=substack&utm_medium=email)
 
