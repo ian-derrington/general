@@ -109,10 +109,19 @@ http://jalammar.github.io/illustrated-gpt2/
 ## Improvements and Optimizations
 
 ### Pruning
-- [SparseGPT: Massive Language Models Can Be Accurately Pruned in One-Shot](https://arxiv.org/abs/2301.00774) Remove 
-- 
+
+- [SparseGPT: Massive Language Models Can Be Accurately Pruned in One-Shot](https://arxiv.org/abs/2301.00774) Remove up to ~50% parameters preserving performance
+- [Scaling Expert Language Models with Unsupervised Domain Discovery](https://arxiv.org/pdf/2303.14177.pdf) Cluster-Branch-Train-Merge (c-BTM), a new way to scale sparse expert LLMs on any dataset. 
+ - [Github](https://github.com/kernelmachine/cbtm) 
+
 ### Memory Augmented
 * [Improving language models by retrieving from trillions of tokens](https://arxiv.org/pdf/2112.04426.pdf)
+
+### Training variations
+- [LinkBERT](https://github.com/michiyasunaga/LinkBERT) places in context window hyperlinked references to achieve better performance.  
+- [Cluster-Branch-Train-Merge (c-BTM)], a new way to scale sparse expert LLMs on any dataset Paper: https://arxiv.org/abs/2303.14177 Code + Models: https://github.com/kernelmachine/
+
+
 
 ## Extensions
 
@@ -147,8 +156,6 @@ This section describes GPT that has been enabled with more 'agency' or the abili
 - [CLAIRIFY](https://ac-rad.github.io/clairify/) Translates english to domain specific languages like robots. 
   - https://arxiv.org/abs/2303.14100
 
-### Linked
-- [LinkBERT](https://github.com/michiyasunaga/LinkBERT)
 
 ### Computer tasks
 
