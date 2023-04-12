@@ -117,6 +117,7 @@ http://jalammar.github.io/illustrated-gpt2/
 ## Extensions
 
 ### Multimodal
+* [Visual GPT](https://arxiv.org/pdf/2303.04671.pdf)
 
 * [Language is not all you need](https://arxiv.org/pdf/2302.14045.pdf)
 
