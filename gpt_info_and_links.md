@@ -149,6 +149,9 @@ This section describes GPT that has been enabled with more 'agency' or the abili
 - ‼️[Langchain](https://python.langchain.com/en/latest/#): Data aware AI that is agentic.
   - ‼️[Langflow](https://github.com/logspace-ai/langflow) 
   - ‼️[Toolkit](https://www.toolkit.club/) Generates LangChain plugins
+- [Teaching Large Language Models to Self-Debug](https://arxiv.org/abs/2304.05128) `trans
+<img width="865" alt="image" src="https://user-images.githubusercontent.com/76016868/231906559-758d89e4-d22a-4a3a-aa96-1d630e48651d.png">
+
 
 ## Applications
 
