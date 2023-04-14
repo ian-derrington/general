@@ -76,7 +76,15 @@ Important discussion revealing the components of Transformers.
  creators nor the values encoded in web text.
  8. Brief interactions with LLMs are often misleading.
 
+- Observations:
+  1. LLM Output can be ambiguous 
+  2. LLM output can be inconsistent because of stochasticity --> Prompt engineering is possible.
 
+### Links
+
+- [LLM Engineering](https://huyenchip.com/2023/04/11/llm-engineering.html)
+
+  
 ## Metrics:
 - Exact Match (EM) 
 
@@ -101,9 +109,18 @@ http://jalammar.github.io/illustrated-gpt2/
 
 ## Prompt engineering
 
-* [Prompt Engineering Guide](https://www.promptingguide.ai/)
-* [Best practices for prompt engineering](https://help.openai.com/en/articles/6654000-best-practices-for-prompt-engineering-with-openai-api)
-* [Chain of Thought Prompting Elicits Reasoning in Large Language Models](https://arxiv.org/abs/2201.11903)
+### Summary: 
+
+- Provide several examples to ground it.
+  -  Good to evaluate this and see if input examples give expected scores. Modify the prompt if it isn't. 
+  -  
+Chain of Thought Prompting:
+
+### Links
+- ‼️ [Prompt Engineering by Lillian Wang](https://lilianweng.github.io/posts/2023-03-15-prompt-engineering/)
+- [Prompt Engineering Guide](https://www.promptingguide.ai/)
+- [Best practices for prompt engineering](https://help.openai.com/en/articles/6654000-best-practices-for-prompt-engineering-with-openai-api)
+- [Chain of Thought Prompting Elicits Reasoning in Large Language Models](https://arxiv.org/abs/2201.11903)
 
 
 ## Improvements and Optimizations
