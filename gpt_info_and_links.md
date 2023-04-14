@@ -117,6 +117,7 @@ http://jalammar.github.io/illustrated-gpt2/
 - Breag prompts into smaller prompts
 - Chain of Thought Prompting
 - Generate many outputs and pick final one or use LLM to pick best one. [Self consistency technique](https://arxiv.org/pdf/2203.11171.pdf)
+- NOTE: Not model universal and not robust to updated changes: not stable. 
 
 ### Links
 - ‼️ [Prompt Engineering by Lillian Wang](https://lilianweng.github.io/posts/2023-03-15-prompt-engineering/)
@@ -126,6 +127,18 @@ http://jalammar.github.io/illustrated-gpt2/
 
 
 ## Improvements and Optimizations
+
+### Fine Tuning
+Using exmaples to fine tune a model can reduce the number of tokens needed to achieve an sufficiently reasonable response. Can be expensive to retrain though.
+
+### Fine Tuning using Distillation
+Train on model trains a new model on the output of a new model. 
+- [Alpaca ](https://github.com/tatsu-lab/stanford_alpaca)
+ 
+### Prompt tuning
+Uses a layer to not change prompt but change the embedding of the prompts. 
+- [The Power of Scale for Parameter-Efficient Prompt Tuning](https://arxiv.org/abs/2104.08691)
+ 
 
 ### Pruning
 
@@ -144,10 +157,14 @@ http://jalammar.github.io/illustrated-gpt2/
 
 ## Extensions
 
+### Vector databases
+Use embeddings to create query vector databases such as:
+   Pinecone, Qdrant, Weaviate, Chroma as well as the incumbents Faiss, Redis, Milvus, ScaNN.
+
+
 ### Multimodal
 * ‼️ [Visual GPT](https://arxiv.org/pdf/2303.04671.pdf)
-
-* [Language is not all you need](https://arxiv.org/pdf/2302.14045.pdf)
+* ‼️ [Language is not all you need](https://arxiv.org/pdf/2302.14045.pdf)
 
 
 ### Agentic, Recurrent and Pipelining GPT
@@ -168,7 +185,7 @@ This section describes GPT that has been enabled with more 'agency' or the abili
 - ‼️[Langchain](https://python.langchain.com/en/latest/#): Data aware AI that is agentic.
   - ‼️[Langflow](https://github.com/logspace-ai/langflow) 
   - ‼️[Toolkit](https://www.toolkit.club/) Generates LangChain plugins
-- [Teaching Large Language Models to Self-Debug](https://arxiv.org/abs/2304.05128) `trans
+- [Teaching Large Language Models to Self-Debug](https://arxiv.org/abs/2304.05128) `transcoder`
 <img width="865" alt="image" src="https://user-images.githubusercontent.com/76016868/231906559-758d89e4-d22a-4a3a-aa96-1d630e48651d.png">
 
 
