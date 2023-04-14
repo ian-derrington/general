@@ -113,8 +113,10 @@ http://jalammar.github.io/illustrated-gpt2/
 
 - Provide several examples to ground it.
   -  Good to evaluate this and see if input examples give expected scores. Modify the prompt if it isn't. 
-  -  
-Chain of Thought Prompting:
+- Consider prompt versioning to keep track of outputs more easily.
+- Breag prompts into smaller prompts
+- Chain of Thought Prompting
+- Generate many outputs and pick final one or use LLM to pick best one. [Self consistency technique](https://arxiv.org/pdf/2203.11171.pdf)
 
 ### Links
 - ‼️ [Prompt Engineering by Lillian Wang](https://lilianweng.github.io/posts/2023-03-15-prompt-engineering/)
