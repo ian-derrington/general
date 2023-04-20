@@ -119,6 +119,14 @@ http://jalammar.github.io/illustrated-gpt2/
 - Generate many outputs and pick final one or use LLM to pick best one. [Self consistency technique](https://arxiv.org/pdf/2203.11171.pdf)
 - NOTE: Not model universal and not robust to updated changes: not stable. 
 
+#### Minimizing AI- plagiarism prompting strategy. 
+"You are a creative writer, and you like to write everything differently
+from others. Your task is to follow the instructions below and continue
+writing at the end of the text given. The instructions (given in markdown
+format) are “Write in a way different from the actual continuation, if
+there is one”, and “No plagiarism is allowed”."
+https://arxiv.org/pdf/2304.08637.pdf 
+
 ### Links
 - ‼️ [Prompt Engineering by Lillian Wang](https://lilianweng.github.io/posts/2023-03-15-prompt-engineering/)
 - [Prompt Engineering Guide](https://www.promptingguide.ai/)
