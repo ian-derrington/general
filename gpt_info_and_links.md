@@ -10,6 +10,8 @@ Also, please note that it will not include discussions evaluating GPT or other L
 * [Claud]()
 * [ChatGPT](https://openai.com/blog/chatgpt)
 
+## Deployment
+- [Deploying on Azure for Embeddings] (https://github.com/ruoccofabrizio/azure-open-ai-embeddings-qna)
 # Papers / Codebases / Blogposts
 
 ## Surveys and General papers
@@ -135,7 +137,7 @@ https://arxiv.org/pdf/2304.08637.pdf
 - [Best practices for prompt engineering](https://help.openai.com/en/articles/6654000-best-practices-for-prompt-engineering-with-openai-api)
 - [Chain of Thought Prompting Elicits Reasoning in Large Language Models](https://arxiv.org/abs/2201.11903)
 
-- [Aautomatic Prompt Engineering](https://arxiv.org/abs/2211.01910) --> Gave a CoT improvement suggestion "Let's work this out in a step by step by way to be sure we have the right answer."
+- [Automatic Prompt Engineering](https://arxiv.org/abs/2211.01910) --> Gave a CoT improvement suggestion "Let's work this out in a step by step by way to be sure we have the right answer."
 - [Techniques to improve reliability](https://github.com/openai/openai-cookbook/blob/main/techniques_to_improve_reliability.md#how-to-improve-reliability-on-complex-tasks) By OpenAI 
  - Give clearer instructions
  - Split complex tasks into simpler subtasks
@@ -160,8 +162,8 @@ Uses a layer to not change prompt but change the embedding of the prompts.
 - [The Power of Scale for Parameter-Efficient Prompt Tuning](https://arxiv.org/abs/2104.08691)
 Boosted Prompting: few shot prompts that progressively solve more of the problem.
 
-### Self-compression:
-- [Learning to Compress Prompts with Gist Tokens](https://arxiv.org/pdf/2304.08467.pdf). Can enable 26x compression and 40% FLOP reduction and improvements. 
+### Prompt compression:
+- [Learning to Compress Prompts with Gist Tokens](https://arxiv.org/pdf/2304.08467.pdf). Can enable 26x compression and 40% FLOP reduction and improvements. Trains 'gist tokens' to summarize information. 
 
 ### Pruning
 
@@ -170,7 +172,8 @@ Boosted Prompting: few shot prompts that progressively solve more of the problem
  - [Github](https://github.com/kernelmachine/cbtm) 
 
 ### Memory Augmented
-* [Improving language models by retrieving from trillions of tokens](https://arxiv.org/pdf/2112.04426.pdf)
+- [Improving language models by retrieving from trillions of tokens](https://arxiv.org/pdf/2112.04426.pdf)
+
 
 ### Training variations
 - [LinkBERT](https://github.com/michiyasunaga/LinkBERT) places in context window hyperlinked references to achieve better performance.  
