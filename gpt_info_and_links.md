@@ -80,6 +80,8 @@ Important discussion revealing the components of Transformers.
   1. LLM Output can be ambiguous 
   2. LLM output can be inconsistent because of stochasticity --> Prompt engineering is possible.
 
+- [A Survey of Large Language Models](https://arxiv.org/pdf/2303.18223.pdf) A very comprehensive paper discussing LLM technology. 
+
 ### Links
 
 - [LLM Engineering](https://huyenchip.com/2023/04/11/llm-engineering.html)
@@ -118,7 +120,7 @@ http://jalammar.github.io/illustrated-gpt2/
 - Chain of Thought Prompting
 - Generate many outputs and pick final one or use LLM to pick best one. [Self consistency technique](https://arxiv.org/pdf/2203.11171.pdf)
 - NOTE: Not model universal and not robust to updated changes: not stable. 
-
+#### 
 #### Minimizing AI- plagiarism prompting strategy. 
 "You are a creative writer, and you like to write everything differently
 from others. Your task is to follow the instructions below and continue
@@ -132,6 +134,16 @@ https://arxiv.org/pdf/2304.08637.pdf
 - [Prompt Engineering Guide](https://www.promptingguide.ai/)
 - [Best practices for prompt engineering](https://help.openai.com/en/articles/6654000-best-practices-for-prompt-engineering-with-openai-api)
 - [Chain of Thought Prompting Elicits Reasoning in Large Language Models](https://arxiv.org/abs/2201.11903)
+
+- [Aautomatic Prompt Engineering](https://arxiv.org/abs/2211.01910) --> Gave a CoT improvement suggestion "Let's work this out in a step by step by way to be sure we have the right answer."
+- [Techniques to improve reliability](https://github.com/openai/openai-cookbook/blob/main/techniques_to_improve_reliability.md#how-to-improve-reliability-on-complex-tasks) By OpenAI 
+ - Give clearer instructions
+ - Split complex tasks into simpler subtasks
+ - Structure the instruction to keep the model on task
+ - Prompt the model to explain before answering
+ - Ask for justifications of many possible answers, and then synthesize
+ - Generate many outputs, and then use the model to pick the best one
+ - Fine-tune custom models to maximize performance
 
 
 ## Improvements and Optimizations
