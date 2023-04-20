@@ -12,6 +12,8 @@ Also, please note that it will not include discussions evaluating GPT or other L
 
 ## Deployment
 - [Deploying on Azure for Embeddings] (https://github.com/ruoccofabrizio/azure-open-ai-embeddings-qna)
+- [Integrating with Azure Services](https://www.youtube.com/watch?v=tW2EA4aZ_YQ)
+- 
 # Papers / Codebases / Blogposts
 
 ## Surveys and General papers
