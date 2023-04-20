@@ -140,7 +140,8 @@ Uses a layer to not change prompt but change the embedding of the prompts.
 - [The Power of Scale for Parameter-Efficient Prompt Tuning](https://arxiv.org/abs/2104.08691)
 Boosted Prompting: few shot prompts that progressively solve more of the problem.
 
-
+### Self-compression:
+- [Learning to Compress Prompts with Gist Tokens](https://arxiv.org/pdf/2304.08467.pdf). Can enable 26x compression and 40% FLOP reduction and improvements. 
 
 ### Pruning
 
@@ -214,7 +215,12 @@ a constant number of encoder layers can emulate basic computing blocks, includin
 - [Generative Agents: Interactive Simulacra of Human Behavior](https://arxiv.org/pdf/2304.03442.pdf): 
   They gave 25 AI agents motivations & memory, and put them in a simulated town. Not only did they engage in complex behavior (including throwing a Valentine’s Day party) but the actions were rated more human than humans roleplaying.
   Demo: https://t.co/pYNF4BBveG
-  
+
+## Public models
+- **StableLM: Stability AI Language Models**
+  Released initial set of StableLM-alpha models, with 3B and 7B parameters. 15B and 30B models are on the way. Base models are released under CC BY-SA-4.0
+  [github](https://github.com/stability-AI/stableLM/)
+
 ## Public Data sets
 - [Redpajama](https://www.together.xyz/blog/redpajama)
   
