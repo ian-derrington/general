@@ -10,6 +10,9 @@ Also, please note that it will not include discussions evaluating GPT or other L
 * [Claud]()
 * [ChatGPT](https://openai.com/blog/chatgpt)
 
+## Models
+* [Medpalm](https://arxiv.org/abs/2212.13138)
+
 ## Deployment
 - [Deploying on Azure for Embeddings] (https://github.com/ruoccofabrizio/azure-open-ai-embeddings-qna)
 - [Integrating with Azure Services](https://www.youtube.com/watch?v=tW2EA4aZ_YQ)
@@ -158,7 +161,11 @@ Using exmaples to fine tune a model can reduce the number of tokens needed to ac
 ### Fine Tuning using Distillation
 Train on model trains a new model on the output of a new model. 
 - [Alpaca ](https://github.com/tatsu-lab/stanford_alpaca)
- 
+
+### Adapter layers
+- [AdapterHub: A Framework for Adapting Transformers] (https://arxiv.org/pdf/2007.07779.pdf) - [Website](https://adapterhub.ml/)
+Adapters are efficient and performant layers that can optimize performance without needing to do inefficient fine-tuning. 
+
 ### Prompt tuning
 Uses a layer to not change prompt but change the embedding of the prompts. 
 - [The Power of Scale for Parameter-Efficient Prompt Tuning](https://arxiv.org/abs/2104.08691)
