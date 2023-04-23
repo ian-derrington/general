@@ -226,6 +226,9 @@ This section describes GPT that has been enabled with more 'agency' or the abili
 
 ## Applications
 
+### Software component replacements
+- [GPT as backend](https://github.com/RootbeerComputer/backend-GPT)
+
 ### Robotics
 
 - [CLAIRIFY](https://ac-rad.github.io/clairify/) Translates english to domain specific languages like robots. 
