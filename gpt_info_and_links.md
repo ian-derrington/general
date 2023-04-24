@@ -12,6 +12,7 @@ Also, please note that it will not include discussions evaluating GPT or other L
 
 ## Models
 * [Medpalm](https://arxiv.org/abs/2212.13138)
+* [Llama](https://github.com/facebookresearch/llama)
 
 ## Deployment
 - [Deploying on Azure for Embeddings] (https://github.com/ruoccofabrizio/azure-open-ai-embeddings-qna)
@@ -67,6 +68,8 @@ Important discussion revealing the components of Transformers.
   * Training: minibatch, batch norm, weight initialization, ensembling, adversarial
   * Regularization: weight decay early stopping cross-validation, dropout, noise
 - [Hyena Architecture](https://arxiv.org/pdf/2302.10866.pdf) Uses inspiration from FFT to create a drop in replacement for Transformer models. 
+
+
 ## LLMs
 - [Eight Things to Know about Large Language Models](https://cims.nyu.edu/~sbowman/eightthings.pdf?utm_source=substack&utm_medium=email)
  1. LLMs predictably get more capable with increasing investment, even without targeted
@@ -128,6 +131,8 @@ http://jalammar.github.io/illustrated-gpt2/
 - Generate many outputs and pick final one or use LLM to pick best one. [Self consistency technique](https://arxiv.org/pdf/2203.11171.pdf)
 - NOTE: Not model universal and not robust to updated changes: not stable. 
 #### 
+
+
 #### Minimizing AI- plagiarism prompting strategy. 
 "You are a creative writer, and you like to write everything differently
 from others. Your task is to follow the instructions below and continue
@@ -137,6 +142,7 @@ there is one”, and “No plagiarism is allowed”."
 https://arxiv.org/pdf/2304.08637.pdf 
 
 ### Links
+- ‼️ [Awesome Prompts](https://github.com/f/awesome-chatgpt-prompts/blob/main/README.md?fbclid=IwAR0_nY_o0c8olt3z7d9vibGUMOrx520Ezs9ej-PNpQfzBru01R5VCpWTnNg)
 - ‼️ [Prompt Engineering by Lillian Wang](https://lilianweng.github.io/posts/2023-03-15-prompt-engineering/)
 - [Prompt Engineering Guide](https://www.promptingguide.ai/)
 - [Best practices for prompt engineering](https://help.openai.com/en/articles/6654000-best-practices-for-prompt-engineering-with-openai-api)
@@ -157,6 +163,7 @@ https://arxiv.org/pdf/2304.08637.pdf
 
 ### Fine Tuning
 Using exmaples to fine tune a model can reduce the number of tokens needed to achieve an sufficiently reasonable response. Can be expensive to retrain though.
+- [Self fine tuning](https://arxiv.org/pdf/2210.11610.pdf) Using Chain of thought to provide better examples and then fine tune the LLM. 
 
 ### Fine Tuning using Distillation
 Train on model trains a new model on the output of a new model. 
@@ -203,12 +210,14 @@ Use embeddings to create query vector databases such as:
 
 
 ### Agentic, Recurrent and Pipelining GPT
+- [Toolformer](https://arxiv.org/pdf/2302.04761.pdf)
+
 This section describes GPT that has been enabled with more 'agency' or the ability to do better.
 - [Language Models can Solve Computer Tasks](https://arxiv.org/pdf/2303.17491.pdf): 
   - Explicit RCI: "Review your previous answer and find problems with your answer." --> "Based on the problems you found, improve your answer." **R**ecursively **C**riticizes and **I**mproves it s output. This sort of prompting outperforms Chain of Thought, and combined it works even better.  
   - Implicit RCI: "
 - [HuggingGPT of 2023](https://arxiv.org/pdf/2303.17580.pdf) This paper describes a paradigm where ChatGPT is enabled with the ability to launch other ML models based on input. It does so by creating a Task list, then by identifying appropriate models, and then by executing them.
-  - [Github repo known as JARVIS here](https://github.com/microsoft/JARVIS)
+  - ‼️ [Github repo known as JARVIS here](https://github.com/microsoft/JARVIS)
   - [TaskMatrix.ai](https://arxiv.org/abs/2303.16434) seemingly from the same authors. 
 - ‼️ [AUTO GPT](https://github.com/Torantulino/Auto-GPT) 
 - ‼️ [BabyAGI](https://github.com/yoheinakajima/babyagi)
@@ -223,8 +232,12 @@ This section describes GPT that has been enabled with more 'agency' or the abili
 - [Teaching Large Language Models to Self-Debug](https://arxiv.org/abs/2304.05128) `transcoder`
 <img width="865" alt="image" src="https://user-images.githubusercontent.com/76016868/231906559-758d89e4-d22a-4a3a-aa96-1d630e48651d.png">
 
+- ‼️[Robo-GPT](https://github.com/rokstrnisa/Robo-GPT)
+
 
 ## Applications
+### Book Writing
+- [Pyprompt chatgpt](http://morganlancer.com/en/portfolio/pyprompt_chatgpt)
 
 ### Software component replacements
 - [GPT as backend](https://github.com/RootbeerComputer/backend-GPT)
