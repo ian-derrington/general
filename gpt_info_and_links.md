@@ -67,8 +67,11 @@ Important discussion revealing the components of Transformers.
   * Architectures: sparce layers, weight-sharing
   * Training: minibatch, batch norm, weight initialization, ensembling, adversarial
   * Regularization: weight decay early stopping cross-validation, dropout, noise
-- [Hyena Architecture](https://arxiv.org/pdf/2302.10866.pdf) Uses inspiration from FFT to create a drop in replacement for Transformer models. 
 
+### Variations
+
+- [Hyena Architecture](https://arxiv.org/pdf/2302.10866.pdf) Uses inspiration from FFT to create a drop in replacement for Transformer models. 
+- [Scaling Transformer to 1M tokens and beyond with RMT](https://arxiv.org/abs/2304.11062) Uses a Recurrent architecture to extend understanding to large lengths. 
 
 ## LLMs
 - [Eight Things to Know about Large Language Models](https://cims.nyu.edu/~sbowman/eightthings.pdf?utm_source=substack&utm_medium=email)
