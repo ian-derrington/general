@@ -190,7 +190,10 @@ Boosted Prompting: few shot prompts that progressively solve more of the problem
 
 #### Repos
 
+
+##### For Llama
 - [For Llama](https://github.com/Lightning-AI/lit-llama)
+- [MedAlpaca](https://github.com/kbressem/medAlpaca)
 
 
 
