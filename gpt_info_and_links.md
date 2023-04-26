@@ -21,6 +21,9 @@ Also, please note that it will not include discussions evaluating GPT or other L
 # Papers / Codebases / Blogposts
 
 ## Surveys and General papers
+### Self-supervised learning
+- ‼️ [A cookbook of self-supervised Learning](https://arxiv.org/pdf/2304.12210.pdf) 
+
 ### Transformers
 - [Formal Algorithms for Transformers in 2023](https://arxiv.org/pdf/2207.09238.pdf)
 Important discussion revealing the components of Transformers.
@@ -133,7 +136,7 @@ http://jalammar.github.io/illustrated-gpt2/
 - Chain of Thought Prompting
 - Generate many outputs and pick final one or use LLM to pick best one. [Self consistency technique](https://arxiv.org/pdf/2203.11171.pdf)
 - NOTE: Not model universal and not robust to updated changes: not stable. 
-#### 
+ 
 
 
 #### Minimizing AI- plagiarism prompting strategy. 
@@ -161,6 +164,9 @@ https://arxiv.org/pdf/2304.08637.pdf
  - Generate many outputs, and then use the model to pick the best one
  - Fine-tune custom models to maximize performance
 
+### Tools
+- [Prompt Engine (MSFT)](https://github.com/microsoft/prompt-engine/blob/main/LICENSE)
+- [Prompt Genius](https://chrome.google.com/webstore/detail/chatgpt-prompt-genius/jjdnakkfjnnbbckhifcfchagnpofjffo)
 
 ## Improvements and Optimizations
 
@@ -177,9 +183,16 @@ Train on model trains a new model on the output of a new model.
 Adapters are efficient and performant layers that can optimize performance without needing to do inefficient fine-tuning. 
 
 ### Prompt tuning
+
 Uses a layer to not change prompt but change the embedding of the prompts. 
 - [The Power of Scale for Parameter-Efficient Prompt Tuning](https://arxiv.org/abs/2104.08691)
 Boosted Prompting: few shot prompts that progressively solve more of the problem.
+
+#### Repos
+
+- [For Llama](https://github.com/Lightning-AI/lit-llama)
+
+
 
 ### Prompt compression:
 - [Learning to Compress Prompts with Gist Tokens](https://arxiv.org/pdf/2304.08467.pdf). Can enable 26x compression and 40% FLOP reduction and improvements. Trains 'gist tokens' to summarize information. 
