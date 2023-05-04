@@ -13,6 +13,7 @@ Also, please note that it will not include discussions evaluating GPT or other L
 ## Models
 * [Medpalm](https://arxiv.org/abs/2212.13138)
 * [Llama](https://github.com/facebookresearch/llama)
+* [Open Llama](https://github.com/openlm-research/open_llama)
 
 ## Deployment
 - [Deploying on Azure for Embeddings] (https://github.com/ruoccofabrizio/azure-open-ai-embeddings-qna)
