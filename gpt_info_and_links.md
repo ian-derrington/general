@@ -303,3 +303,6 @@ a constant number of encoder layers can emulate basic computing blocks, includin
 Data sets (To be made into different document)
 
 - https://arxiv.org/pdf/2303.14957.pdf
+
+## Detectors
+https://sapling.ai/ai-content-detector
