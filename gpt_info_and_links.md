@@ -246,14 +246,16 @@ This section describes GPT that has been enabled with more 'agency' or the abili
 - [Reflexion](Reflexion: an autonomous agent with dynamic memory and self-reflection): "Reflexion, an approach that endows an agent with dynamic memory and self-reflection capabilities to enhance its existing reasoning trace and task-specific action choice abilities"
   - [Github](https://github.com/noahshinn024/reflexion)
   - [Inspired github](https://github.com/GammaTauAI/reflexion-human-eval) 
-- ‼️[Langchain](https://python.langchain.com/en/latest/#): Data aware AI that is agentic.
-  - ‼️[Langflow](https://github.com/logspace-ai/langflow) 
-  - ‼️[Toolkit](https://www.toolkit.club/) Generates LangChain plugins
 - [Teaching Large Language Models to Self-Debug](https://arxiv.org/abs/2304.05128) `transcoder`
 <img width="865" alt="image" src="https://user-images.githubusercontent.com/76016868/231906559-758d89e4-d22a-4a3a-aa96-1d630e48651d.png">
 
 - ‼️[Robo-GPT](https://github.com/rokstrnisa/Robo-GPT)
 
+## Structured prompting:
+- [Guidance](https://github.com/microsoft/guidance/?utm_source=tldrai) Interleaving generation, prompting and logical control to single  continuous flow.
+- ‼️[Langchain](https://python.langchain.com/en/latest/#): Data aware AI that is agentic.
+  - ‼️[Langflow](https://github.com/logspace-ai/langflow) 
+  - ‼️[Toolkit](https://www.toolkit.club/) Generates LangChain plugins
 
 ## Applications
 ### Book Writing
