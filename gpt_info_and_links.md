@@ -308,3 +308,12 @@ Data sets (To be made into different document)
 
 ## Detectors
 https://sapling.ai/ai-content-detector
+
+## To sort
+
+https://github.com/irgolic/AutoPR
+https://github.com/Helicone/helicone
+https://shreyar.github.io/guardrails/
+https://github.com/jerryjliu/llama_index
+scale.com/spellbook
+
