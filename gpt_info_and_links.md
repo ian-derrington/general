@@ -255,6 +255,7 @@ This section describes GPT that has been enabled with more 'agency' or the abili
 - [Guidance](https://github.com/microsoft/guidance/?utm_source=tldrai) Interleaving generation, prompting and logical control to single  continuous flow.
 - ‼️[Langchain](https://python.langchain.com/en/latest/#): Data aware AI that is agentic.
   - ‼️[Langflow](https://github.com/logspace-ai/langflow) 
+  - ‼️[Aweome Langchain](https://github.com/kyrolabs/awesome-langchain)
   - ‼️[Toolkit](https://www.toolkit.club/) Generates LangChain plugins
 
 ## Applications
