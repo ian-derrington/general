@@ -45,7 +45,8 @@ Important discussion revealing the components of Transformers.
   * Word Level: Rare words don't work
   * Subword level: Simpleset and most successful is Byte Pair Encoding
   * Special Characters: `mask_token`, `bos_token` (beginning of sequence), `eos_token`
-
+  
+ 
   **Components:**
   
   * Token Embedding: Mapping to a vector space. 
@@ -72,6 +73,8 @@ Important discussion revealing the components of Transformers.
   * Training: minibatch, batch norm, weight initialization, ensembling, adversarial
   * Regularization: weight decay early stopping cross-validation, dropout, noise
 
+## Tokenization 
+- [Tiktoken](https://github.com/openai/tiktoken) uses BPE and is theoretically used in GPT models. 
 ### Variations
 
 - [Hyena Architecture](https://arxiv.org/pdf/2302.10866.pdf) Uses inspiration from FFT to create a drop in replacement for Transformer models. 
