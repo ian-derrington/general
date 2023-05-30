@@ -218,6 +218,8 @@ Boosted Prompting: few shot prompts that progressively solve more of the problem
 
 
 ## Extensions
+### Adapters
+https://adapterhub.ml/
 
 ### Vector databases
 Use embeddings to create query vector databases such as:
@@ -241,8 +243,8 @@ This section describes GPT that has been enabled with more 'agency' or the abili
   - [TaskMatrix.ai](https://arxiv.org/abs/2303.16434) seemingly from the same authors. 
 - ‼️ [AUTO GPT](https://github.com/Torantulino/Auto-GPT) 
 - ‼️ [BabyAGI](https://github.com/yoheinakajima/babyagi)
-- ‼️ [ReAct](https://arxiv.org/abs/2210.03629)
-  - [Github](https://github.com/ysymyth/ReAct) 
+- ‼️ [ReAct](https://arxiv.org/abs/2210.03629) [Github](https://github.com/ysymyth/ReAct) 
+  - Effectively Observe, Think, Act, Repeat. Has limited action space 
 - [Reflexion](Reflexion: an autonomous agent with dynamic memory and self-reflection): "Reflexion, an approach that endows an agent with dynamic memory and self-reflection capabilities to enhance its existing reasoning trace and task-specific action choice abilities"
   - [Github](https://github.com/noahshinn024/reflexion)
   - [Inspired github](https://github.com/GammaTauAI/reflexion-human-eval) 
