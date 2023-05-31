@@ -143,7 +143,8 @@ http://jalammar.github.io/illustrated-gpt2/
 - NOTE: Not model universal and not robust to updated changes: not stable. 
  
 
-- 'According to { some_reputable_source }' prompt inception additions increases output quality https://arxiv.org/pdf/2305.13252.pdf
+-  [“According to ...” Prompting Language Models Improves Quoting from Pre-Training Data](https://arxiv.org/pdf/2305.13252.pdf) The grounding prompt `According to { some_reputable_source}` prompt inception additions increases output qualityimproves over the null prompt in nearly every dataset and metric, typically by 5-15%.
+-  
 
 
 #### Minimizing AI- plagiarism prompting strategy. 
