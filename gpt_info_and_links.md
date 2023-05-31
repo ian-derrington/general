@@ -5,7 +5,7 @@ Please note that it will *not* focus the topic of AI Ethics.  While that is impo
 Also, please note that it will not include discussions evaluating GPT or other LLMs, their potential consciousnes, their performance on standardized human tests, etc as this will change within weeks to months and will be deprecated by the time you likely read this. 
 
 # Providers
-
+(incomplete)
 * [Bard](https://bard.google.com/)
 * [Claud]()
 * [ChatGPT](https://openai.com/blog/chatgpt)
@@ -79,6 +79,7 @@ Important discussion revealing the components of Transformers.
 
 - [Hyena Architecture](https://arxiv.org/pdf/2302.10866.pdf) Uses inspiration from FFT to create a drop in replacement for Transformer models. 
 - [Scaling Transformer to 1M tokens and beyond with RMT](https://arxiv.org/abs/2304.11062) Uses a Recurrent architecture to extend understanding to large lengths. 
+- ‼️[MEGABYTE: Predicting Million-byte Sequences with Multiscale Transformers](https://arxiv.org/pdf/2305.07185.pdf) MEGABYTE segments sequences into patches and uses a local submodel within patches and a global model between patches
 
 ## LLMs
 - [Eight Things to Know about Large Language Models](https://cims.nyu.edu/~sbowman/eightthings.pdf?utm_source=substack&utm_medium=email)
@@ -141,6 +142,8 @@ http://jalammar.github.io/illustrated-gpt2/
 - Generate many outputs and pick final one or use LLM to pick best one. [Self consistency technique](https://arxiv.org/pdf/2203.11171.pdf)
 - NOTE: Not model universal and not robust to updated changes: not stable. 
  
+
+- 'According to { some_reputable_source }' prompt inception additions increases output quality https://arxiv.org/pdf/2305.13252.pdf
 
 
 #### Minimizing AI- plagiarism prompting strategy. 
