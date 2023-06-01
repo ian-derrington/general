@@ -27,6 +27,14 @@ Also, please note that it will not include discussions evaluating GPT or other L
 <img width="251" alt="Screen Shot 2023-06-01 at 2 11 51 PM" src="https://github.com/ianderrington/general/assets/76016868/0e8a1e8a-c1f1-47ff-8955-0e012aac4dbb">
 ssssss
 <img width="339" alt="image" src="https://github.com/ianderrington/general/assets/76016868/a3ae1b9d-cd19-41f0-885d-e82ad99a5873">
+<img width="918" alt="image" src="https://github.com/ianderrington/general/assets/76016868/0ecb56de-966a-40c5-8d14-1df3b4a5a89f">
+
+<img width="282" alt="image" src="https://github.com/ianderrington/general/assets/76016868/7cea8be4-26dd-46c3-9001-fcf625e5975d">
+
+Pretend you have an IQ of 120
+<img width="918" alt="image" src="https://github.com/ianderrington/general/assets/76016868/a32295bd-9d88-4b31-bd10-134e11e6c546">
+<img width="886" alt="image" src="https://github.com/ianderrington/general/assets/76016868/7b1c6c4b-3778-4536-8d10-03696f3624c5">
+<img width="927" alt="image" src="https://github.com/ianderrington/general/assets/76016868/dc89e484-aed6-485f-9a3e-84cdfcf858d2">
 
 ### Data sets
 RedPajama
