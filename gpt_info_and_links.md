@@ -21,6 +21,24 @@ Also, please note that it will not include discussions evaluating GPT or other L
 - [Integrating with Azure Services](https://www.youtube.com/watch?v=tW2EA4aZ_YQ)
 - 
 # Papers / Codebases / Blogposts
+## Videos
+[State of GPT by Andrej Karpathy](https://build.microsoft.com/en-US/sessions/db3f4859-cd30-4445-a0cd-553c3304f8e2)
+  <img width="925" alt="image" src="https://github.com/ianderrington/general/assets/76016868/de2d3b33-9e79-407d-b3c7-5b795f330722">
+<img width="251" alt="Screen Shot 2023-06-01 at 2 11 51 PM" src="https://github.com/ianderrington/general/assets/76016868/0e8a1e8a-c1f1-47ff-8955-0e012aac4dbb">
+ssssss
+<img width="339" alt="image" src="https://github.com/ianderrington/general/assets/76016868/a3ae1b9d-cd19-41f0-885d-e82ad99a5873">
+
+### Data sets
+RedPajama
+Pile
+CommonCrawl (webscrape)
+C4 (CommonCrawl)
+Github
+Books
+Arxiv
+StackExchange
+
+Byte Pair Encoding
 
 ## Surveys and General papers
 ### Self-supervised learning
@@ -268,6 +286,9 @@ This section describes GPT that has been enabled with more 'agency' or the abili
   - ‼️[Awesome Langchain](https://github.com/kyrolabs/awesome-langchain)
   - ‼️[Flowise](https://github.com/FlowiseAI/Flowise)
   - ‼️[Toolkit](https://www.toolkit.club/) Generates LangChain plugins
+### Tutorials:
+  - https://www.pinecone.io/learn/langchain-prompt-templates/
+  - https://learn.deeplearning.ai/langchain/lesson/3/memory
 
 ## Applications
 ### Book Writing
