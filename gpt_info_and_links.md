@@ -4,16 +4,17 @@ Please note that it will *not* focus the topic of AI Ethics.  While that is impo
 
 Also, please note that it will not include discussions evaluating GPT or other LLMs, their potential consciousnes, their performance on standardized human tests, etc as this will change within weeks to months and will be deprecated by the time you likely read this. 
 
-# Providers
-(incomplete)
+# Providers 
 * [Bard](https://bard.google.com/)
 * [Claud]()
 * [ChatGPT](https://openai.com/blog/chatgpt)
+
 
 ## Models
 * [Medpalm](https://arxiv.org/abs/2212.13138)
 * [Llama](https://github.com/facebookresearch/llama)
 * [Open Llama](https://github.com/openlm-research/open_llama)
+* [UAE Falcon](https://www.tii.ae/news/uaes-falcon-40b-now-royalty-free?utm_source=tldrai) (Apache License)
 
 ## Deployment
 - [Deploying on Azure for Embeddings] (https://github.com/ruoccofabrizio/azure-open-ai-embeddings-qna)
