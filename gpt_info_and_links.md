@@ -36,6 +36,25 @@ Pretend you have an IQ of 120
 <img width="886" alt="image" src="https://github.com/ianderrington/general/assets/76016868/7b1c6c4b-3778-4536-8d10-03696f3624c5">
 <img width="927" alt="image" src="https://github.com/ianderrington/general/assets/76016868/dc89e484-aed6-485f-9a3e-84cdfcf858d2">
 
+[A good description of advanced prompt tuning](https://cameronrwolfe.substack.com/p/advanced-prompt-engineering)
+```
+AutoPrompt [5] combines the original prompt input with a set of shared (across all input data) “trigger tokens” that are selected via a gradient-based search to improve performance.
+
+Prefix Tuning [6] adds several “prefix” tokens to the prompt embedding in both input and hidden layers, then trains the parameters of this prefix (leaving model parameters fixed) with gradient descent as a parameter-efficient fine-tuning strategy.
+
+Prompt Tuning [7] is similar to prefix tuning, but prefix tokens are only added to the input layer. These tokens are fine-tuned on each task that the language model solves, allowing prefix tokens to condition the model for a given task.
+
+P-Tuning [8] adds task-specific anchor tokens to the model’s input layer that are fine-tuned, but allows these tokens to be placed at arbitrary locations (e.g., the middle of the prompt), making the approach more flexible than prefix tuning.
+
+[5] Shin, Taylor, et al. "Autoprompt: Eliciting knowledge from language models with automatically generated prompts." arXiv preprint arXiv:2010.15980 (2020).
+
+[6] Li, Xiang Lisa, and Percy Liang. "Prefix-tuning: Optimizing continuous prompts for generation." arXiv preprint arXiv:2101.00190 (2021).
+
+[7] Lester, Brian, Rami Al-Rfou, and Noah Constant. "The power of scale for parameter-efficient prompt tuning." arXiv preprint arXiv:2104.08691 (2021).
+
+[8] Liu, Xiao, et al. "GPT understands, too." arXiv preprint arXiv:2103.10385 (2021).
+```
+
 ### Data sets
 RedPajama
 Pile
@@ -298,6 +317,8 @@ This section describes GPT that has been enabled with more 'agency' or the abili
   - https://www.pinecone.io/learn/langchain-prompt-templates/
   - https://learn.deeplearning.ai/langchain/lesson/3/memory
 
+
+[LLMs as toolmakers](https://arxiv.org/abs/2305.17126)[Github](https://github.com/ctlllll/llm-toolmaker?utm_source=tldrai)
 ## Applications
 ### Book Writing
 - [Pyprompt chatgpt](http://morganlancer.com/en/portfolio/pyprompt_chatgpt)
