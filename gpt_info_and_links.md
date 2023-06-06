@@ -69,6 +69,8 @@ StackExchange
 - 
 
 ## Surveys and General papers
+
+
 ## RLHF
 - ‼️ [RLHF basics by hugging face](https://huggingface.co/blog/rlhf) A realy good intro to parse again.
 - [RLHF for Palm in Pytorch](https://github.com/lucidrains/PaLM-rlhf-pytorch)
@@ -124,7 +126,7 @@ Important discussion revealing the components of Transformers.
   * Architectures: sparce layers, weight-sharing
   * Training: minibatch, batch norm, weight initialization, ensembling, adversarial
   * Regularization: weight decay early stopping cross-validation, dropout, noise
-- [Five Years of Progress in GPTs](https://finbarrtimbers.substack.com/p/five-years-of-progress-in-gpts)
+
 ## Tokenization 
 - [Tiktoken](https://github.com/openai/tiktoken) uses BPE and is theoretically used in GPT models. 
 - [Token Monster](https://github.com/alasdairforsythe/tokenmonster) Uses 35% fewer tokens and uses a top-down approach, instead of a bottom-up constructive approach. Likely of high value. 
@@ -132,10 +134,12 @@ Important discussion revealing the components of Transformers.
 
 ### Variations
 
-- [Hyena Architecture](https://arxiv.org/pdf/2302.10866.pdf) Uses inspiration from FFT to create a drop in replacement for Transformer models. 
+
+To improve length:
 - [Scaling Transformer to 1M tokens and beyond with RMT](https://arxiv.org/abs/2304.11062) Uses a Recurrent architecture to extend understanding to large lengths. 
 - ‼️[MEGABYTE: Predicting Million-byte Sequences with Multiscale Transformers](https://arxiv.org/pdf/2305.07185.pdf) MEGABYTE segments sequences into patches and uses a local submodel within patches and a global model between patches
-
+- [Hyena Architecture](https://arxiv.org/pdf/2302.10866.pdf) Uses inspiration from FFT to create a drop in replacement for Transformer models. Quite complex and maybe overhyped.
+-  
 ## LLMs
 - [Eight Things to Know about Large Language Models](https://cims.nyu.edu/~sbowman/eightthings.pdf?utm_source=substack&utm_medium=email)
  1. LLMs predictably get more capable with increasing investment, even without targeted
@@ -283,7 +287,7 @@ Boosted Prompting: few shot prompts that progressively solve more of the problem
 - [LinkBERT](https://github.com/michiyasunaga/LinkBERT) places in context window hyperlinked references to achieve better performance.  
 - [Cluster-Branch-Train-Merge (c-BTM)], a new way to scale sparse expert LLMs on any dataset Paper: https://arxiv.org/abs/2303.14177 Code + Models: https://github.com/kernelmachine/
 
-
+### [https://arxiv.org/pdf/2303.14177.pdf]
 
 ## Extensions
 ### Adapters
@@ -318,6 +322,9 @@ This section describes GPT that has been enabled with more 'agency' or the abili
 - [Reflexion](Reflexion: an autonomous agent with dynamic memory and self-reflection): "Reflexion, an approach that endows an agent with dynamic memory and self-reflection capabilities to enhance its existing reasoning trace and task-specific action choice abilities"
   - [Github](https://github.com/noahshinn024/reflexion)
   - [Inspired github](https://github.com/GammaTauAI/reflexion-human-eval) 
+
+- [Baize: An Open-Source Chat Model with Parameter-Efficient Tuning on Self-Chat Data](https://arxiv.org/pdf/2304.01196.pdf) Parameter efficient LLama Tuning and risk minimization with a new 'Self Distillation' with Feedback to improve itself even more. RESEARCH ONLY
+
 - [Teaching Large Language Models to Self-Debug](https://arxiv.org/abs/2304.05128) `transcoder`
 <img width="865" alt="image" src="https://user-images.githubusercontent.com/76016868/231906559-758d89e4-d22a-4a3a-aa96-1d630e48651d.png">
 
@@ -336,12 +343,15 @@ This section describes GPT that has been enabled with more 'agency' or the abili
   - ‼️[Flowise](https://github.com/FlowiseAI/Flowise)
   - ‼️[Toolkit](https://www.toolkit.club/) Generates LangChain plugins
 - ！[Chain Forge](https://github.com/ianarawjo/ChainForge?utm_source=tldrai) A data flow prompt engineering environment for evaluating ana analyzing LLM responses
+
 ### Tutorials:
   - https://www.pinecone.io/learn/langchain-prompt-templates/
   - https://learn.deeplearning.ai/langchain/lesson/3/memory
 
 
 [LLMs as toolmakers](https://arxiv.org/abs/2305.17126)[Github](https://github.com/ctlllll/llm-toolmaker?utm_source=tldrai)
+
+
 ## Applications
 ### Book Writing
 - [Pyprompt chatgpt](http://morganlancer.com/en/portfolio/pyprompt_chatgpt)
@@ -380,7 +390,10 @@ a constant number of encoder layers can emulate basic computing blocks, includin
 sets
 - [Redpajama](https://www.together.xyz/blog/redpajama)
   
-  
+## Theory
+- [Looped Transformers and Programmable Computers](https://arxiv.org/pdf/2301.13196.pdf)Understanding that transformer networks can simulate complex algorithms when hardcoded with specific weights and made intoa  loop. 'Machine Learning' 'Machine code'. 
+- 
+
 ## Interesting Companies:
 
 - [e2b](https://github.com/e2b-dev/e2b) Write documentation, get code. 
@@ -394,6 +407,12 @@ Data sets (To be made into different document)
 
 ## Detectors
 https://sapling.ai/ai-content-detector
+
+
+## Operational Toolkits for LLMops
+- [Hugging Face Transformers](https://huggingface.co/transformers/v4.0.1/index.html)
+- [Adapters for Hugging Face](https://adapterhub.ml/)
+- [Metaseq](https://github.com/facebookresearch/metaseq/) For working with Oen pre-trained transformers (from fairseq)
 
 ## To sort
 
