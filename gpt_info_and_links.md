@@ -68,6 +68,9 @@ StackExchange
 Byte Pair Encoding
 
 ## Surveys and General papers
+## RLHF
+- ‼️ [RLHF basics by hugging face](https://huggingface.co/blog/rlhf) A realy good intro to parse again.
+
 ### Self-supervised learning
 - ‼️ [A cookbook of self-supervised Learning](https://arxiv.org/pdf/2304.12210.pdf) 
 
