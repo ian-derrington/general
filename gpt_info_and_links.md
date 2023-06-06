@@ -70,6 +70,8 @@ Byte Pair Encoding
 ## Surveys and General papers
 ## RLHF
 - ‼️ [RLHF basics by hugging face](https://huggingface.co/blog/rlhf) A realy good intro to parse again.
+- [RLHF for Palm in Pytorch](https://github.com/lucidrains/PaLM-rlhf-pytorch)
+
 
 ### Self-supervised learning
 - ‼️ [A cookbook of self-supervised Learning](https://arxiv.org/pdf/2304.12210.pdf) 
@@ -124,6 +126,9 @@ Important discussion revealing the components of Transformers.
 
 ## Tokenization 
 - [Tiktoken](https://github.com/openai/tiktoken) uses BPE and is theoretically used in GPT models. 
+- [Token Monster](https://github.com/alasdairforsythe/tokenmonster) Uses 35% fewer tokens and uses a top-down approach, instead of a bottom-up constructive approach. Likely of high value. 
+
+
 ### Variations
 
 - [Hyena Architecture](https://arxiv.org/pdf/2302.10866.pdf) Uses inspiration from FFT to create a drop in replacement for Transformer models. 
@@ -221,6 +226,12 @@ https://arxiv.org/pdf/2304.08637.pdf
  - Generate many outputs, and then use the model to pick the best one
  - Fine-tune custom models to maximize performance
 
+### Advanced
+
+
+- [Large Language Model Guided Tree-of-Thought](https://arxiv.org/abs/2305.08291) [Github](https://github.com/jieyilong/tree-of-thought-puzzle-solver)
+- [Tree of Thoughts: Deliberate Problem Solving with Large Language Models](https://arxiv.org/abs/2305.10601) [Github](https://github.com/ysymyth/tree-of-thought-llm)
+
 ### Tools
 - [Prompt Engine (MSFT)](https://github.com/microsoft/prompt-engine/blob/main/LICENSE)
 - [Prompt Genius](https://chrome.google.com/webstore/detail/chatgpt-prompt-genius/jjdnakkfjnnbbckhifcfchagnpofjffo)
@@ -310,7 +321,8 @@ This section describes GPT that has been enabled with more 'agency' or the abili
 - ‼️[Robo-GPT](https://github.com/rokstrnisa/Robo-GPT)
 
 ## Structured prompting:
-- [Guidance](https://github.com/microsoft/guidance/?utm_source=tldrai) Interleaving generation, prompting and logical control to single  continuous flow.
+- ‼️[Guidance](https://github.com/microsoft/guidance/?utm_source=tldrai) Interleaving generation, prompting and logical control to single  continuous flow.
+- ‼️[Semantic Kernel]([https://github.com/microsoft/semantic-kernel/blob/main/samples/notebooks/python/00-getting-started.ipynb](https://github.com/microsoft/semantic-kernel/tree/main))
 - ‼️[Langchain](https://python.langchain.com/en/latest/#): Data aware AI that is agentic.
   - ‼️[Langflow](https://github.com/logspace-ai/langflow) 
   - ‼️[Awesome Langchain](https://github.com/kyrolabs/awesome-langchain)
@@ -381,4 +393,4 @@ https://github.com/Helicone/helicone
 https://shreyar.github.io/guardrails/
 https://github.com/jerryjliu/llama_index
 scale.com/spellbook
-
+- [LAION-AI](https://github.com/LAION-AI/Open-Assistant)
