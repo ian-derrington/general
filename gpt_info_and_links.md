@@ -320,6 +320,9 @@ This section describes GPT that has been enabled with more 'agency' or the abili
 
 - ‼️[Robo-GPT](https://github.com/rokstrnisa/Robo-GPT)
 
+
+- [Self-play GPT](https://arxiv.org/pdf/2305.10142.pdf) Uses different LLMs and different rolls to provide feedback on how to improve and enabling autonomous improvement while game playing. 
+
 ## Structured prompting:
 - ‼️[Guidance](https://github.com/microsoft/guidance/?utm_source=tldrai) Interleaving generation, prompting and logical control to single  continuous flow.
 - ‼️[Semantic Kernel]([https://github.com/microsoft/semantic-kernel/blob/main/samples/notebooks/python/00-getting-started.ipynb](https://github.com/microsoft/semantic-kernel/tree/main))
