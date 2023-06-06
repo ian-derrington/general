@@ -65,7 +65,8 @@ Books
 Arxiv
 StackExchange
 
-Byte Pair Encoding
+- [Mini Wob++](http://miniwob.farama.org/) For web interactive environments for accomplishing different tasks. Quite useful.
+- 
 
 ## Surveys and General papers
 ## RLHF
@@ -123,7 +124,7 @@ Important discussion revealing the components of Transformers.
   * Architectures: sparce layers, weight-sharing
   * Training: minibatch, batch norm, weight initialization, ensembling, adversarial
   * Regularization: weight decay early stopping cross-validation, dropout, noise
-
+- [Five Years of Progress in GPTs](https://finbarrtimbers.substack.com/p/five-years-of-progress-in-gpts)
 ## Tokenization 
 - [Tiktoken](https://github.com/openai/tiktoken) uses BPE and is theoretically used in GPT models. 
 - [Token Monster](https://github.com/alasdairforsythe/tokenmonster) Uses 35% fewer tokens and uses a top-down approach, instead of a bottom-up constructive approach. Likely of high value. 
@@ -310,6 +311,8 @@ This section describes GPT that has been enabled with more 'agency' or the abili
   - [TaskMatrix.ai](https://arxiv.org/abs/2303.16434) seemingly from the same authors. 
 - ‼️ [AUTO GPT](https://github.com/Torantulino/Auto-GPT) 
 - ‼️ [BabyAGI](https://github.com/yoheinakajima/babyagi)
+- ‼️ [CAMEL](https://github.com/camel-ai/camel) inception prompting to guide chat agents towards task completion. Also [implemented in Langchain](https://python.langchain.com/en/latest/use_cases/agent_simulations/camel_role_playing.html)
+- [Loop GPT](https://github.com/farizrahman4u/loopgpt) A re-implementaiton of Auto-GPT with modularity and extensibility in mind. 
 - ‼️ [ReAct](https://arxiv.org/abs/2210.03629) [Github](https://github.com/ysymyth/ReAct) 
   - Effectively Observe, Think, Act, Repeat. Has limited action space 
 - [Reflexion](Reflexion: an autonomous agent with dynamic memory and self-reflection): "Reflexion, an approach that endows an agent with dynamic memory and self-reflection capabilities to enhance its existing reasoning trace and task-specific action choice abilities"
@@ -322,15 +325,17 @@ This section describes GPT that has been enabled with more 'agency' or the abili
 
 
 - [Self-play GPT](https://arxiv.org/pdf/2305.10142.pdf) Uses different LLMs and different rolls to provide feedback on how to improve and enabling autonomous improvement while game playing. 
+- [Language Models can Solve Computer Tasks](https://arxiv.org/pdf/2303.17491.pdf) USes Recursive Criticism and Improvement. Combining with Chain of Thought it is even better. The method: Plan: Critique, Improve 
 
 ## Structured prompting:
 - ‼️[Guidance](https://github.com/microsoft/guidance/?utm_source=tldrai) Interleaving generation, prompting and logical control to single  continuous flow.
 - ‼️[Semantic Kernel]([https://github.com/microsoft/semantic-kernel/blob/main/samples/notebooks/python/00-getting-started.ipynb](https://github.com/microsoft/semantic-kernel/tree/main))
-- ‼️[Langchain](https://python.langchain.com/en/latest/#): Data aware AI that is agentic.
+- ‼️[Langchain](https://python.langchain.com/en/latest/#) A primative python or javascript based primitive 'LLM' language that enables planned and agentic AI.
   - ‼️[Langflow](https://github.com/logspace-ai/langflow) 
   - ‼️[Awesome Langchain](https://github.com/kyrolabs/awesome-langchain)
   - ‼️[Flowise](https://github.com/FlowiseAI/Flowise)
   - ‼️[Toolkit](https://www.toolkit.club/) Generates LangChain plugins
+- ！[Chain Forge](https://github.com/ianarawjo/ChainForge?utm_source=tldrai) A data flow prompt engineering environment for evaluating ana analyzing LLM responses
 ### Tutorials:
   - https://www.pinecone.io/learn/langchain-prompt-templates/
   - https://learn.deeplearning.ai/langchain/lesson/3/memory
@@ -371,7 +376,8 @@ a constant number of encoder layers can emulate basic computing blocks, includin
   Released initial set of StableLM-alpha models, with 3B and 7B parameters. 15B and 30B models are on the way. Base models are released under CC BY-SA-4.0
   [github](https://github.com/stability-AI/stableLM/)
 
-## Public Data sets
+## Public 
+sets
 - [Redpajama](https://www.together.xyz/blog/redpajama)
   
   
