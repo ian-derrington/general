@@ -19,8 +19,14 @@ Also, please note that it will not include discussions evaluating GPT or other L
 ## Deployment
 - [Deploying on Azure for Embeddings] (https://github.com/ruoccofabrizio/azure-open-ai-embeddings-qna)
 - [Integrating with Azure Services](https://www.youtube.com/watch?v=tW2EA4aZ_YQ)
+
+
 - 
 # Papers / Codebases / Blogposts
+### Embeddings
+‼️[What are Embeddings](http://vickiboykis.com/what_are_embeddings/)[Github](https://github.com/veekaybee/what_are_embeddings/blob/main/README.md)
+
+
 ## Videos
 [State of GPT by Andrej Karpathy](https://build.microsoft.com/en-US/sessions/db3f4859-cd30-4445-a0cd-553c3304f8e2)
   <img width="925" alt="image" src="https://github.com/ianderrington/general/assets/76016868/de2d3b33-9e79-407d-b3c7-5b795f330722">
@@ -334,6 +340,15 @@ This section describes GPT that has been enabled with more 'agency' or the abili
 - [Self-play GPT](https://arxiv.org/pdf/2305.10142.pdf) Uses different LLMs and different rolls to provide feedback on how to improve and enabling autonomous improvement while game playing. 
 - [Language Models can Solve Computer Tasks](https://arxiv.org/pdf/2303.17491.pdf) USes Recursive Criticism and Improvement. Combining with Chain of Thought it is even better. The method: Plan: Critique, Improve 
 
+### Agent Improvements
+
+- [Learning to Reason and Memorize with Self-Notes](https://adapterhub.ml/) "Allows model to deviate from input context at any time to reason and take notes"
+<img width="685" alt="image" src="https://github.com/ianderrington/general/assets/76016868/e3b9ed66-18a8-451b-b29a-09815d7791d1">
+
+- [Large language models as tool makers](https://arxiv.org/pdf/2305.17126.pdf) Allows high-quality tools to be reused by more lightweight models. <img width="545" alt="image" src="https://github.com/ianderrington/general/assets/76016868/fc0d79fd-54b7-493b-93a4-5eafd76584a6">
+
+
+
 ## Structured prompting:
 - ‼️[Guidance](https://github.com/microsoft/guidance/?utm_source=tldrai) Interleaving generation, prompting and logical control to single  continuous flow.
 - ‼️[Semantic Kernel]([https://github.com/microsoft/semantic-kernel/blob/main/samples/notebooks/python/00-getting-started.ipynb](https://github.com/microsoft/semantic-kernel/tree/main))
@@ -387,12 +402,16 @@ a constant number of encoder layers can emulate basic computing blocks, includin
   [github](https://github.com/stability-AI/stableLM/)
 
 ## Public 
-sets
+Datasets
 - [Redpajama](https://www.together.xyz/blog/redpajama)
-  
+- [BIG-bench](https://github.com/google/BIG-bench/blob/main/docs/doc.md) APACHE 2.0
+- [Metaseq](https://github.com/facebookresearch/metaseq/) For working with Oen pre-trained transformers (from fairseq)
+
 ## Theory
 - [Looped Transformers and Programmable Computers](https://arxiv.org/pdf/2301.13196.pdf)Understanding that transformer networks can simulate complex algorithms when hardcoded with specific weights and made intoa  loop. 'Machine Learning' 'Machine code'. 
-- 
+
+
+- [Scaling Expert Language Models with Unsupervised Domain Discovery](https://arxiv.org/pdf/2303.14177.pdf) "parse language models on arbitrary text corpora. Our method clusters a corpus into sets of related documents, trains a separate expert language model on each cluster, and combines them in a sparse ensemble for inference. This approach generalizes embarrassingly parallel training by automatically discovering the domains for each expert, and eliminates nearly all the communication overhead of existing sparse language models. "
 
 ## Interesting Companies:
 
@@ -408,11 +427,11 @@ Data sets (To be made into different document)
 ## Detectors
 https://sapling.ai/ai-content-detector
 
+## Training LLMs
 
 ## Operational Toolkits for LLMops
 - [Hugging Face Transformers](https://huggingface.co/transformers/v4.0.1/index.html)
 - [Adapters for Hugging Face](https://adapterhub.ml/)
-- [Metaseq](https://github.com/facebookresearch/metaseq/) For working with Oen pre-trained transformers (from fairseq)
 
 ## To sort
 
