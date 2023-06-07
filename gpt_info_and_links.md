@@ -196,7 +196,7 @@ http://jalammar.github.io/illustrated-gpt2/
 
 
 ## Prompt engineering
-
+- [OPEN AI best practices](https://platform.openai.com/docs/guides/gpt-best-practices/)
 ### Summary: 
 
 - Provide several examples to ground it.
