@@ -62,7 +62,33 @@ StackExchange
 - [Hugging Face Transformers](https://huggingface.co/transformers/v4.0.1/index.html)
 - [Adapters for Hugging Face](https://adapterhub.ml/)
 
-# Educational
+## Foundational Programming Interfaces (Chains, agents, tools)
+
+- ‼️[Guidance](https://github.com/microsoft/guidance/?utm_source=tldrai) Interleaving generation, prompting and logical control to single  continuous flow.
+- ‼️[Semantic Kernel]([https://github.com/microsoft/semantic-kernel/blob/main/samples/notebooks/python/00-getting-started.ipynb](https://github.com/microsoft/semantic-kernel/tree/main))
+
+### Langchain
+- ‼️[Langchain](https://python.langchain.com/en/latest/#) A primative python or javascript based primitive 'LLM' language that enables planned and agentic AI.
+  - ‼️[Langflow](https://github.com/logspace-ai/langflow) 
+  - ‼️[Awesome Langchain](https://github.com/kyrolabs/awesome-langchain)
+  -   - ‼️[Toolkit](https://www.toolkit.club/) Generates LangChain plugins
+
+#### Tutorials
+  - https://www.pinecone.io/learn/langchain-prompt-templates/
+  - https://learn.deeplearning.ai/langchain/lesson/3/memory
+ 
+## Others
+- ‼️[Flowise](https://github.com/FlowiseAI/Flowise)
+- ！[Chain Forge](https://github.com/ianarawjo/ChainForge?utm_source=tldrai) A data flow prompt engineering environment for evaluating ana analyzing LLM responses
+
+
+
+
+
+
+
+
+# Education and Research
 
 ## General
 
@@ -164,7 +190,7 @@ Important discussion revealing the components of Transformers.
 
 ### LLM Model Variations
 To improve length:
-- [Scaling Transformer to 1M tokens and beyond with RMT](https://arxiv.org/abs/2304.11062) Uses a Recurrent architecture to extend understanding to large lengths. 
+- [Scaling Transformer to 1M tokens and beyond with RMT](https://arxiv.org/abs/2304.11062) [Github](https://github.com/booydar/t5-experiments/tree/scaling-report) Uses a Recurrent Memory Transformer(RMT) architecture to extend understanding to large lengths. 
 - ‼️[MEGABYTE: Predicting Million-byte Sequences with Multiscale Transformers](https://arxiv.org/pdf/2305.07185.pdf) MEGABYTE segments sequences into patches and uses a local submodel within patches and a global model between patches
 - [Hyena Architecture](https://arxiv.org/pdf/2302.10866.pdf) Uses inspiration from FFT to create a drop in replacement for Transformer models. Quite complex and maybe overhyped.
   
@@ -178,7 +204,7 @@ Train on model trains a new model on the output of a new model.
 - [Alpaca ](https://github.com/tatsu-lab/stanford_alpaca)
 
 ### Adapter layers
-- [AdapterHub: A Framework for Adapting Transformers] (https://arxiv.org/pdf/2007.07779.pdf) - [Website](https://adapterhub.ml/)
+- [AdapterHub: A Framework for Adapting Transformers] (https://arxiv.org/pdf/2007.07779.pdf) [Website](https://adapterhub.ml/)
 Adapters are efficient and performant layers that can optimize performance without needing to do inefficient fine-tuning. 
 
 
@@ -334,14 +360,21 @@ Use embeddings to create query vector databases such as:
 * ‼️ [Visual GPT](https://arxiv.org/pdf/2303.04671.pdf)
 * ‼️ [Language is not all you need](https://arxiv.org/pdf/2302.14045.pdf)
 
+### Recurrent and self-improving
+- ‼️ [ReAct](https://arxiv.org/abs/2210.03629) [Github](https://github.com/ysymyth/ReAct) 
+  - Effectively Observe, Think, Act, Repeat. Has limited action space 
+- [Reflexion](Reflexion: an autonomous agent with dynamic memory and self-reflection): "Reflexion, an approach that endows an agent with dynamic memory and self-reflection capabilities to enhance its existing reasoning trace and task-specific action choice abilities"
+  - [Github](https://github.com/noahshinn024/reflexion)
+  - [Inspired github](https://github.com/GammaTauAI/reflexion-human-eval) 
+- [Teaching Large Language Models to Self-Debug](https://arxiv.org/abs/2304.05128) `transcoder`
+<img width="865" alt="image" src="https://user-images.githubusercontent.com/76016868/231906559-758d89e4-d22a-4a3a-aa96-1d630e48651d.png">
+- [Self-play GPT](https://arxiv.org/pdf/2305.10142.pdf) Uses different LLMs and different rolls to provide feedback on how to improve and enabling autonomous improvement while game playing. 
+- [Language Models can Solve Computer Tasks](https://arxiv.org/pdf/2303.17491.pdf), [Website](https://posgnu.github.io/rci-web/), [GitHub](https://github.com/posgnu/rci-agent) USes Recursive Criticism and Improvement. Combining with Chain of Thought it is even better. The method: Plan: Critique, Improve 
+  - Explicit RCI: "Review your previous answer and find problems with your answer." --> "Based on the problems you found, improve your answer." Recursively Criticizes and Improves it s output. This sort of prompting outperforms Chain of Thought, and combined it works even better.  
+### Agentic
 
-### Agentic, Recurrent and Pipelining GPT
-- [Toolformer](https://arxiv.org/pdf/2302.04761.pdf)
+- [Toolformer](https://arxiv.org/pdf/2302.04761.pdf) This section describes GPT that has been enabled with more 'agency' or the ability to do better.
 
-This section describes GPT that has been enabled with more 'agency' or the ability to do better.
-- [Language Models can Solve Computer Tasks](https://arxiv.org/pdf/2303.17491.pdf): 
-  - Explicit RCI: "Review your previous answer and find problems with your answer." --> "Based on the problems you found, improve your answer." **R**ecursively **C**riticizes and **I**mproves it s output. This sort of prompting outperforms Chain of Thought, and combined it works even better.  
-  - Implicit RCI: "
 - [HuggingGPT of 2023](https://arxiv.org/pdf/2303.17580.pdf) This paper describes a paradigm where ChatGPT is enabled with the ability to launch other ML models based on input. It does so by creating a Task list, then by identifying appropriate models, and then by executing them.
   - ‼️ [Github repo known as JARVIS here](https://github.com/microsoft/JARVIS)
   - [TaskMatrix.ai](https://arxiv.org/abs/2303.16434) seemingly from the same authors. 
@@ -349,41 +382,17 @@ This section describes GPT that has been enabled with more 'agency' or the abili
 - ‼️ [BabyAGI](https://github.com/yoheinakajima/babyagi)
 - ‼️ [CAMEL](https://github.com/camel-ai/camel) inception prompting to guide chat agents towards task completion. Also [implemented in Langchain](https://python.langchain.com/en/latest/use_cases/agent_simulations/camel_role_playing.html)
 - [Loop GPT](https://github.com/farizrahman4u/loopgpt) A re-implementaiton of Auto-GPT with modularity and extensibility in mind. 
-- ‼️ [ReAct](https://arxiv.org/abs/2210.03629) [Github](https://github.com/ysymyth/ReAct) 
-  - Effectively Observe, Think, Act, Repeat. Has limited action space 
-- [Reflexion](Reflexion: an autonomous agent with dynamic memory and self-reflection): "Reflexion, an approach that endows an agent with dynamic memory and self-reflection capabilities to enhance its existing reasoning trace and task-specific action choice abilities"
-  - [Github](https://github.com/noahshinn024/reflexion)
-  - [Inspired github](https://github.com/GammaTauAI/reflexion-human-eval) 
 
 - [Baize: An Open-Source Chat Model with Parameter-Efficient Tuning on Self-Chat Data](https://arxiv.org/pdf/2304.01196.pdf) Parameter efficient LLama Tuning and risk minimization with a new 'Self Distillation' with Feedback to improve itself even more. RESEARCH ONLY
 
-- [Teaching Large Language Models to Self-Debug](https://arxiv.org/abs/2304.05128) `transcoder`
-<img width="865" alt="image" src="https://user-images.githubusercontent.com/76016868/231906559-758d89e4-d22a-4a3a-aa96-1d630e48651d.png">
-
 - ‼️[Robo-GPT](https://github.com/rokstrnisa/Robo-GPT)
-- [Self-play GPT](https://arxiv.org/pdf/2305.10142.pdf) Uses different LLMs and different rolls to provide feedback on how to improve and enabling autonomous improvement while game playing. 
-- [Language Models can Solve Computer Tasks](https://arxiv.org/pdf/2303.17491.pdf) USes Recursive Criticism and Improvement. Combining with Chain of Thought it is even better. The method: Plan: Critique, Improve 
+
 
 ### Agent Improvements
 
 - [Learning to Reason and Memorize with Self-Notes](https://adapterhub.ml/) "Allows model to deviate from input context at any time to reason and take notes"
 <img width="685" alt="image" src="https://github.com/ianderrington/general/assets/76016868/e3b9ed66-18a8-451b-b29a-09815d7791d1">
 - [Large language models as tool makers](https://arxiv.org/pdf/2305.17126.pdf) [Github](https://github.com/ctlllll/llm-toolmaker?utm_source=tldrai) Allows high-quality tools to be reused by more lightweight models. <img width="545" alt="image" src="https://github.com/ianderrington/general/assets/76016868/fc0d79fd-54b7-493b-93a4-5eafd76584a6">
-
-## Structured prompting
-
-- ‼️[Guidance](https://github.com/microsoft/guidance/?utm_source=tldrai) Interleaving generation, prompting and logical control to single  continuous flow.
-- ‼️[Semantic Kernel]([https://github.com/microsoft/semantic-kernel/blob/main/samples/notebooks/python/00-getting-started.ipynb](https://github.com/microsoft/semantic-kernel/tree/main))
-- ‼️[Langchain](https://python.langchain.com/en/latest/#) A primative python or javascript based primitive 'LLM' language that enables planned and agentic AI.
-  - ‼️[Langflow](https://github.com/logspace-ai/langflow) 
-  - ‼️[Awesome Langchain](https://github.com/kyrolabs/awesome-langchain)
-  - ‼️[Flowise](https://github.com/FlowiseAI/Flowise)
-  - ‼️[Toolkit](https://www.toolkit.club/) Generates LangChain plugins
-- ！[Chain Forge](https://github.com/ianarawjo/ChainForge?utm_source=tldrai) A data flow prompt engineering environment for evaluating ana analyzing LLM responses
-
-### Tutorials:
-  - https://www.pinecone.io/learn/langchain-prompt-templates/
-  - https://learn.deeplearning.ai/langchain/lesson/3/memory
 
 
 
@@ -434,9 +443,10 @@ https://sapling.ai/ai-content-detector
 
 ## To sort
 
-https://github.com/irgolic/AutoPR
-https://github.com/Helicone/helicone
-https://shreyar.github.io/guardrails/
-https://github.com/jerryjliu/llama_index
-scale.com/spellbook
+- https://github.com/irgolic/AutoPR
+
+- https://github.com/Helicone/helicone
+- tps://shreyar.github.io/guardrails/
+- https://github.com/jerryjliu/llama_index
+- scale.com/spellbook
 - [LAION-AI](https://github.com/LAION-AI/Open-Assistant)
