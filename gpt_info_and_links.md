@@ -1,10 +1,28 @@
-This summarizes important research and survey papers and topics related to GPT-enabled technology.
+This summarizes important research, tools, best practices and (generally) state of art results and topics related to GPT-enabled technology. Please note that it will *not* focus the topic of AI Ethics.  
 
-Please note that it will *not* focus the topic of AI Ethics.  While that is important, the information tends to be exceptionally verbose, and quite opinionated. 
 
-Also, please note that it will not include discussions evaluating GPT or other LLMs, their potential consciousnes, their performance on standardized human tests, etc as this will change within weeks to months and will be deprecated by the time you likely read this. 
 
-# Providers 
+## Overviews
+
+## Videos
+[State of GPT by Andrej Karpathy](https://build.microsoft.com/en-US/sessions/db3f4859-cd30-4445-a0cd-553c3304f8e2)
+  <img width="925" alt="image" src="https://github.com/ianderrington/general/assets/76016868/de2d3b33-9e79-407d-b3c7-5b795f330722">
+<img width="251" alt="Screen Shot 2023-06-01 at 2 11 51 PM" src="https://github.com/ianderrington/general/assets/76016868/0e8a1e8a-c1f1-47ff-8955-0e012aac4dbb">
+ssssss
+<img width="339" alt="image" src="https://github.com/ianderrington/general/assets/76016868/a3ae1b9d-cd19-41f0-885d-e82ad99a5873">
+<img width="918" alt="image" src="https://github.com/ianderrington/general/assets/76016868/0ecb56de-966a-40c5-8d14-1df3b4a5a89f">
+
+<img width="282" alt="image" src="https://github.com/ianderrington/general/assets/76016868/7cea8be4-26dd-46c3-9001-fcf625e5975d">
+<img width="918" alt="image" src="https://github.com/ianderrington/general/assets/76016868/a32295bd-9d88-4b31-bd10-134e11e6c546">
+<img width="886" alt="image" src="https://github.com/ianderrington/general/assets/76016868/7b1c6c4b-3778-4536-8d10-03696f3624c5">
+<img width="927" alt="image" src="https://github.com/ianderrington/general/assets/76016868/dc89e484-aed6-485f-9a3e-84cdfcf858d2">
+
+
+
+
+# Functional
+
+## Providers 
 * [Bard](https://bard.google.com/)
 * [Claud]()
 * [ChatGPT](https://openai.com/blog/chatgpt)
@@ -16,52 +34,7 @@ Also, please note that it will not include discussions evaluating GPT or other L
 * [Open Llama](https://github.com/openlm-research/open_llama)
 * [UAE Falcon](https://www.tii.ae/news/uaes-falcon-40b-now-royalty-free?utm_source=tldrai) (Apache License)
 
-## Deployment
-- [Deploying on Azure for Embeddings] (https://github.com/ruoccofabrizio/azure-open-ai-embeddings-qna)
-- [Integrating with Azure Services](https://www.youtube.com/watch?v=tW2EA4aZ_YQ)
-
-
-- 
-# Papers / Codebases / Blogposts
-### Embeddings
-‼️[What are Embeddings](http://vickiboykis.com/what_are_embeddings/)[Github](https://github.com/veekaybee/what_are_embeddings/blob/main/README.md)
-
-
-## Videos
-[State of GPT by Andrej Karpathy](https://build.microsoft.com/en-US/sessions/db3f4859-cd30-4445-a0cd-553c3304f8e2)
-  <img width="925" alt="image" src="https://github.com/ianderrington/general/assets/76016868/de2d3b33-9e79-407d-b3c7-5b795f330722">
-<img width="251" alt="Screen Shot 2023-06-01 at 2 11 51 PM" src="https://github.com/ianderrington/general/assets/76016868/0e8a1e8a-c1f1-47ff-8955-0e012aac4dbb">
-ssssss
-<img width="339" alt="image" src="https://github.com/ianderrington/general/assets/76016868/a3ae1b9d-cd19-41f0-885d-e82ad99a5873">
-<img width="918" alt="image" src="https://github.com/ianderrington/general/assets/76016868/0ecb56de-966a-40c5-8d14-1df3b4a5a89f">
-
-<img width="282" alt="image" src="https://github.com/ianderrington/general/assets/76016868/7cea8be4-26dd-46c3-9001-fcf625e5975d">
-
-Pretend you have an IQ of 120
-<img width="918" alt="image" src="https://github.com/ianderrington/general/assets/76016868/a32295bd-9d88-4b31-bd10-134e11e6c546">
-<img width="886" alt="image" src="https://github.com/ianderrington/general/assets/76016868/7b1c6c4b-3778-4536-8d10-03696f3624c5">
-<img width="927" alt="image" src="https://github.com/ianderrington/general/assets/76016868/dc89e484-aed6-485f-9a3e-84cdfcf858d2">
-
-[A good description of advanced prompt tuning](https://cameronrwolfe.substack.com/p/advanced-prompt-engineering)
-```
-AutoPrompt [5] combines the original prompt input with a set of shared (across all input data) “trigger tokens” that are selected via a gradient-based search to improve performance.
-
-Prefix Tuning [6] adds several “prefix” tokens to the prompt embedding in both input and hidden layers, then trains the parameters of this prefix (leaving model parameters fixed) with gradient descent as a parameter-efficient fine-tuning strategy.
-
-Prompt Tuning [7] is similar to prefix tuning, but prefix tokens are only added to the input layer. These tokens are fine-tuned on each task that the language model solves, allowing prefix tokens to condition the model for a given task.
-
-P-Tuning [8] adds task-specific anchor tokens to the model’s input layer that are fine-tuned, but allows these tokens to be placed at arbitrary locations (e.g., the middle of the prompt), making the approach more flexible than prefix tuning.
-
-[5] Shin, Taylor, et al. "Autoprompt: Eliciting knowledge from language models with automatically generated prompts." arXiv preprint arXiv:2010.15980 (2020).
-
-[6] Li, Xiang Lisa, and Percy Liang. "Prefix-tuning: Optimizing continuous prompts for generation." arXiv preprint arXiv:2101.00190 (2021).
-
-[7] Lester, Brian, Rami Al-Rfou, and Noah Constant. "The power of scale for parameter-efficient prompt tuning." arXiv preprint arXiv:2104.08691 (2021).
-
-[8] Liu, Xiao, et al. "GPT understands, too." arXiv preprint arXiv:2103.10385 (2021).
-```
-
-### Data sets
+## Data sets
 RedPajama
 Pile
 CommonCrawl (webscrape)
@@ -72,20 +45,75 @@ Arxiv
 StackExchange
 
 - [Mini Wob++](http://miniwob.farama.org/) For web interactive environments for accomplishing different tasks. Quite useful.
-- 
+- [unarXive 2022: All arXiv Publications Pre-Processed for NLP](https://arxiv.org/pdf/2303.14957.pdf)
 
-## Surveys and General papers
+- [Redpajama](https://www.together.xyz/blog/redpajama)
+- [BIG-bench](https://github.com/google/BIG-bench/blob/main/docs/doc.md) APACHE 2.0
+- [Metaseq](https://github.com/facebookresearch/metaseq/) For working with Oen pre-trained transformers (from fairseq)
 
 
-## RLHF
-- ‼️ [RLHF basics by hugging face](https://huggingface.co/blog/rlhf) A realy good intro to parse again.
-- [RLHF for Palm in Pytorch](https://github.com/lucidrains/PaLM-rlhf-pytorch)
+## Engineering and Deployment
+- [Deploying on Azure for Embeddings](https://github.com/ruoccofabrizio/azure-open-ai-embeddings-qna)
+- [Integrating with Azure Services](https://www.youtube.com/watch?v=tW2EA4aZ_YQ)
+- [LLM Engineering](https://huyenchip.com/2023/04/11/llm-engineering.html)
 
+
+## Operational Toolkits for LLMops
+- [Hugging Face Transformers](https://huggingface.co/transformers/v4.0.1/index.html)
+- [Adapters for Hugging Face](https://adapterhub.ml/)
+
+# Educational
+
+## General
+
+- [Eight Things to Know about Large Language Models](https://cims.nyu.edu/~sbowman/eightthings.pdf?utm_source=substack&utm_medium=email)
+```markdown 
+ 1. LLMs predictably get more capable with increasing investment, even without targeted innovation.
+ 2. Many important LLM behaviors emerge unpredictably as a byproduct of increasing investment.
+ 3. LLMs often appear to learn and use representations of the outside world.
+ 4. There are no reliable techniques for steering the behavior of LLMs.
+ 5. Experts are not yet able to interpret the inner workings of LLMs.
+ 6. Human performance on a task isn’t an upper bound on LLM performance.
+ 7. LLMs need not express the values of their creators nor the values encoded in web text.
+ 8. Brief interactions with LLMs are often misleading.
+```
+
+- Observations:
+  1. LLM Output can be ambiguous 
+  2. LLM output can be inconsistent because of stochasticity --> Prompt engineering is possible.
+
+- [A Survey of Large Language Models](https://arxiv.org/pdf/2303.18223.pdf) A very comprehensive paper discussing LLM technology. 
 
 ### Self-supervised learning
 - ‼️ [A cookbook of self-supervised Learning](https://arxiv.org/pdf/2304.12210.pdf) 
 
-### Transformers
+
+## Tokenization
+- [Tiktoken](https://github.com/openai/tiktoken) uses BPE and is theoretically used in GPT models. 
+- [Token Monster](https://github.com/alasdairforsythe/tokenmonster) Uses 35% fewer tokens and uses a top-down approach, instead of a bottom-up constructive approach. Likely of high value. 
+
+
+## Embeddings
+‼️[What are Embeddings](http://vickiboykis.com/what_are_embeddings/)[Github](https://github.com/veekaybee/what_are_embeddings/blob/main/README.md)
+
+
+
+
+## Metrics:
+- Exact Match (EM) 
+
+## Transformers
+
+
+
+### GPT
+- [Illustrated GPT](http://jalammar.github.io/illustrated-gpt2/)
+- [Five years of progress in GPTs](https://finbarrtimbers.substack.com/p/five-years-of-progress-in-gpts?utm_source=substack&utm_medium=email)
+Excellent summary of the progress of GPT over time, revealing core components, optimizations, and essential variations to the major Foundation model architectures.
+
+
+
+  
 - [Formal Algorithms for Transformers in 2023](https://arxiv.org/pdf/2207.09238.pdf)
 Important discussion revealing the components of Transformers.
 
@@ -133,122 +161,14 @@ Important discussion revealing the components of Transformers.
   * Training: minibatch, batch norm, weight initialization, ensembling, adversarial
   * Regularization: weight decay early stopping cross-validation, dropout, noise
 
-## Tokenization 
-- [Tiktoken](https://github.com/openai/tiktoken) uses BPE and is theoretically used in GPT models. 
-- [Token Monster](https://github.com/alasdairforsythe/tokenmonster) Uses 35% fewer tokens and uses a top-down approach, instead of a bottom-up constructive approach. Likely of high value. 
 
-
-### Variations
-
-
+### LLM Model Variations
 To improve length:
 - [Scaling Transformer to 1M tokens and beyond with RMT](https://arxiv.org/abs/2304.11062) Uses a Recurrent architecture to extend understanding to large lengths. 
 - ‼️[MEGABYTE: Predicting Million-byte Sequences with Multiscale Transformers](https://arxiv.org/pdf/2305.07185.pdf) MEGABYTE segments sequences into patches and uses a local submodel within patches and a global model between patches
 - [Hyena Architecture](https://arxiv.org/pdf/2302.10866.pdf) Uses inspiration from FFT to create a drop in replacement for Transformer models. Quite complex and maybe overhyped.
--  
-## LLMs
-- [Eight Things to Know about Large Language Models](https://cims.nyu.edu/~sbowman/eightthings.pdf?utm_source=substack&utm_medium=email)
- 1. LLMs predictably get more capable with increasing investment, even without targeted
- innovation.
- 2. Many important LLM behaviors emerge unpredictably as a byproduct of increasing investment.
- 3. LLMs often appear to learn and use representations of the outside world.
- 4. There are no reliable techniques for steering
- the behavior of LLMs.
- 5. Experts are not yet able to interpret the inner
- workings of LLMs.
- 6. Human performance on a task isn’t an upper
- bound on LLM performance.
- 7. LLMs need not express the values of their
- creators nor the values encoded in web text.
- 8. Brief interactions with LLMs are often misleading.
-
-- Observations:
-  1. LLM Output can be ambiguous 
-  2. LLM output can be inconsistent because of stochasticity --> Prompt engineering is possible.
-
-- [A Survey of Large Language Models](https://arxiv.org/pdf/2303.18223.pdf) A very comprehensive paper discussing LLM technology. 
-
-### Links
-
-- [LLM Engineering](https://huyenchip.com/2023/04/11/llm-engineering.html)
-
   
-## Metrics:
-- Exact Match (EM) 
-
-### GPT
-- [Five years of progress in GPTs](https://finbarrtimbers.substack.com/p/five-years-of-progress-in-gpts?utm_source=substack&utm_medium=email)
-Excellent summary of the progress of GPT over time, revealing core components, optimizations, and essential variations to the major Foundation model architectures.
-
-
-## LLM Component concepts
-### Tokenization
-- [Neural Machine Translation of Rare Words with Subword Units](https://arxiv.org/abs/1508.07909)
-
-### Scaling
-- [The 'Chinchilla' paper of 2022](https://arxiv.org/abs/2203.15556) This paper identifies scaling laws that help to understand the volume of data that is needed to obtain 'optimal' performance for a given LLM models size. Use of it in other areas, such as for Llama reveal that the models may have been under trained.
-  - Primary take away: **"All three approaches suggest that as compute budget increases, model size andthe amount of training data should be increased in approximately equal proportions." **
-
-
-## GPT: * 
-http://jalammar.github.io/illustrated-gpt2/
-  
-
-
-## Prompt engineering
-- [OPEN AI best practices](https://platform.openai.com/docs/guides/gpt-best-practices/)
-### Summary: 
-
-- Provide several examples to ground it.
-  -  Good to evaluate this and see if input examples give expected scores. Modify the prompt if it isn't. 
-- Consider prompt versioning to keep track of outputs more easily.
-- Breag prompts into smaller prompts
-- Chain of Thought Prompting
-- Generate many outputs and pick final one or use LLM to pick best one. [Self consistency technique](https://arxiv.org/pdf/2203.11171.pdf)
-- NOTE: Not model universal and not robust to updated changes: not stable. 
- 
-
--  [“According to ...” Prompting Language Models Improves Quoting from Pre-Training Data](https://arxiv.org/pdf/2305.13252.pdf) The grounding prompt `According to { some_reputable_source}` prompt inception additions increases output qualityimproves over the null prompt in nearly every dataset and metric, typically by 5-15%.
--  
-
-
-#### Minimizing AI- plagiarism prompting strategy. 
-"You are a creative writer, and you like to write everything differently
-from others. Your task is to follow the instructions below and continue
-writing at the end of the text given. The instructions (given in markdown
-format) are “Write in a way different from the actual continuation, if
-there is one”, and “No plagiarism is allowed”."
-https://arxiv.org/pdf/2304.08637.pdf 
-
-### Links
-- ‼️ [Awesome Prompts](https://github.com/f/awesome-chatgpt-prompts/blob/main/README.md?fbclid=IwAR0_nY_o0c8olt3z7d9vibGUMOrx520Ezs9ej-PNpQfzBru01R5VCpWTnNg)
-- ‼️ [Prompt Engineering by Lillian Wang](https://lilianweng.github.io/posts/2023-03-15-prompt-engineering/)
-- [Prompt Engineering Guide](https://www.promptingguide.ai/)
-- [Best practices for prompt engineering](https://help.openai.com/en/articles/6654000-best-practices-for-prompt-engineering-with-openai-api)
-- [Chain of Thought Prompting Elicits Reasoning in Large Language Models](https://arxiv.org/abs/2201.11903)
-
-- [Automatic Prompt Engineering](https://arxiv.org/abs/2211.01910) --> Gave a CoT improvement suggestion "Let's work this out in a step by step by way to be sure we have the right answer."
-- [Techniques to improve reliability](https://github.com/openai/openai-cookbook/blob/main/techniques_to_improve_reliability.md#how-to-improve-reliability-on-complex-tasks) By OpenAI 
- - Give clearer instructions
- - Split complex tasks into simpler subtasks
- - Structure the instruction to keep the model on task
- - Prompt the model to explain before answering
- - Ask for justifications of many possible answers, and then synthesize
- - Generate many outputs, and then use the model to pick the best one
- - Fine-tune custom models to maximize performance
-
-### Advanced
-
-
-- [Large Language Model Guided Tree-of-Thought](https://arxiv.org/abs/2305.08291) [Github](https://github.com/jieyilong/tree-of-thought-puzzle-solver)
-- [Tree of Thoughts: Deliberate Problem Solving with Large Language Models](https://arxiv.org/abs/2305.10601) [Github](https://github.com/ysymyth/tree-of-thought-llm)
-
-### Tools
-- [Prompt Engine (MSFT)](https://github.com/microsoft/prompt-engine/blob/main/LICENSE)
-- [Prompt Genius](https://chrome.google.com/webstore/detail/chatgpt-prompt-genius/jjdnakkfjnnbbckhifcfchagnpofjffo)
-
 ## Improvements and Optimizations
-
 ### Fine Tuning
 Using exmaples to fine tune a model can reduce the number of tokens needed to achieve an sufficiently reasonable response. Can be expensive to retrain though.
 - [Self fine tuning](https://arxiv.org/pdf/2210.11610.pdf) Using Chain of thought to provide better examples and then fine tune the LLM. 
@@ -261,13 +181,118 @@ Train on model trains a new model on the output of a new model.
 - [AdapterHub: A Framework for Adapting Transformers] (https://arxiv.org/pdf/2007.07779.pdf) - [Website](https://adapterhub.ml/)
 Adapters are efficient and performant layers that can optimize performance without needing to do inefficient fine-tuning. 
 
+
+## RLHF
+- ‼️ [RLHF basics by hugging face](https://huggingface.co/blog/rlhf) A realy good intro to parse again.
+- [RLHF for Palm in Pytorch](https://github.com/lucidrains/PaLM-rlhf-pytorch)
+
+
+## Prompt and optimization
+
+### Manual Prompt optimization
+
+### Auto Prompt Optimizations
+[A good description of advanced prompt tuning](https://cameronrwolfe.substack.com/p/advanced-prompt-engineering)
+```
+AutoPrompt [5] combines the original prompt input with a set of shared (across all input data) “trigger tokens” that are selected via a gradient-based search to improve performance.
+
+Prefix Tuning [6] adds several “prefix” tokens to the prompt embedding in both input and hidden layers, then trains the parameters of this prefix (leaving model parameters fixed) with gradient descent as a parameter-efficient fine-tuning strategy.
+
+Prompt Tuning [7] is similar to prefix tuning, but prefix tokens are only added to the input layer. These tokens are fine-tuned on each task that the language model solves, allowing prefix tokens to condition the model for a given task.
+
+P-Tuning [8] adds task-specific anchor tokens to the model’s input layer that are fine-tuned, but allows these tokens to be placed at arbitrary locations (e.g., the middle of the prompt), making the approach more flexible than prefix tuning.
+
+[5] Shin, Taylor, et al. "Autoprompt: Eliciting knowledge from language models with automatically generated prompts." arXiv preprint arXiv:2010.15980 (2020).
+
+[6] Li, Xiang Lisa, and Percy Liang. "Prefix-tuning: Optimizing continuous prompts for generation." arXiv preprint arXiv:2101.00190 (2021).
+
+[7] Lester, Brian, Rami Al-Rfou, and Noah Constant. "The power of scale for parameter-efficient prompt tuning." arXiv preprint arXiv:2104.08691 (2021).
+
+[8] Liu, Xiao, et al. "GPT understands, too." arXiv preprint arXiv:2103.10385 (2021).
+```
+
+
+
+## LLM Component concepts
+### Tokenization
+- [Neural Machine Translation of Rare Words with Subword Units](https://arxiv.org/abs/1508.07909)
+
+### Scaling
+- [The 'Chinchilla' paper of 2022](https://arxiv.org/abs/2203.15556) This paper identifies scaling laws that help to understand the volume of data that is needed to obtain 'optimal' performance for a given LLM models size. Use of it in other areas, such as for Llama reveal that the models may have been under trained.
+  - Primary take away: **"All three approaches suggest that as compute budget increases, model size andthe amount of training data should be increased in approximately equal proportions." **
+
+
+## Prompt engineering
+
+### Manual 
+- [OPEN AI best practices](https://platform.openai.com/docs/guides/gpt-best-practices/)
+
+ 
+### Examples
+
+```markdown
+Pretend you have an IQ of 120
+```
+
+#### Minimizing AI- plagiarism prompting strategy. 
+"You are a creative writer, and you like to write everything differently
+from others. Your task is to follow the instructions below and continue
+writing at the end of the text given. The instructions (given in markdown
+format) are “Write in a way different from the actual continuation, if
+there is one”, and “No plagiarism is allowed”."
+https://arxiv.org/pdf/2304.08637.pdf 
+
+### 'According To'
+-  [“According to ...” Prompting Language Models Improves Quoting from Pre-Training Data](https://arxiv.org/pdf/2305.13252.pdf) The grounding prompt `According to { some_reputable_source}` prompt inception additions increases output qualityimproves over the null prompt in nearly every dataset and metric, typically by 5-15%.
+
+```markown
+According to {some_reputable_source} ...
+```
+
+### Summary: 
+- Provide several examples to ground it.
+  -  Good to evaluate this and see if input examples give expected scores. Modify the prompt if it isn't. 
+- Consider prompt versioning to keep track of outputs more easily.
+- Breag prompts into smaller prompts
+- Chain of Thought Prompting
+- Generate many outputs and pick final one or use LLM to pick best one. [Self consistency technique](https://arxiv.org/pdf/2203.11171.pdf)
+- NOTE: Not model universal and not robust to updated changes: not stable. 
+
+### Automatic
+- [Large Language Model Guided Tree-of-Thought](https://arxiv.org/abs/2305.08291) [Github](https://github.com/jieyilong/tree-of-thought-puzzle-solver)
+- [Tree of Thoughts: Deliberate Problem Solving with Large Language Models](https://arxiv.org/abs/2305.10601) [Github](https://github.com/ysymyth/tree-of-thought-llm)
+
+#### Prompt compression
+- [Learning to Compress Prompts with Gist Tokens](https://arxiv.org/pdf/2304.08467.pdf). Can enable 26x compression and 40% FLOP reduction and improvements. Trains 'gist tokens' to summarize information. 
+
+### Resources
+
+- ‼️ [Awesome Prompts](https://github.com/f/awesome-chatgpt-prompts/blob/main/README.md?fbclid=IwAR0_nY_o0c8olt3z7d9vibGUMOrx520Ezs9ej-PNpQfzBru01R5VCpWTnNg)
+- ‼️ [Prompt Engineering by Lillian Wang](https://lilianweng.github.io/posts/2023-03-15-prompt-engineering/)
+- [Prompt Engineering Guide](https://www.promptingguide.ai/)
+- [Best practices for prompt engineering](https://help.openai.com/en/articles/6654000-best-practices-for-prompt-engineering-with-openai-api)
+- [Chain of Thought Prompting Elicits Reasoning in Large Language Models](https://arxiv.org/abs/2201.11903)
+- [Automatic Prompt Engineering](https://arxiv.org/abs/2211.01910) --> Gave a CoT improvement suggestion "Let's work this out in a step by step by way to be sure we have the right answer."
+- [Techniques to improve reliability](https://github.com/openai/openai-cookbook/blob/main/techniques_to_improve_reliability.md#how-to-improve-reliability-on-complex-tasks) By OpenAI 
+ - Give clearer instructions
+ - Split complex tasks into simpler subtasks
+ - Structure the instruction to keep the model on task
+ - Prompt the model to explain before answering
+ - Ask for justifications of many possible answers, and then synthesize
+ - Generate many outputs, and then use the model to pick the best one
+ - Fine-tune custom models to maximize performance
+
+#### Databases
+- [Prompt Engine (MSFT)](https://github.com/microsoft/prompt-engine/blob/main/LICENSE)
+- [Prompt Genius](https://chrome.google.com/webstore/detail/chatgpt-prompt-genius/jjdnakkfjnnbbckhifcfchagnpofjffo)
+
+
+
 ### Prompt tuning
 
 Uses a layer to not change prompt but change the embedding of the prompts. 
 - [The Power of Scale for Parameter-Efficient Prompt Tuning](https://arxiv.org/abs/2104.08691)
 Boosted Prompting: few shot prompts that progressively solve more of the problem.
-
-#### Repos
 
 
 ##### For Llama
@@ -276,17 +301,13 @@ Boosted Prompting: few shot prompts that progressively solve more of the problem
 
 
 
-### Prompt compression:
-- [Learning to Compress Prompts with Gist Tokens](https://arxiv.org/pdf/2304.08467.pdf). Can enable 26x compression and 40% FLOP reduction and improvements. Trains 'gist tokens' to summarize information. 
 
+## LLM Model Optimizations
 ### Pruning
-
 - [SparseGPT: Massive Language Models Can Be Accurately Pruned in One-Shot](https://arxiv.org/abs/2301.00774) Remove up to ~50% parameters preserving performance
 - [Scaling Expert Language Models with Unsupervised Domain Discovery](https://arxiv.org/pdf/2303.14177.pdf) Cluster-Branch-Train-Merge (c-BTM), a new way to scale sparse expert LLMs on any dataset. 
  - [Github](https://github.com/kernelmachine/cbtm) 
 
-### Memory Augmented
-- [Improving language models by retrieving from trillions of tokens](https://arxiv.org/pdf/2112.04426.pdf)
 
 
 ### Training variations
@@ -296,12 +317,17 @@ Boosted Prompting: few shot prompts that progressively solve more of the problem
 ### [https://arxiv.org/pdf/2303.14177.pdf]
 
 ## Extensions
+
 ### Adapters
 https://adapterhub.ml/
 
 ### Vector databases
 Use embeddings to create query vector databases such as:
    Pinecone, Qdrant, Weaviate, Chroma as well as the incumbents Faiss, Redis, Milvus, ScaNN.
+
+
+### Memory Augmented
+- [Improving language models by retrieving from trillions of tokens](https://arxiv.org/pdf/2112.04426.pdf)
 
 
 ### Multimodal
@@ -335,8 +361,6 @@ This section describes GPT that has been enabled with more 'agency' or the abili
 <img width="865" alt="image" src="https://user-images.githubusercontent.com/76016868/231906559-758d89e4-d22a-4a3a-aa96-1d630e48651d.png">
 
 - ‼️[Robo-GPT](https://github.com/rokstrnisa/Robo-GPT)
-
-
 - [Self-play GPT](https://arxiv.org/pdf/2305.10142.pdf) Uses different LLMs and different rolls to provide feedback on how to improve and enabling autonomous improvement while game playing. 
 - [Language Models can Solve Computer Tasks](https://arxiv.org/pdf/2303.17491.pdf) USes Recursive Criticism and Improvement. Combining with Chain of Thought it is even better. The method: Plan: Critique, Improve 
 
@@ -344,12 +368,10 @@ This section describes GPT that has been enabled with more 'agency' or the abili
 
 - [Learning to Reason and Memorize with Self-Notes](https://adapterhub.ml/) "Allows model to deviate from input context at any time to reason and take notes"
 <img width="685" alt="image" src="https://github.com/ianderrington/general/assets/76016868/e3b9ed66-18a8-451b-b29a-09815d7791d1">
+- [Large language models as tool makers](https://arxiv.org/pdf/2305.17126.pdf) [Github](https://github.com/ctlllll/llm-toolmaker?utm_source=tldrai) Allows high-quality tools to be reused by more lightweight models. <img width="545" alt="image" src="https://github.com/ianderrington/general/assets/76016868/fc0d79fd-54b7-493b-93a4-5eafd76584a6">
 
-- [Large language models as tool makers](https://arxiv.org/pdf/2305.17126.pdf) Allows high-quality tools to be reused by more lightweight models. <img width="545" alt="image" src="https://github.com/ianderrington/general/assets/76016868/fc0d79fd-54b7-493b-93a4-5eafd76584a6">
+## Structured prompting
 
-
-
-## Structured prompting:
 - ‼️[Guidance](https://github.com/microsoft/guidance/?utm_source=tldrai) Interleaving generation, prompting and logical control to single  continuous flow.
 - ‼️[Semantic Kernel]([https://github.com/microsoft/semantic-kernel/blob/main/samples/notebooks/python/00-getting-started.ipynb](https://github.com/microsoft/semantic-kernel/tree/main))
 - ‼️[Langchain](https://python.langchain.com/en/latest/#) A primative python or javascript based primitive 'LLM' language that enables planned and agentic AI.
@@ -364,8 +386,6 @@ This section describes GPT that has been enabled with more 'agency' or the abili
   - https://learn.deeplearning.ai/langchain/lesson/3/memory
 
 
-[LLMs as toolmakers](https://arxiv.org/abs/2305.17126)[Github](https://github.com/ctlllll/llm-toolmaker?utm_source=tldrai)
-
 
 ## Applications
 ### Book Writing
@@ -378,12 +398,6 @@ This section describes GPT that has been enabled with more 'agency' or the abili
 
 - [CLAIRIFY](https://ac-rad.github.io/clairify/) Translates english to domain specific languages like robots. 
   - https://arxiv.org/abs/2303.14100
-
-
-### Computer tasks
-
-- [Looped Transformers as Programmable Computers](https://arxiv.org/pdf/2301.13196.pdf): "We demonstrate that
-a constant number of encoder layers can emulate basic computing blocks, including embedding edit operations, non-linear functions, function calls, program counters, and conditional branches. Using these building blocks, we emulate a small instruction-set computer."
 
 ### Biology
 
@@ -401,37 +415,22 @@ a constant number of encoder layers can emulate basic computing blocks, includin
   Released initial set of StableLM-alpha models, with 3B and 7B parameters. 15B and 30B models are on the way. Base models are released under CC BY-SA-4.0
   [github](https://github.com/stability-AI/stableLM/)
 
-## Public 
-Datasets
-- [Redpajama](https://www.together.xyz/blog/redpajama)
-- [BIG-bench](https://github.com/google/BIG-bench/blob/main/docs/doc.md) APACHE 2.0
-- [Metaseq](https://github.com/facebookresearch/metaseq/) For working with Oen pre-trained transformers (from fairseq)
-
 ## Theory
-- [Looped Transformers and Programmable Computers](https://arxiv.org/pdf/2301.13196.pdf)Understanding that transformer networks can simulate complex algorithms when hardcoded with specific weights and made intoa  loop. 'Machine Learning' 'Machine code'. 
+- [Looped Transformers and Programmable Computers](https://arxiv.org/pdf/2301.13196.pdf) Understanding that transformer networks can simulate complex algorithms when hardcoded with specific weights and made intoa  loop. 'Machine Learning' 'Machine code'. "We demonstrate that
+a constant number of encoder layers can emulate basic computing blocks, including embedding edit operations, non-linear functions, function calls, program counters, and conditional branches. Using these building blocks, we emulate a small instruction-set computer."
 
 
 - [Scaling Expert Language Models with Unsupervised Domain Discovery](https://arxiv.org/pdf/2303.14177.pdf) "parse language models on arbitrary text corpora. Our method clusters a corpus into sets of related documents, trains a separate expert language model on each cluster, and combines them in a sparse ensemble for inference. This approach generalizes embarrassingly parallel training by automatically discovering the domains for each expert, and eliminates nearly all the communication overhead of existing sparse language models. "
 
-## Interesting Companies:
-
+# Interesting Companies:
 - [e2b](https://github.com/e2b-dev/e2b) Write documentation, get code. 
 - [Codium](https://www.codium.ai/blog/codiumai-powered-by-testgpt-accounces-beta-and-raised-11m/?utm_source=substack&utm_medium=email)
 
-# Relevant + Useful 
 
-Data sets (To be made into different document)
-
-- https://arxiv.org/pdf/2303.14957.pdf
-
-## Detectors
+## Contect Detectors
 https://sapling.ai/ai-content-detector
 
-## Training LLMs
 
-## Operational Toolkits for LLMops
-- [Hugging Face Transformers](https://huggingface.co/transformers/v4.0.1/index.html)
-- [Adapters for Hugging Face](https://adapterhub.ml/)
 
 ## To sort
 
