@@ -20,9 +20,13 @@ ssssss
 
 
 
-# Functional
+# Services + Providers
 
-## Providers 
+##
+- [Hugging Face LLM leaderboard](https://huggingface.co/spaces/HuggingFaceH4/open_llm_leaderboard) An essential chart for documenting the model peformance across multiple models. 
+- 
+
+## Models and APIs 
 * [Bard](https://bard.google.com/)
 * [Claud]()
 * [ChatGPT](https://openai.com/blog/chatgpt)
@@ -30,9 +34,33 @@ ssssss
 
 ## Models
 * [Medpalm](https://arxiv.org/abs/2212.13138)
-* [Llama](https://github.com/facebookresearch/llama)
-* [Open Llama](https://github.com/openlm-research/open_llama)
+* [Llama](https://github.com/facebookresearch/llama) (Non-commercial ??)
+* [Open Llama](https://github.com/openlm-research/open_llama) (Non-commercial ??)
 * [UAE Falcon](https://www.tii.ae/news/uaes-falcon-40b-now-royalty-free?utm_source=tldrai) (Apache License)
+
+### MultiModal 
+- [Unilm](https://github.com/microsoft/unilm) (MSFT
+
+
+### LLM Training + Deployment
+- ‼️[CodeTF](https://github.com/salesforce/CodeTF) From Salesforce
+- ‼️[Azure Open AI samples](https://github.com/Azure/azure-openai-samples) Sample end-to-end use cases with chatbots, content generation. 
+- [RLHF with DeepSpeed (Microsoft)](https://github.com/microsoft/DeepSpeed/tree/master/blogs/deepspeed-chat)
+
+### LLM Prompting
+- ‼️[Prompting Guide](https://www.promptingguide.ai/)
+- [Wolfram Prompt Repo](https://writings.stephenwolfram.com/2023/06/prompts-for-work-play-launching-the-wolfram-prompt-repository/?mibextid=Zxz2cZ)
+- ‼️[Prompt Engine (MSFT) database tool](https://github.com/microsoft/prompt-engine) MIT license
+
+
+
+
+
+#### Plugins
+- ‼️[Prompt Genius](https://chrome.google.com/webstore/detail/chatgpt-prompt-genius/jjdnakkfjnnbbckhifcfchagnpofjffo)
+
+
+### Image + Movie
 
 ## Data sets
 RedPajama
@@ -72,6 +100,8 @@ StackExchange
   - ‼️[Langflow](https://github.com/logspace-ai/langflow) 
   - ‼️[Awesome Langchain](https://github.com/kyrolabs/awesome-langchain)
   -   - ‼️[Toolkit](https://www.toolkit.club/) Generates LangChain plugins
+### LLM-Chain
+- ‼️[llm-chain](https://docs.llm-chain.xyz/docs/introduction) ChatGPT and Alpaca support. Agentic with bash commands.
 
 #### Tutorials
   - https://www.pinecone.io/learn/langchain-prompt-templates/
@@ -134,6 +164,7 @@ StackExchange
 
 ### GPT
 - [Illustrated GPT](http://jalammar.github.io/illustrated-gpt2/)
+- [How GPT3 works](https://jalammar.github.io/how-gpt3-works-visualizations-animations/)
 - [Five years of progress in GPTs](https://finbarrtimbers.substack.com/p/five-years-of-progress-in-gpts?utm_source=substack&utm_medium=email)
 Excellent summary of the progress of GPT over time, revealing core components, optimizations, and essential variations to the major Foundation model architectures.
 
@@ -198,13 +229,15 @@ To improve length:
 ### Fine Tuning
 Using exmaples to fine tune a model can reduce the number of tokens needed to achieve an sufficiently reasonable response. Can be expensive to retrain though.
 - [Self fine tuning](https://arxiv.org/pdf/2210.11610.pdf) Using Chain of thought to provide better examples and then fine tune the LLM. 
+- [Refiner](https://arxiv.org/pdf/2304.01904.pdf) Iteratively improves itself based on an LLM critic
+<img width="713" alt="image" src="https://github.com/ianderrington/general/assets/76016868/3ac44e13-2444-4f1e-ae3b-800c9d32ce59">
 
 ### Fine Tuning using Distillation
 Train on model trains a new model on the output of a new model. 
 - [Alpaca ](https://github.com/tatsu-lab/stanford_alpaca)
 
 ### Adapter layers
-- [AdapterHub: A Framework for Adapting Transformers] (https://arxiv.org/pdf/2007.07779.pdf) [Website](https://adapterhub.ml/)
+- [AdapterHub: A Framework for Adapting Transformers](https://arxiv.org/pdf/2007.07779.pdf) [Website](https://adapterhub.ml/)
 Adapters are efficient and performant layers that can optimize performance without needing to do inefficient fine-tuning. 
 
 
@@ -308,10 +341,6 @@ According to {some_reputable_source} ...
  - Generate many outputs, and then use the model to pick the best one
  - Fine-tune custom models to maximize performance
 
-#### Databases
-- [Prompt Engine (MSFT)](https://github.com/microsoft/prompt-engine/blob/main/LICENSE)
-- [Prompt Genius](https://chrome.google.com/webstore/detail/chatgpt-prompt-genius/jjdnakkfjnnbbckhifcfchagnpofjffo)
-
 
 
 ### Prompt tuning
@@ -325,7 +354,8 @@ Boosted Prompting: few shot prompts that progressively solve more of the problem
 - [For Llama](https://github.com/Lightning-AI/lit-llama)
 - [MedAlpaca](https://github.com/kbressem/medAlpaca)
 
-
+### Theory
+- [ Prompting is Programming: A Query Language for Large Language Models](https://arxiv.org/pdf/2212.06094.pdf)
 
 
 ## LLM Model Optimizations
@@ -371,10 +401,10 @@ Use embeddings to create query vector databases such as:
 - [Self-play GPT](https://arxiv.org/pdf/2305.10142.pdf) Uses different LLMs and different rolls to provide feedback on how to improve and enabling autonomous improvement while game playing. 
 - [Language Models can Solve Computer Tasks](https://arxiv.org/pdf/2303.17491.pdf), [Website](https://posgnu.github.io/rci-web/), [GitHub](https://github.com/posgnu/rci-agent) USes Recursive Criticism and Improvement. Combining with Chain of Thought it is even better. The method: Plan: Critique, Improve 
   - Explicit RCI: "Review your previous answer and find problems with your answer." --> "Based on the problems you found, improve your answer." Recursively Criticizes and Improves it s output. This sort of prompting outperforms Chain of Thought, and combined it works even better.  
+- [GPT-Bargaining](https://github.com/FranxYao/GPT-Bargaining) USes multiple rounds to improve negotiation tacticts based on external feedback. (Manager like)
+ 
 ### Agentic
-
 - [Toolformer](https://arxiv.org/pdf/2302.04761.pdf) This section describes GPT that has been enabled with more 'agency' or the ability to do better.
-
 - [HuggingGPT of 2023](https://arxiv.org/pdf/2303.17580.pdf) This paper describes a paradigm where ChatGPT is enabled with the ability to launch other ML models based on input. It does so by creating a Task list, then by identifying appropriate models, and then by executing them.
   - ‼️ [Github repo known as JARVIS here](https://github.com/microsoft/JARVIS)
   - [TaskMatrix.ai](https://arxiv.org/abs/2303.16434) seemingly from the same authors. 
@@ -382,6 +412,11 @@ Use embeddings to create query vector databases such as:
 - ‼️ [BabyAGI](https://github.com/yoheinakajima/babyagi)
 - ‼️ [CAMEL](https://github.com/camel-ai/camel) inception prompting to guide chat agents towards task completion. Also [implemented in Langchain](https://python.langchain.com/en/latest/use_cases/agent_simulations/camel_role_playing.html)
 - [Loop GPT](https://github.com/farizrahman4u/loopgpt) A re-implementaiton of Auto-GPT with modularity and extensibility in mind. 
+
+- [Chameleon GPT](https://arxiv.org/pdf/2304.09842.pdf) A multi-agentic service that is able to accomplish many separate tasks, building it compositionally. (Project Idea: build in Langchain???)
+<img width="1191" alt="image" src="https://github.com/ianderrington/general/assets/76016868/0dc2f25a-0eea-42ed-a108-c90cfeed8e1d">
+
+
 
 - [Baize: An Open-Source Chat Model with Parameter-Efficient Tuning on Self-Chat Data](https://arxiv.org/pdf/2304.01196.pdf) Parameter efficient LLama Tuning and risk minimization with a new 'Self Distillation' with Feedback to improve itself even more. RESEARCH ONLY
 
@@ -392,9 +427,10 @@ Use embeddings to create query vector databases such as:
 
 - [Learning to Reason and Memorize with Self-Notes](https://adapterhub.ml/) "Allows model to deviate from input context at any time to reason and take notes"
 <img width="685" alt="image" src="https://github.com/ianderrington/general/assets/76016868/e3b9ed66-18a8-451b-b29a-09815d7791d1">
-- [Large language models as tool makers](https://arxiv.org/pdf/2305.17126.pdf) [Github](https://github.com/ctlllll/llm-toolmaker?utm_source=tldrai) Allows high-quality tools to be reused by more lightweight models. <img width="545" alt="image" src="https://github.com/ianderrington/general/assets/76016868/fc0d79fd-54b7-493b-93a4-5eafd76584a6">
+- [Large language models as tool makers](https://arxiv.org/pdf/2305.17126.pdf) [Github](https://github.com/ctlllll/llm-toolmaker) Allows high-quality tools to be reused by more lightweight models. <img width="545" alt="image" src="https://github.com/ianderrington/general/assets/76016868/fc0d79fd-54b7-493b-93a4-5eafd76584a6">
 
-
+### Measurements
+[Chain of thought hub](https://github.com/FranxYao/chain-of-thought-hub)
 
 ## Applications
 ### Book Writing
