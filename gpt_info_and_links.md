@@ -38,6 +38,10 @@ ssssss
 * [Open Llama](https://github.com/openlm-research/open_llama) (Non-commercial ??)
 * [UAE Falcon](https://www.tii.ae/news/uaes-falcon-40b-now-royalty-free?utm_source=tldrai) (Apache License)
 
+
+### Image models
+- [StableLM: Stability AI Language Models](https://github.com/stability-AI/stableLM/)  CC BY-SA-4.0
+
 ### MultiModal 
 - [Unilm](https://github.com/microsoft/unilm) (MSFT
 
@@ -455,10 +459,6 @@ Use embeddings to create query vector databases such as:
   They gave 25 AI agents motivations & memory, and put them in a simulated town. Not only did they engage in complex behavior (including throwing a Valentine’s Day party) but the actions were rated more human than humans roleplaying.
   Demo: https://t.co/pYNF4BBveG
 
-## Public models
-- **StableLM: Stability AI Language Models**
-  Released initial set of StableLM-alpha models, with 3B and 7B parameters. 15B and 30B models are on the way. Base models are released under CC BY-SA-4.0
-  [github](https://github.com/stability-AI/stableLM/)
 
 ## Theory
 - [Looped Transformers and Programmable Computers](https://arxiv.org/pdf/2301.13196.pdf) Understanding that transformer networks can simulate complex algorithms when hardcoded with specific weights and made intoa  loop. 'Machine Learning' 'Machine code'. "We demonstrate that
