@@ -7,30 +7,30 @@ This summarizes important research, tools, best practices and (generally) state 
 ## Videos
 [State of GPT by Andrej Karpathy](https://build.microsoft.com/en-US/sessions/db3f4859-cd30-4445-a0cd-553c3304f8e2)
   <img width="925" alt="image" src="https://github.com/ianderrington/general/assets/76016868/de2d3b33-9e79-407d-b3c7-5b795f330722">
-<img width="251" alt="Screen Shot 2023-06-01 at 2 11 51 PM" src="https://github.com/ianderrington/general/assets/76016868/0e8a1e8a-c1f1-47ff-8955-0e012aac4dbb">
-ssssss
-<img width="339" alt="image" src="https://github.com/ianderrington/general/assets/76016868/a3ae1b9d-cd19-41f0-885d-e82ad99a5873">
 <img width="918" alt="image" src="https://github.com/ianderrington/general/assets/76016868/0ecb56de-966a-40c5-8d14-1df3b4a5a89f">
-
 <img width="282" alt="image" src="https://github.com/ianderrington/general/assets/76016868/7cea8be4-26dd-46c3-9001-fcf625e5975d">
 <img width="918" alt="image" src="https://github.com/ianderrington/general/assets/76016868/a32295bd-9d88-4b31-bd10-134e11e6c546">
 <img width="886" alt="image" src="https://github.com/ianderrington/general/assets/76016868/7b1c6c4b-3778-4536-8d10-03696f3624c5">
 <img width="927" alt="image" src="https://github.com/ianderrington/general/assets/76016868/dc89e484-aed6-485f-9a3e-84cdfcf858d2">
 
 
-
+## Guides
+- ‼️[LLM Practical Guide](https://github.com/Mooler0410/LLMsPracticalGuide) based on [paper](https://arxiv.org/abs/2304.13712).
 
 # Services + Providers
 
-##
+## Competition boards
 - [Hugging Face LLM leaderboard](https://huggingface.co/spaces/HuggingFaceH4/open_llm_leaderboard) An essential chart for documenting the model peformance across multiple models. 
-- 
+- [lmsys.org leader board](lmsys.org/blog/2023-05-10-leaderboard)
+
 
 ## Models and APIs 
 * [Bard](https://bard.google.com/)
 * [Claud]()
 * [ChatGPT](https://openai.com/blog/chatgpt)
 
+## Building and deploying
+- [Fixie](https://www.fixie.ai/)
 
 ## Models
 * [Medpalm](https://arxiv.org/abs/2212.13138)
