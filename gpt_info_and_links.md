@@ -88,7 +88,7 @@ StackExchange
 - [Deploying on Azure for Embeddings](https://github.com/ruoccofabrizio/azure-open-ai-embeddings-qna)
 - [Integrating with Azure Services](https://www.youtube.com/watch?v=tW2EA4aZ_YQ)
 - [LLM Engineering](https://huyenchip.com/2023/04/11/llm-engineering.html)
-
+- [Langchain service deployment](https://github.com/ajndkr/lanarky)
 
 ## Operational Toolkits for LLMops
 - [Hugging Face Transformers](https://huggingface.co/transformers/v4.0.1/index.html)
