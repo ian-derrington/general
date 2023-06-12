@@ -98,14 +98,22 @@ StackExchange
 
 - ‼️[Guidance](https://github.com/microsoft/guidance/?utm_source=tldrai) Interleaving generation, prompting and logical control to single  continuous flow.
 - ‼️[Semantic Kernel]([https://github.com/microsoft/semantic-kernel/blob/main/samples/notebooks/python/00-getting-started.ipynb](https://github.com/microsoft/semantic-kernel/tree/main))
+- ‼️[Rebuff](https://github.com/woop/rebuff) a prompt injection detection service. 
 
 ### Langchain
 - ‼️[Langchain](https://python.langchain.com/en/latest/#) A primative python or javascript based primitive 'LLM' language that enables planned and agentic AI.
   - ‼️[Langflow](https://github.com/logspace-ai/langflow) 
   - ‼️[Awesome Langchain](https://github.com/kyrolabs/awesome-langchain)
   -   - ‼️[Toolkit](https://www.toolkit.club/) Generates LangChain plugins
+
+
 ### LLM-Chain
 - ‼️[llm-chain](https://docs.llm-chain.xyz/docs/introduction) ChatGPT and Alpaca support. Agentic with bash commands.
+
+### Llama index
+- [llama index](https://github.com/jerryjliu/llama_index)
+- [LlamaHub (community library of data loaders)](https://llamahub.ai)
+- [LlamaLab (cutting-edge AGI projects using LlamaIndex)](https://github.com/run-llama/llama-lab)
 
 #### Tutorials
   - https://www.pinecone.io/learn/langchain-prompt-templates/
