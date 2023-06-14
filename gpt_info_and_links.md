@@ -413,8 +413,9 @@ Use embeddings to create query vector databases such as:
 - [Self-play GPT](https://arxiv.org/pdf/2305.10142.pdf) Uses different LLMs and different rolls to provide feedback on how to improve and enabling autonomous improvement while game playing. 
 - [Language Models can Solve Computer Tasks](https://arxiv.org/pdf/2303.17491.pdf), [Website](https://posgnu.github.io/rci-web/), [GitHub](https://github.com/posgnu/rci-agent) USes Recursive Criticism and Improvement. Combining with Chain of Thought it is even better. The method: Plan: Critique, Improve 
   - Explicit RCI: "Review your previous answer and find problems with your answer." --> "Based on the problems you found, improve your answer." Recursively Criticizes and Improves it s output. This sort of prompting outperforms Chain of Thought, and combined it works even better.  
-- [GPT-Bargaining](https://github.com/FranxYao/GPT-Bargaining) USes multiple rounds to improve negotiation tacticts based on external feedback. (Manager like)
- 
+- [GPT-Bargaining](https://github.com/FranxYao/GPT-Bargaining) Uses multiple rounds to improve negotiation tacticts based on external feedback. (Manager like)
+- ‼️ [RL4L allen ai](https://arxiv.org/pdf/2305.08844.pdf) Uses smaller critique model feedback to improve larger model output with a policy gradient to fine-tune the critique model while allowing reasonable performance gains. [Github](https://github.com/allenai/RL4LMs)
+- 
 ### Agentic
 - [Toolformer](https://arxiv.org/pdf/2302.04761.pdf) This section describes GPT that has been enabled with more 'agency' or the ability to do better.
 - [HuggingGPT of 2023](https://arxiv.org/pdf/2303.17580.pdf) This paper describes a paradigm where ChatGPT is enabled with the ability to launch other ML models based on input. It does so by creating a Task list, then by identifying appropriate models, and then by executing them.
