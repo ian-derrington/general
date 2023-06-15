@@ -380,10 +380,11 @@ Boosted Prompting: few shot prompts that progressively solve more of the problem
 
 
 ## LLM Model Optimizations
-### Pruning
+### Pruning and copression
 - [SparseGPT: Massive Language Models Can Be Accurately Pruned in One-Shot](https://arxiv.org/abs/2301.00774) Remove up to ~50% parameters preserving performance
 - [Scaling Expert Language Models with Unsupervised Domain Discovery](https://arxiv.org/pdf/2303.14177.pdf) Cluster-Branch-Train-Merge (c-BTM), a new way to scale sparse expert LLMs on any dataset. 
- - [Github](https://github.com/kernelmachine/cbtm) 
+- [Github](https://github.com/kernelmachine/cbtm)
+-  [SqueezeLLM](paper) They are able to have 2x fold in model size for equivalent performance in perplexity. They use 'Dense and SParce Quantization' [Github](https://github.com/SqueezeAILab/SqueezeLLM) 
 
 
 
@@ -488,7 +489,11 @@ Use embeddings to create query vector databases such as:
 - [CLAIRIFY](https://ac-rad.github.io/clairify/) Translates English to domain-specific languages like robots. 
   - https://arxiv.org/abs/2303.14100
 
-### Biology
+### Science and Tech
+- [Emergent autonomous scientific research](https://arxiv.org/pdf/2304.05332.pdf)
+<img width="658" alt="image" src="https://github.com/ianderrington/general/assets/76016868/7fd5c4ce-9468-4cf2-a9b9-d3913b66e656">
+
+#### Biology
 
 - [Evolutionary-scale prediction of atomic-level protein structure with a language model](https://www.science.org/doi/10.1126/science.ade2574) End to end Language model enabling structure sequence pairing, coupled with an equivariant transformer structure model at the end. 
 -  https://arxiv.org/pdf/2303.16416.pdf
