@@ -155,6 +155,9 @@ StackExchange
 ### Self-supervised learning
 - ‼️ [A cookbook of self-supervised Learning](https://arxiv.org/pdf/2304.12210.pdf) 
 
+## Binary Representations
+- ‼️ [Bytes are all you need](https://arxiv.org/pdf/2306.00238.pdf) Reveals that just taking file bytes into transformer technology can directly enable improvements in performance accuracy. The accuracy method varies based on encoding method. Their model is called ByteFormer [Github](https://github.com/apple/ml-cvnets/tree/main/examples/byteformer)
+- 
 
 ## Tokenization
 - [Tiktoken](https://github.com/openai/tiktoken) uses BPE and is theoretically used in GPT models. 
