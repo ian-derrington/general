@@ -232,28 +232,34 @@ Important discussion revealing the components of Transformers.
 
 
 ### LLM Model Variations
+
 To improve length:
 - [Scaling Transformer to 1M tokens and beyond with RMT](https://arxiv.org/abs/2304.11062) [Github](https://github.com/booydar/t5-experiments/tree/scaling-report) Uses a Recurrent Memory Transformer(RMT) architecture to extend understanding to large lengths. 
 - ‼️[MEGABYTE: Predicting Million-byte Sequences with Multiscale Transformers](https://arxiv.org/pdf/2305.07185.pdf) MEGABYTE segments sequences into patches and uses a local submodel within patches and a global model between patches
 - [Hyena Architecture](https://arxiv.org/pdf/2302.10866.pdf) Uses inspiration from FFT to create a drop in replacement for Transformer models. Quite complex and maybe overhyped.
   
 ## Improvements and Optimizations
+
 ### Fine Tuning
-Using exmaples to fine tune a model can reduce the number of tokens needed to achieve an sufficiently reasonable response. Can be expensive to retrain though.
-- [Self fine tuning](https://arxiv.org/pdf/2210.11610.pdf) Using Chain of thought to provide better examples and then fine tune the LLM. 
+
+Using examples to fine-tune a model can reduce the number of tokens needed to achieve a sufficiently reasonable response. Can be expensive to retrain though.
+- [Self fine tuning](https://arxiv.org/pdf/2210.11610.pdf) Using Chain of thought to provide better examples and then fine-tune the LLM. 
 - [Refiner](https://arxiv.org/pdf/2304.01904.pdf) Iteratively improves itself based on an LLM critic
 <img width="713" alt="image" src="https://github.com/ianderrington/general/assets/76016868/3ac44e13-2444-4f1e-ae3b-800c9d32ce59">
 
 ### Fine Tuning using Distillation
+
 Train on model trains a new model on the output of a new model. 
 - [Alpaca ](https://github.com/tatsu-lab/stanford_alpaca)
 
 ### Adapter layers
+
 - [AdapterHub: A Framework for Adapting Transformers](https://arxiv.org/pdf/2007.07779.pdf) [Website](https://adapterhub.ml/)
 Adapters are efficient and performant layers that can optimize performance without needing to do inefficient fine-tuning. 
 
 
 ## RLHF
+
 - ‼️ [RLHF basics by hugging face](https://huggingface.co/blog/rlhf) A realy good intro to parse again.
 - [RLHF for Palm in Pytorch](https://github.com/lucidrains/PaLM-rlhf-pytorch)
 
@@ -271,11 +277,11 @@ Prefix Tuning [6] adds several “prefix” tokens to the prompt embedding in bo
 
 Prompt Tuning [7] is similar to prefix tuning, but prefix tokens are only added to the input layer. These tokens are fine-tuned on each task that the language model solves, allowing prefix tokens to condition the model for a given task.
 
-P-Tuning [8] adds task-specific anchor tokens to the model’s input layer that are fine-tuned, but allows these tokens to be placed at arbitrary locations (e.g., the middle of the prompt), making the approach more flexible than prefix tuning.
+P-Tuning [8] adds task-specific anchor tokens to the model’s input layer that are fine-tuned but allows these tokens to be placed at arbitrary locations (e.g., the middle of the prompt), making the approach more flexible than prefix tuning.
 
 [5] Shin, Taylor, et al. "Autoprompt: Eliciting knowledge from language models with automatically generated prompts." arXiv preprint arXiv:2010.15980 (2020).
 
-[6] Li, Xiang Lisa, and Percy Liang. "Prefix-tuning: Optimizing continuous prompts for generation." arXiv preprint arXiv:2101.00190 (2021).
+[6] Li, Xiang Lisa, and Percy Liang. "Prefix-tuning: Optimizing continuous prompts for a generation." arXiv preprint arXiv:2101.00190 (2021).
 
 [7] Lester, Brian, Rami Al-Rfou, and Noah Constant. "The power of scale for parameter-efficient prompt tuning." arXiv preprint arXiv:2104.08691 (2021).
 
@@ -289,8 +295,8 @@ P-Tuning [8] adds task-specific anchor tokens to the model’s input layer that 
 - [Neural Machine Translation of Rare Words with Subword Units](https://arxiv.org/abs/1508.07909)
 
 ### Scaling
-- [The 'Chinchilla' paper of 2022](https://arxiv.org/abs/2203.15556) This paper identifies scaling laws that help to understand the volume of data that is needed to obtain 'optimal' performance for a given LLM models size. Use of it in other areas, such as for Llama reveal that the models may have been under trained.
-  - Primary take away: **"All three approaches suggest that as compute budget increases, model size andthe amount of training data should be increased in approximately equal proportions." **
+- [The 'Chinchilla' paper of 2022](https://arxiv.org/abs/2203.15556) This paper identifies scaling laws that help to understand the volume of data that is needed to obtain 'optimal' performance for a given LLM models size. Use of it in other areas, such as for Llama reveals that the models may have been under-trained.
+  - Primary takeaway: **"All three approaches suggest that as compute budget increases, model size and the amount of training data should be increased in approximately equal proportions." **
 
 
 ## Prompt engineering
@@ -314,9 +320,9 @@ there is one”, and “No plagiarism is allowed”."
 https://arxiv.org/pdf/2304.08637.pdf 
 
 ### 'According To'
--  [“According to ...” Prompting Language Models Improves Quoting from Pre-Training Data](https://arxiv.org/pdf/2305.13252.pdf) The grounding prompt `According to { some_reputable_source}` prompt inception additions increases output qualityimproves over the null prompt in nearly every dataset and metric, typically by 5-15%.
+-  [“According to ...” Prompting Language Models Improves Quoting from Pre-Training Data](https://arxiv.org/pdf/2305.13252.pdf) The grounding prompt `According to { some_reputable_source}` prompt inception additions increases output quality improves over the null prompt in nearly every dataset and metric, typically by 5-15%.
 
-```markown
+```markdown
 According to {some_reputable_source} ...
 ```
 
@@ -357,7 +363,7 @@ According to {some_reputable_source} ...
 
 ### Prompt tuning
 
-Uses a layer to not change prompt but change the embedding of the prompts. 
+Uses a layer to not change prompts but change the embedding of the prompts. 
 - [The Power of Scale for Parameter-Efficient Prompt Tuning](https://arxiv.org/abs/2104.08691)
 Boosted Prompting: few shot prompts that progressively solve more of the problem.
 
@@ -379,8 +385,9 @@ Boosted Prompting: few shot prompts that progressively solve more of the problem
 
 
 ### Training variations
-- [LinkBERT](https://github.com/michiyasunaga/LinkBERT) places in context window hyperlinked references to achieve better performance.  
-- [Cluster-Branch-Train-Merge (c-BTM)], a new way to scale sparse expert LLMs on any dataset Paper: https://arxiv.org/abs/2303.14177 Code + Models: https://github.com/kernelmachine/
+
+- [LinkBERT](https://github.com/michiyasunaga/LinkBERT) places in the context window hyperlinked references to achieve better performance.  
+- [Cluster-Branch-Train-Merge (c-BTM)], a new way to scale sparse expert LLMs on any dataset Paper: https://arxiv.org/abs/2303.14177 [Github](https://github.com/kernelmachine/)
 
 ### [https://arxiv.org/pdf/2303.14177.pdf]
 
@@ -390,6 +397,7 @@ Boosted Prompting: few shot prompts that progressively solve more of the problem
 https://adapterhub.ml/
 
 ### Vector databases
+
 Use embeddings to create query vector databases such as:
    Pinecone, Qdrant, Weaviate, Chroma as well as the incumbents Faiss, Redis, Milvus, ScaNN.
 
@@ -414,28 +422,26 @@ Use embeddings to create query vector databases such as:
 - [Teaching Large Language Models to Self-Debug](https://arxiv.org/abs/2304.05128) `transcoder`
 <img width="865" alt="image" src="https://user-images.githubusercontent.com/76016868/231906559-758d89e4-d22a-4a3a-aa96-1d630e48651d.png">
 
-- [Self-play GPT](https://arxiv.org/pdf/2305.10142.pdf) Uses different LLMs and different rolls to provide feedback on how to improve and enabling autonomous improvement while game playing. 
+- [Self-play GPT](https://arxiv.org/pdf/2305.10142.pdf) Uses different LLMs and different roles to provide feedback on how to improve and enable autonomous improvement while game playing. 
 - [Language Models can Solve Computer Tasks](https://arxiv.org/pdf/2303.17491.pdf), [Website](https://posgnu.github.io/rci-web/), [GitHub](https://github.com/posgnu/rci-agent) USes Recursive Criticism and Improvement. Combining with Chain of Thought it is even better. The method: Plan: Critique, Improve 
-  - Explicit RCI: "Review your previous answer and find problems with your answer." --> "Based on the problems you found, improve your answer." Recursively Criticizes and Improves it s output. This sort of prompting outperforms Chain of Thought, and combined it works even better.  
-- [GPT-Bargaining](https://github.com/FranxYao/GPT-Bargaining) Uses multiple rounds to improve negotiation tacticts based on external feedback. (Manager like)
-- ‼️ [RL4L allen ai](https://arxiv.org/pdf/2305.08844.pdf) Uses smaller critique model feedback to improve larger model output with a policy gradient to fine-tune the critique model while allowing reasonable performance gains. [Github](https://github.com/allenai/RL4LMs)
+  - Explicit RCI: "Review your previous answer and find problems with your answer." --> "Based on the problems you found, improve your answer." Recursively Criticizes and Improves its output. This sort of prompting outperforms Chain of Thought, and combined it works even better.  
+- [GPT-Bargaining](https://github.com/FranxYao/GPT-Bargaining) Uses multiple rounds to improve negotiation tactics based on external feedback. (Manager-like)
+- ‼️ [RL4L Allen ai](https://arxiv.org/pdf/2305.08844.pdf) Uses smaller critique model feedback to improve larger model output with a policy gradient to fine-tune the critique model while allowing reasonable performance gains. [Github](https://github.com/allenai/RL4LMs)
 
 
 ### Agentic
 
 - [Toolformer](https://arxiv.org/pdf/2302.04761.pdf) This section describes GPT that has been enabled with more 'agency' or the ability to do better.
-- [HuggingGPT of 2023](https://arxiv.org/pdf/2303.17580.pdf) This paper describes a paradigm where ChatGPT is enabled with the ability to launch other ML models based on input. It does so by creating a Task list, then by identifying appropriate models, and then by executing them.
+- [HuggingGPT of 2023](https://arxiv.org/pdf/2303.17580.pdf) This paper describes a paradigm where ChatGPT is enabled with the ability to launch other ML models based on input. It does so by creating a Task list, then by identifying appropriate models, and then executing them.
   - ‼️ [Github repo known as JARVIS here](https://github.com/microsoft/JARVIS)
   - [TaskMatrix.ai](https://arxiv.org/abs/2303.16434) seemingly from the same authors. 
 - ‼️ [AUTO GPT](https://github.com/Torantulino/Auto-GPT) 
 - ‼️ [BabyAGI](https://github.com/yoheinakajima/babyagi)
-- ‼️ [CAMEL](https://github.com/camel-ai/camel) inception prompting to guide chat agents towards task completion. Also [implemented in Langchain](https://python.langchain.com/en/latest/use_cases/agent_simulations/camel_role_playing.html)
-- [Loop GPT](https://github.com/farizrahman4u/loopgpt) A re-implementaiton of Auto-GPT with modularity and extensibility in mind. 
+- ‼️ [CAMEL](https://github.com/camel-ai/camel) inception prompting to guide chat agents toward task completion. Also [implemented in Langchain](https://python.langchain.com/en/latest/use_cases/agent_simulations/camel_role_playing.html)
+- [Loop GPT](https://github.com/farizrahman4u/loopgpt) A re-implementation of Auto-GPT with modularity and extensibility in mind. 
 
 - [Chameleon GPT](https://arxiv.org/pdf/2304.09842.pdf) A multi-agentic service that is able to accomplish many separate tasks, building it compositionally. (Project Idea: build in Langchain???)
 <img width="1191" alt="image" src="https://github.com/ianderrington/general/assets/76016868/0dc2f25a-0eea-42ed-a108-c90cfeed8e1d">
-
-
 
 - [Baize: An Open-Source Chat Model with Parameter-Efficient Tuning on Self-Chat Data](https://arxiv.org/pdf/2304.01196.pdf) Parameter efficient LLama Tuning and risk minimization with a new 'Self Distillation' with Feedback to improve itself even more. RESEARCH ONLY
 
@@ -447,22 +453,28 @@ Use embeddings to create query vector databases such as:
 - [Learning to Reason and Memorize with Self-Notes](https://adapterhub.ml/) "Allows model to deviate from input context at any time to reason and take notes"
 
 <img width="685" alt="image" src="https://github.com/ianderrington/general/assets/76016868/e3b9ed66-18a8-451b-b29a-09815d7791d1">
-- [Large language models as tool makers](https://arxiv.org/pdf/2305.17126.pdf) [Github](https://github.com/ctlllll/llm-toolmaker) Allows high-quality tools to be reused by more lightweight models. 
+
+- [Large language models as tool makers](https://arxiv.org/pdf/2305.17126.pdf) [Github](https://github.com/ctlllll/llm-toolmaker) Allows high-quality tools to be reused by more lightweight models.
+
 <img width="545" alt="image" src="https://github.com/ianderrington/general/assets/76016868/fc0d79fd-54b7-493b-93a4-5eafd76584a6">
 
 ### Measurements
+
 [Chain of thought hub](https://github.com/FranxYao/chain-of-thought-hub)
 
 ## Applications
+
 ### Book Writing
+
 - [Pyprompt chatgpt](http://morganlancer.com/en/portfolio/pyprompt_chatgpt)
 
 ### Software component replacements
+
 - [GPT as backend](https://github.com/RootbeerComputer/backend-GPT)
 
 ### Robotics
 
-- [CLAIRIFY](https://ac-rad.github.io/clairify/) Translates english to domain specific languages like robots. 
+- [CLAIRIFY](https://ac-rad.github.io/clairify/) Translates English to domain-specific languages like robots. 
   - https://arxiv.org/abs/2303.14100
 
 ### Biology
@@ -472,12 +484,14 @@ Use embeddings to create query vector databases such as:
 -  https://arxiv.org/abs/2304.02496
 
 ### Societal simulations
+
 - [Generative Agents: Interactive Simulacra of Human Behavior](https://arxiv.org/pdf/2304.03442.pdf): 
   They gave 25 AI agents motivations & memory, and put them in a simulated town. Not only did they engage in complex behavior (including throwing a Valentine’s Day party) but the actions were rated more human than humans roleplaying.
   Demo: https://t.co/pYNF4BBveG
 
 
 ## Theory
+
 - [Looped Transformers and Programmable Computers](https://arxiv.org/pdf/2301.13196.pdf) Understanding that transformer networks can simulate complex algorithms when hardcoded with specific weights and made intoa  loop. 'Machine Learning' 'Machine code'. "We demonstrate that
 a constant number of encoder layers can emulate basic computing blocks, including embedding edit operations, non-linear functions, function calls, program counters, and conditional branches. Using these building blocks, we emulate a small instruction-set computer."
 
@@ -485,12 +499,14 @@ a constant number of encoder layers can emulate basic computing blocks, includin
 - [Scaling Expert Language Models with Unsupervised Domain Discovery](https://arxiv.org/pdf/2303.14177.pdf) "parse language models on arbitrary text corpora. Our method clusters a corpus into sets of related documents, trains a separate expert language model on each cluster, and combines them in a sparse ensemble for inference. This approach generalizes embarrassingly parallel training by automatically discovering the domains for each expert, and eliminates nearly all the communication overhead of existing sparse language models. "
 
 # Interesting Companies:
+
 - [e2b](https://github.com/e2b-dev/e2b) Write documentation, get code. 
 - [Codium](https://www.codium.ai/blog/codiumai-powered-by-testgpt-accounces-beta-and-raised-11m/?utm_source=substack&utm_medium=email)
 
 
 ## Contect Detectors
-https://sapling.ai/ai-content-detector
+
+[Sapling AI content detector](https://sapling.ai/ai-content-detector)
 
 
 
