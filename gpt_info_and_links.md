@@ -458,6 +458,14 @@ Use embeddings to create query vector databases such as:
 
 <img width="545" alt="image" src="https://github.com/ianderrington/general/assets/76016868/fc0d79fd-54b7-493b-93a4-5eafd76584a6">
 
+- [CREATOR: Disentangling Abstract and Concrete Reasonings of Large Language Models through Tool Creation](https://arxiv.org/pdf/2305.14318.pdf)
+
+  <img width="750" alt="image" src="https://github.com/ianderrington/general/assets/76016868/0762aaaf-871e-495c-b560-f4e019c8020e">
+<img width="1012" alt="image" src="https://github.com/ianderrington/general/assets/76016868/81b88f7e-af2e-424e-9cb8-0e377bc141c0">
+
+!!! idea "Make an algorithm -> find a tool"
+    best tool finder system. 
+
 ### Measurements
 
 [Chain of thought hub](https://github.com/FranxYao/chain-of-thought-hub)
