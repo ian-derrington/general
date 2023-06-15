@@ -1,6 +1,6 @@
-This summarizes important research, tools, best practices and (generally) state of art results and topics related to GPT-enabled technology. Please note that it will *not* focus the topic of AI Ethics.  
+This summarizes important research, tools, best practices, and (generally) state of art results and topics related to GPT-enabled technology. Please note that it will *not* focus on the topic of AI Ethics.  
 
-
+This will be versioned with continued publications with what we find.
 
 ## Overviews
 
