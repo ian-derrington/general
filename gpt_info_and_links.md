@@ -98,7 +98,9 @@ StackExchange
 
 - ‼️[Guidance](https://github.com/microsoft/guidance/?utm_source=tldrai) Interleaving generation, prompting and logical control to single  continuous flow.
 - ‼️[Semantic Kernel]([https://github.com/microsoft/semantic-kernel/blob/main/samples/notebooks/python/00-getting-started.ipynb](https://github.com/microsoft/semantic-kernel/tree/main))
-- ‼️[Rebuff](https://github.com/woop/rebuff) a prompt injection detection service. 
+- ‼️[Rebuff](https://github.com/woop/rebuff) a prompt injection detection service.
+- ‼️[Guardrails](https://shreyar.github.io/guardrails/) To help format output and prevent improper prompts.
+- [Native function calls](https://github.com/openai/openai-cookbook/blob/main/examples/How_to_call_functions_with_chat_models.ipynb) and [json support with OpenAI](https://yonom.substack.com/p/native-json-output-from-gpt-4) 
 
 ### Langchain
 - ‼️[Langchain](https://python.langchain.com/en/latest/#) A primative python or javascript based primitive 'LLM' language that enables planned and agentic AI.
@@ -246,10 +248,8 @@ To improve length:
 ### Fine Tuning
 
 Using examples to fine-tune a model can reduce the number of tokens needed to achieve a sufficiently reasonable response. Can be expensive to retrain though.
-- [Self fine tuning](https://arxiv.org/pdf/2210.11610.pdf) Using Chain of thought to provide better examples and then fine-tune the LLM. 
-- [Refiner](https://arxiv.org/pdf/2304.01904.pdf) Iteratively improves itself based on an LLM critic
-<img width="713" alt="image" src="https://github.com/ianderrington/general/assets/76016868/3ac44e13-2444-4f1e-ae3b-800c9d32ce59">
-
+- [Symbol Tuning IMproves in-context learning in Language Models](https://arxiv.org/pdf/2305.08298.pdf)
+<img width="488" alt="image" src="https://github.com/ianderrington/general/assets/76016868/a75d4a36-0e20-4259-bd10-c7180b5468b5">
 ### Fine Tuning using Distillation
 
 Train on model trains a new model on the output of a new model. 
@@ -268,6 +268,10 @@ Adapters are efficient and performant layers that can optimize performance witho
 
 
 ## Prompt and optimization
+- [Large Language Models Can Self Improve](https://arxiv.org/pdf/2210.11610.pdf) Using Chain of thought to provide better examples and then fine-tune the LLM. 
+- [Refiner](https://arxiv.org/pdf/2304.01904.pdf) Iteratively improves itself based on an LLM critic
+<img width="713" alt="image" src="https://github.com/ianderrington/general/assets/76016868/3ac44e13-2444-4f1e-ae3b-800c9d32ce59">
+
 
 ### Manual Prompt optimization
 
@@ -439,7 +443,8 @@ Use embeddings to create query vector databases such as:
 - [HuggingGPT of 2023](https://arxiv.org/pdf/2303.17580.pdf) This paper describes a paradigm where ChatGPT is enabled with the ability to launch other ML models based on input. It does so by creating a Task list, then by identifying appropriate models, and then executing them.
   - ‼️ [Github repo known as JARVIS here](https://github.com/microsoft/JARVIS)
   - [TaskMatrix.ai](https://arxiv.org/abs/2303.16434) seemingly from the same authors. 
-- ‼️ [AUTO GPT](https://github.com/Torantulino/Auto-GPT) 
+- ‼️ [AUTO GPT](https://github.com/Torantulino/Auto-GPT)
+- ‼️ [GPT engineer](https://github.com/AntonOsika/gpt-engineer )
 - ‼️ [BabyAGI](https://github.com/yoheinakajima/babyagi)
 - ‼️ [CAMEL](https://github.com/camel-ai/camel) inception prompting to guide chat agents toward task completion. Also [implemented in Langchain](https://python.langchain.com/en/latest/use_cases/agent_simulations/camel_role_playing.html)
 - [Loop GPT](https://github.com/farizrahman4u/loopgpt) A re-implementation of Auto-GPT with modularity and extensibility in mind. 
@@ -518,7 +523,7 @@ a constant number of encoder layers can emulate basic computing blocks, includin
 
 - [e2b](https://github.com/e2b-dev/e2b) Write documentation, get code. 
 - [Codium](https://www.codium.ai/blog/codiumai-powered-by-testgpt-accounces-beta-and-raised-11m/?utm_source=substack&utm_medium=email)
-
+- [Why labs](https://whylabs.ai/safeguard-large-language-models) for LLM observability and other solutions.
 
 ## Contect Detectors
 
@@ -531,7 +536,7 @@ a constant number of encoder layers can emulate basic computing blocks, includin
 - https://github.com/irgolic/AutoPR
 
 - https://github.com/Helicone/helicone
-- tps://shreyar.github.io/guardrails/
+
 - https://github.com/jerryjliu/llama_index
 - scale.com/spellbook
 - [LAION-AI](https://github.com/LAION-AI/Open-Assistant)
