@@ -169,14 +169,14 @@ StackExchange
 ## Embeddings
 ‼️[What are Embeddings](http://vickiboykis.com/what_are_embeddings/)[Github](https://github.com/veekaybee/what_are_embeddings/blob/main/README.md)
 
-
+##
 
 
 ## Metrics:
 - Exact Match (EM) 
 
 ## Transformers
-
+- [Amazing Presentation on Transformers](https://docs.google.com/presentation/d/1ZXFIhYczos679r70Yu8vV9uO6B1J0ztzeDxbnBxD1S0/mobilepresent?fbclid=IwAR18pR_Mf46mkZ1_E3NFOwYY2wVx0aATficgfh_GWZd29c_lWNRa4vK5zy8&slide=id.g31364026ad_3_2)
 
 
 ### GPT
@@ -265,13 +265,14 @@ Adapters are efficient and performant layers that can optimize performance witho
 
 - ‼️ [RLHF basics by hugging face](https://huggingface.co/blog/rlhf) A realy good intro to parse again.
 - [RLHF for Palm in Pytorch](https://github.com/lucidrains/PaLM-rlhf-pytorch)
-
+- [AligningLargeLanguageModelsthroughSyntheticFeedback](https://arxiv.org/abs/2305.13735) Using a heirarchy of systems to 
 
 ## Prompt and optimization
 - [Large Language Models Can Self Improve](https://arxiv.org/pdf/2210.11610.pdf) Using Chain of thought to provide better examples and then fine-tune the LLM. 
 - [Refiner](https://arxiv.org/pdf/2304.01904.pdf) Iteratively improves itself based on an LLM critic
 <img width="713" alt="image" src="https://github.com/ianderrington/general/assets/76016868/3ac44e13-2444-4f1e-ae3b-800c9d32ce59">
 
+- [PROMPT generator](https://huggingface.co/spaces/merve/ChatGPT-prompt-generator) To save a few words by just entering a persona and igives prompt output. 
 
 ### Manual Prompt optimization
 
@@ -326,14 +327,16 @@ format) are “Write in a way different from the actual continuation, if
 there is one”, and “No plagiarism is allowed”."
 https://arxiv.org/pdf/2304.08637.pdf 
 
-### 'According To'
+##### 'According To'
+
 -  [“According to ...” Prompting Language Models Improves Quoting from Pre-Training Data](https://arxiv.org/pdf/2305.13252.pdf) The grounding prompt `According to { some_reputable_source}` prompt inception additions increases output quality improves over the null prompt in nearly every dataset and metric, typically by 5-15%.
 
 ```markdown
 According to {some_reputable_source} ...
 ```
 
-### Summary: 
+#### Summary: 
+
 - Provide several examples to ground it.
   -  Good to evaluate this and see if input examples give expected scores. Modify the prompt if it isn't. 
 - Consider prompt versioning to keep track of outputs more easily.
@@ -344,8 +347,10 @@ According to {some_reputable_source} ...
 
 ### Automatic
 - [Large Language Model Guided Tree-of-Thought](https://arxiv.org/abs/2305.08291) [Github](https://github.com/jieyilong/tree-of-thought-puzzle-solver)
-- [Tree of Thoughts: Deliberate Problem Solving with Large Language Models](https://arxiv.org/abs/2305.10601) [Github](https://github.com/ysymyth/tree-of-thought-llm)
-
+- ‼️[Tree of Thoughts: Deliberate Problem Solving with Large Language Models](https://arxiv.org/abs/2305.10601) [Github](https://github.com/ysymyth/tree-of-thought-llm)
+IDEA: Write Tree of Thoughts into Langchain?
+- ‼️[Meta Tree of thought](https://github.com/kyegomez/Meta-Tree-Of-Thoughts)
+- 
 #### Prompt compression
 - [Learning to Compress Prompts with Gist Tokens](https://arxiv.org/pdf/2304.08467.pdf). Can enable 26x compression and 40% FLOP reduction and improvements. Trains 'gist tokens' to summarize information. 
 
@@ -434,8 +439,10 @@ Use embeddings to create query vector databases such as:
 - [Language Models can Solve Computer Tasks](https://arxiv.org/pdf/2303.17491.pdf), [Website](https://posgnu.github.io/rci-web/), [GitHub](https://github.com/posgnu/rci-agent) USes Recursive Criticism and Improvement. Combining with Chain of Thought it is even better. The method: Plan: Critique, Improve 
   - Explicit RCI: "Review your previous answer and find problems with your answer." --> "Based on the problems you found, improve your answer." Recursively Criticizes and Improves its output. This sort of prompting outperforms Chain of Thought, and combined it works even better.  
 - [GPT-Bargaining](https://github.com/FranxYao/GPT-Bargaining) Uses multiple rounds to improve negotiation tactics based on external feedback. (Manager-like)
-- ‼️ [RL4L Allen ai](https://arxiv.org/pdf/2305.08844.pdf) Uses smaller critique model feedback to improve larger model output with a policy gradient to fine-tune the critique model while allowing reasonable performance gains. [Github](https://github.com/allenai/RL4LMs)
+- ‼️[RL4L Allen ai](https://arxiv.org/pdf/2305.08844.pdf) Uses smaller critique model feedback to improve larger model output with a policy gradient to fine-tune the critique model while allowing reasonable performance gains. [Github](https://github.com/allenai/RL4LMs)
 
+- [Strategic Reasoning with Language Models](https://arxiv.org/abs/2305.19165?utm_source=substack&utm_medium=email) Uses game trees and observed and inferred beliefs to achieve closer to optimal results. Powerful to consider for inferred beliefs and interacting in situations where negotiation or games are being played.
+<img width="1008" alt="image" src="https://github.com/ianderrington/general/assets/76016868/5ffa0653-a323-44a6-bff5-b49e3be6091a">
 
 ### Agentic
 
@@ -443,18 +450,19 @@ Use embeddings to create query vector databases such as:
 - [HuggingGPT of 2023](https://arxiv.org/pdf/2303.17580.pdf) This paper describes a paradigm where ChatGPT is enabled with the ability to launch other ML models based on input. It does so by creating a Task list, then by identifying appropriate models, and then executing them.
   - ‼️ [Github repo known as JARVIS here](https://github.com/microsoft/JARVIS)
   - [TaskMatrix.ai](https://arxiv.org/abs/2303.16434) seemingly from the same authors. 
-- ‼️ [AUTO GPT](https://github.com/Torantulino/Auto-GPT)
+- [AUTO GPT](https://github.com/Torantulino/Auto-GPT) Auto GPT
 - ‼️ [GPT engineer](https://github.com/AntonOsika/gpt-engineer )
 - ‼️ [BabyAGI](https://github.com/yoheinakajima/babyagi)
 - ‼️ [CAMEL](https://github.com/camel-ai/camel) inception prompting to guide chat agents toward task completion. Also [implemented in Langchain](https://python.langchain.com/en/latest/use_cases/agent_simulations/camel_role_playing.html)
 - [Loop GPT](https://github.com/farizrahman4u/loopgpt) A re-implementation of Auto-GPT with modularity and extensibility in mind. 
-
 - [Chameleon GPT](https://arxiv.org/pdf/2304.09842.pdf) A multi-agentic service that is able to accomplish many separate tasks, building it compositionally. (Project Idea: build in Langchain???)
 <img width="1191" alt="image" src="https://github.com/ianderrington/general/assets/76016868/0dc2f25a-0eea-42ed-a108-c90cfeed8e1d">
 
 - [Baize: An Open-Source Chat Model with Parameter-Efficient Tuning on Self-Chat Data](https://arxiv.org/pdf/2304.01196.pdf) Parameter efficient LLama Tuning and risk minimization with a new 'Self Distillation' with Feedback to improve itself even more. RESEARCH ONLY
 
 - ‼️[Robo-GPT](https://github.com/rokstrnisa/Robo-GPT)
+- (Open source + Product) [Agent-GPT](https://github.com/reworkd/AgentGPT) and [WEbsite](https://agentgpt.reworkd.ai/)
+- ‼️ (Open source + product) [Super-GPT](https://github.com/TransformerOptimus/SuperAGI)  --> Seemingly better than SuperAGI because more tools accessible and GUI. Allows multiple agents (no communication though)
 
 
 ### Agent Improvements
@@ -474,6 +482,9 @@ Use embeddings to create query vector databases such as:
 
 !!! idea "Make an algorithm -> find a tool"
     best tool finder system. 
+
+#### Tools
+- [Certified Reasoning with Language models](https://arxiv.org/abs/2306.04031) A 'logical guide' tool that an LLM can use. 
 
 ### Measurements
 
