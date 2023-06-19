@@ -471,6 +471,8 @@ https://arxiv.org/pdf/2306.08640.pdf
 - ‼️ (Open source + product) [Super-AGI](https://github.com/TransformerOptimus/SuperAGI)  --> Seemingly better than SuperAGI because more tools accessible and GUI. Allows multiple agents (no communication though)
 - ‼️  [AssistGPT: A General Multi-modal Assistant that can Plan, Execute, Inspect, and Learn] (https://arxiv.org/pdf/2306.08640.pdf) [Webpage](https://showlab.github.io/assistgpt/) Uses PEIL PLan execute inspect learn. Code coming soon. 
 
+- ‼️ [GPT Engineer](https://github.com/AntonOsika/gpt-engineer)
+
 ### Agent Improvements
 
 - [Learning to Reason and Memorize with Self-Notes](https://adapterhub.ml/) "Allows model to deviate from input context at any time to reason and take notes"
