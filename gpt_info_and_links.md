@@ -87,7 +87,8 @@ StackExchange
 ## Engineering and Deployment
 - [Deploying on Azure for Embeddings](https://github.com/ruoccofabrizio/azure-open-ai-embeddings-qna)
 - [Integrating with Azure Services](https://www.youtube.com/watch?v=tW2EA4aZ_YQ)
-- [LLM Engineering](https://huyenchip.com/2023/04/11/llm-engineering.html)
+- [LLM Engineering by Huyen Chip](https://huyenchip.com/2023/04/11/llm-engineering.html)
+- [The whole training process by Huyen Chip](https://huyenchip.com/2023/05/02/rlhf.html)
 - [Langchain service deployment](https://github.com/ajndkr/lanarky)
 
 ## Operational Toolkits for LLMops
@@ -389,13 +390,17 @@ Boosted Prompting: few shot prompts that progressively solve more of the problem
 
 
 ## LLM Model Optimizations
-### Pruning and copression
+
+### Pruning and compression
+
 - [SparseGPT: Massive Language Models Can Be Accurately Pruned in One-Shot](https://arxiv.org/abs/2301.00774) Remove up to ~50% parameters preserving performance
 - [Scaling Expert Language Models with Unsupervised Domain Discovery](https://arxiv.org/pdf/2303.14177.pdf) Cluster-Branch-Train-Merge (c-BTM), a new way to scale sparse expert LLMs on any dataset. 
 - [Github](https://github.com/kernelmachine/cbtm)
 -  [SqueezeLLM](paper) They are able to have 2x fold in model size for equivalent performance in perplexity. They use 'Dense and SParce Quantization' [Github](https://github.com/SqueezeAILab/SqueezeLLM) 
 
+### Fairness Enablement
 
+- [Concept Erasure](https://arxiv.org/pdf/2306.03819.pdf)
 
 ### Training variations
 
@@ -444,6 +449,7 @@ Use embeddings to create query vector databases such as:
 - [Strategic Reasoning with Language Models](https://arxiv.org/abs/2305.19165?utm_source=substack&utm_medium=email) Uses game trees and observed and inferred beliefs to achieve closer to optimal results. Powerful to consider for inferred beliefs and interacting in situations where negotiation or games are being played.
 <img width="1008" alt="image" src="https://github.com/ianderrington/general/assets/76016868/5ffa0653-a323-44a6-bff5-b49e3be6091a">
 https://arxiv.org/pdf/2306.08640.pdf
+
 ### Agentic
 
 - [Toolformer](https://arxiv.org/pdf/2302.04761.pdf) This section describes GPT that has been enabled with more 'agency' or the ability to do better.
@@ -480,6 +486,11 @@ https://arxiv.org/pdf/2306.08640.pdf
   <img width="750" alt="image" src="https://github.com/ianderrington/general/assets/76016868/0762aaaf-871e-495c-b560-f4e019c8020e">
 <img width="1012" alt="image" src="https://github.com/ianderrington/general/assets/76016868/81b88f7e-af2e-424e-9cb8-0e377bc141c0">
 
+
+### Multi-Agentic Systems
+- [Can Language Models Teach Weaker Agents? Teacher Explanations Improve Students via Theory of Mind](https://arxiv.org/pdf/2306.09299.pdf) Uses Theory fo Mind to try to improve student performance. [Github](https://github.com/swarnaHub/ExplanationIntervention)
+
+- 
 !!! idea "Make an algorithm -> find a tool"
     best tool finder system. 
 
