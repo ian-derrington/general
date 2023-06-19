@@ -443,7 +443,7 @@ Use embeddings to create query vector databases such as:
 
 - [Strategic Reasoning with Language Models](https://arxiv.org/abs/2305.19165?utm_source=substack&utm_medium=email) Uses game trees and observed and inferred beliefs to achieve closer to optimal results. Powerful to consider for inferred beliefs and interacting in situations where negotiation or games are being played.
 <img width="1008" alt="image" src="https://github.com/ianderrington/general/assets/76016868/5ffa0653-a323-44a6-bff5-b49e3be6091a">
-
+https://arxiv.org/pdf/2306.08640.pdf
 ### Agentic
 
 - [Toolformer](https://arxiv.org/pdf/2302.04761.pdf) This section describes GPT that has been enabled with more 'agency' or the ability to do better.
@@ -461,9 +461,9 @@ Use embeddings to create query vector databases such as:
 - [Baize: An Open-Source Chat Model with Parameter-Efficient Tuning on Self-Chat Data](https://arxiv.org/pdf/2304.01196.pdf) Parameter efficient LLama Tuning and risk minimization with a new 'Self Distillation' with Feedback to improve itself even more. RESEARCH ONLY
 
 - ‼️[Robo-GPT](https://github.com/rokstrnisa/Robo-GPT)
-- (Open source + Product) [Agent-GPT](https://github.com/reworkd/AgentGPT) and [WEbsite](https://agentgpt.reworkd.ai/)
-- ‼️ (Open source + product) [Super-GPT](https://github.com/TransformerOptimus/SuperAGI)  --> Seemingly better than SuperAGI because more tools accessible and GUI. Allows multiple agents (no communication though)
-
+- (Open source + Product) [Agent-GPT](https://github.com/reworkd/AgentGPT) and [WEbsite](https://agentgpt.reworkd.ai/) --> Doesn't have agency/tools... So it is not good. A fancy wrapper for multi-task planning and execution. Limited at present. 
+- ‼️ (Open source + product) [Super-AGI](https://github.com/TransformerOptimus/SuperAGI)  --> Seemingly better than SuperAGI because more tools accessible and GUI. Allows multiple agents (no communication though)
+- ‼️  [AssistGPT: A General Multi-modal Assistant that can Plan, Execute, Inspect, and Learn] (https://arxiv.org/pdf/2306.08640.pdf) [Webpage](https://showlab.github.io/assistgpt/) Uses PEIL PLan execute inspect learn. Code coming soon. 
 
 ### Agent Improvements
 
