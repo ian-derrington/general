@@ -246,11 +246,16 @@ To improve length:
   
 ## Improvements and Optimizations
 
+### 
+
+[SpQR: A Sparse-Quantized Representation for Near-Lossless LLM Weight Compression](https://arxiv.org/pdf/2306.03078v1.pdf)
+
 ### Fine Tuning
 
 Using examples to fine-tune a model can reduce the number of tokens needed to achieve a sufficiently reasonable response. Can be expensive to retrain though.
 - [Symbol Tuning IMproves in-context learning in Language Models](https://arxiv.org/pdf/2305.08298.pdf)
 <img width="488" alt="image" src="https://github.com/ianderrington/general/assets/76016868/a75d4a36-0e20-4259-bd10-c7180b5468b5">
+
 ### Fine Tuning using Distillation
 
 Train on model trains a new model on the output of a new model. 
@@ -549,14 +554,16 @@ a constant number of encoder layers can emulate basic computing blocks, includin
 - [Codium](https://www.codium.ai/blog/codiumai-powered-by-testgpt-accounces-beta-and-raised-11m/?utm_source=substack&utm_medium=email)
 - [Why labs](https://whylabs.ai/safeguard-large-language-models) for LLM observability and other solutions.
 
-## Contect Detectors
+## Content Detectors
 
-[Sapling AI content detector](https://sapling.ai/ai-content-detector)
+- [Sapling AI content detector](https://sapling.ai/ai-content-detector)
 
 
 
 ## To sort
-
+- [Chatall](https://github.com/sunner/ChatALL) To interact with multiple chatbots at the same time.
+- ‼️ [LocalAI](https://github.com/go-skynet/LocalAI) drop-in replacement REST API that’s compatible with OpenAI API specifications for local inferencing.
+- [Finance GPT](https://github.com/ai4finance-foundation/fingpt) LLMs for finance
 - https://github.com/irgolic/AutoPR
 
 - https://github.com/Helicone/helicone
