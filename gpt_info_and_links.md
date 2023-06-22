@@ -92,8 +92,9 @@ StackExchange
 - [Langchain service deployment](https://github.com/ajndkr/lanarky)
 
 ## Operational Toolkits for LLMops
-- [Hugging Face Transformers](https://huggingface.co/transformers/v4.0.1/index.html)
-- [Adapters for Hugging Face](https://adapterhub.ml/)
+- ‼️[Hugging Face Transformers](https://huggingface.co/transformers/v4.0.1/index.html)
+- ‼️[Adapters for Hugging Face](https://adapterhub.ml/)
+- ‼️[Open LLM](https://github.com/bentoml/OpenLLM)
 
 ## Foundational Programming Interfaces (Chains, agents, tools)
 
@@ -102,7 +103,8 @@ StackExchange
 - ‼️[Rebuff](https://github.com/woop/rebuff) a prompt injection detection service.
 - ‼️[Guardrails](https://shreyar.github.io/guardrails/) To help format output and prevent improper prompts.
 - [Native function calls](https://github.com/openai/openai-cookbook/blob/main/examples/How_to_call_functions_with_chat_models.ipynb) and [json support with OpenAI](https://yonom.substack.com/p/native-json-output-from-gpt-4) 
-
+- [AutoLabel ](https://github.com/refuel-ai/autolabel) A nice pythonic system for generating semantic labels repeatedly for use in downstream datasets
+- 
 ### Langchain
 - ‼️[Langchain](https://python.langchain.com/en/latest/#) A primative python or javascript based primitive 'LLM' language that enables planned and agentic AI.
   - ‼️[Langflow](https://github.com/logspace-ai/langflow) 
