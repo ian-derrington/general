@@ -13,6 +13,12 @@ This will be versioned with continued publications with what we find.
 <img width="886" alt="image" src="https://github.com/ianderrington/general/assets/76016868/7b1c6c4b-3778-4536-8d10-03696f3624c5">
 <img width="927" alt="image" src="https://github.com/ianderrington/general/assets/76016868/dc89e484-aed6-485f-9a3e-84cdfcf858d2">
 
+- [Lex Fridman](https://www.youtube.com/@lexfridman)
+- [David Shapiro](https://www.youtube.com/@DavidShapiroAutomator)
+- [AI Explained](https://www.youtube.com/@ai-explained-)
+- [Yannic Kilcher](https://www.youtube.com/@YannicKilcher)
+
+List of tools and metrics for AI - Tools for Trustworthy AI - OECD.AI
 
 ## Guides
 - ‼️[LLM Practical Guide](https://github.com/Mooler0410/LLMsPracticalGuide) based on [paper](https://arxiv.org/abs/2304.13712).
@@ -22,7 +28,7 @@ This will be versioned with continued publications with what we find.
 ## Competition boards
 - [Hugging Face LLM leaderboard](https://huggingface.co/spaces/HuggingFaceH4/open_llm_leaderboard) An essential chart for documenting the model peformance across multiple models. 
 - [lmsys.org leader board](lmsys.org/blog/2023-05-10-leaderboard)
-
+- [Foundation model Providers EU AI compliance](https://crfm.stanford.edu/2023/06/15/eu-ai-act.html)
 
 ## Models and APIs 
 * [Bard](https://bard.google.com/)
@@ -50,6 +56,7 @@ This will be versioned with continued publications with what we find.
 - ‼️[CodeTF](https://github.com/salesforce/CodeTF) From Salesforce
 - ‼️[Azure Open AI samples](https://github.com/Azure/azure-openai-samples) Sample end-to-end use cases with chatbots, content generation. 
 - [RLHF with DeepSpeed (Microsoft)](https://github.com/microsoft/DeepSpeed/tree/master/blogs/deepspeed-chat)
+- [vLLM](https://vllm.readthedocs.io/en/latest/getting_started/installation.html) a python repo to help run LLMs. 
 
 ### LLM Prompting
 - ‼️[Prompting Guide](https://www.promptingguide.ai/)
@@ -103,9 +110,11 @@ StackExchange
 - ‼️[Rebuff](https://github.com/woop/rebuff) a prompt injection detection service.
 - ‼️[Guardrails](https://shreyar.github.io/guardrails/) To help format output and prevent improper prompts.
 - [Native function calls](https://github.com/openai/openai-cookbook/blob/main/examples/How_to_call_functions_with_chat_models.ipynb) and [json support with OpenAI](https://yonom.substack.com/p/native-json-output-from-gpt-4) 
-- [AutoLabel ](https://github.com/refuel-ai/autolabel) A nice pythonic system for generating semantic labels repeatedly for use in downstream datasets
-- 
+- [AutoLabel](https://github.com/refuel-ai/autolabel) A nice pythonic system for generating semantic labels repeatedly for use in downstream datasets
+- [Levanter (not just LLMS) ](https://crfm.stanford.edu/2023/06/16/levanter-1_0-release.html) Codebase for training FMs with JAX. Using Haliax for naming tensors field-names instead of indexes. (for example Batch, Feature....). Full sharding and distributable / parallelizable. 
+
 ### Langchain
+
 - ‼️[Langchain](https://python.langchain.com/en/latest/#) A primative python or javascript based primitive 'LLM' language that enables planned and agentic AI.
   - ‼️[Langflow](https://github.com/logspace-ai/langflow) 
   - ‼️[Awesome Langchain](https://github.com/kyrolabs/awesome-langchain)
@@ -262,6 +271,11 @@ Using examples to fine-tune a model can reduce the number of tokens needed to ac
 
 Train on model trains a new model on the output of a new model. 
 - [Alpaca ](https://github.com/tatsu-lab/stanford_alpaca)
+
+### Fine tuning Optimizations
+
+- [Full Parameter Fine-Tuning for Large Language Models with Limited Resources.](https://github.com/openlmlab/lomo) Introduces LOMO: LOw-Memory Optimization to fuse 
+- 
 
 ### Adapter layers
 
@@ -470,14 +484,11 @@ https://arxiv.org/pdf/2306.08640.pdf
 - [Loop GPT](https://github.com/farizrahman4u/loopgpt) A re-implementation of Auto-GPT with modularity and extensibility in mind. 
 - [Chameleon GPT](https://arxiv.org/pdf/2304.09842.pdf) A multi-agentic service that is able to accomplish many separate tasks, building it compositionally. (Project Idea: build in Langchain???)
 <img width="1191" alt="image" src="https://github.com/ianderrington/general/assets/76016868/0dc2f25a-0eea-42ed-a108-c90cfeed8e1d">
-
 - [Baize: An Open-Source Chat Model with Parameter-Efficient Tuning on Self-Chat Data](https://arxiv.org/pdf/2304.01196.pdf) Parameter efficient LLama Tuning and risk minimization with a new 'Self Distillation' with Feedback to improve itself even more. RESEARCH ONLY
-
 - ‼️[Robo-GPT](https://github.com/rokstrnisa/Robo-GPT)
 - (Open source + Product) [Agent-GPT](https://github.com/reworkd/AgentGPT) and [WEbsite](https://agentgpt.reworkd.ai/) --> Doesn't have agency/tools... So it is not good. A fancy wrapper for multi-task planning and execution. Limited at present. 
 - ‼️ (Open source + product) [Super-AGI](https://github.com/TransformerOptimus/SuperAGI)  --> Seemingly better than SuperAGI because more tools accessible and GUI. Allows multiple agents (no communication though)
 - ‼️  [AssistGPT: A General Multi-modal Assistant that can Plan, Execute, Inspect, and Learn] (https://arxiv.org/pdf/2306.08640.pdf) [Webpage](https://showlab.github.io/assistgpt/) Uses PEIL PLan execute inspect learn. Code coming soon. 
-
 - ‼️ [GPT Engineer](https://github.com/AntonOsika/gpt-engineer)
 
 ### Agent Improvements
@@ -512,6 +523,9 @@ https://arxiv.org/pdf/2306.08640.pdf
 
 ## Applications
 
+- [Wizard Coding](https://github.com/nlpxucan/WizardLM/tree/main/WizardCoder)
+
+
 ### Book Writing
 
 - [Pyprompt chatgpt](http://morganlancer.com/en/portfolio/pyprompt_chatgpt)
@@ -534,6 +548,7 @@ https://arxiv.org/pdf/2306.08640.pdf
 - [Evolutionary-scale prediction of atomic-level protein structure with a language model](https://www.science.org/doi/10.1126/science.ade2574) End to end Language model enabling structure sequence pairing, coupled with an equivariant transformer structure model at the end. 
 -  https://arxiv.org/pdf/2303.16416.pdf
 -  https://arxiv.org/abs/2304.02496
+-  ！[Biomedical simulation](https://www.biorxiv.org/content/10.1101/2023.06.16.545235v1.full.pdf)
 
 ### Societal simulations
 
@@ -541,6 +556,9 @@ https://arxiv.org/pdf/2306.08640.pdf
   They gave 25 AI agents motivations & memory, and put them in a simulated town. Not only did they engage in complex behavior (including throwing a Valentine’s Day party) but the actions were rated more human than humans roleplaying.
   Demo: https://t.co/pYNF4BBveG
 
+### Finance
+
+- [ML for trading (NOT LLM based)](https://github.com/stefan-jansen/machine-learning-for-trading)
 
 ## Theory
 
@@ -551,7 +569,7 @@ a constant number of encoder layers can emulate basic computing blocks, includin
 - [Scaling Expert Language Models with Unsupervised Domain Discovery](https://arxiv.org/pdf/2303.14177.pdf) "parse language models on arbitrary text corpora. Our method clusters a corpus into sets of related documents, trains a separate expert language model on each cluster, and combines them in a sparse ensemble for inference. This approach generalizes embarrassingly parallel training by automatically discovering the domains for each expert, and eliminates nearly all the communication overhead of existing sparse language models. "
 
 # Interesting Companies:
-
+- [Mosaic ML](https://www.mosaicml.com/blog/mpt-30b) LLM ops based company with potentially good products
 - [e2b](https://github.com/e2b-dev/e2b) Write documentation, get code. 
 - [Codium](https://www.codium.ai/blog/codiumai-powered-by-testgpt-accounces-beta-and-raised-11m/?utm_source=substack&utm_medium=email)
 - [Why labs](https://whylabs.ai/safeguard-large-language-models) for LLM observability and other solutions.
