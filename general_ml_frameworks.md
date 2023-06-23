@@ -1,0 +1,1 @@
+- [Lightly](https://github.com/lightly-ai/lightly) A lightweight pytorch based training framework focusing on vision.
