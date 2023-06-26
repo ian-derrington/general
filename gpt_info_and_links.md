@@ -42,7 +42,7 @@ List of tools and metrics for AI - Tools for Trustworthy AI - OECD.AI
 * [Medpalm](https://arxiv.org/abs/2212.13138)
 * [Llama](https://github.com/facebookresearch/llama) (Non-commercial ??)
 * [Open Llama](https://github.com/openlm-research/open_llama) (Non-commercial ??)
-* [UAE Falcon](https://www.tii.ae/news/uaes-falcon-40b-now-royalty-free?utm_source=tldrai) (Apache License)
+* [UAE Falcon](https://www.tii.ae/news/uaes-falcon-40b-now-royalty-free) (Apache License)
 
 
 ### Image models
@@ -105,7 +105,7 @@ StackExchange
 
 ## Foundational Programming Interfaces (Chains, agents, tools)
 
-- ‼️[Guidance](https://github.com/microsoft/guidance/?utm_source=tldrai) Interleaving generation, prompting and logical control to single  continuous flow.
+- ‼️[Guidance](https://github.com/microsoft/guidance/) Interleaving generation, prompting and logical control to single  continuous flow.
 - ‼️[Semantic Kernel]([https://github.com/microsoft/semantic-kernel/blob/main/samples/notebooks/python/00-getting-started.ipynb](https://github.com/microsoft/semantic-kernel/tree/main))
 - ‼️[Rebuff](https://github.com/woop/rebuff) a prompt injection detection service.
 - ‼️[Guardrails](https://shreyar.github.io/guardrails/) To help format output and prevent improper prompts.
@@ -135,8 +135,8 @@ StackExchange
  
 ## Others
 - ‼️[Flowise](https://github.com/FlowiseAI/Flowise)
-- ！[Chain Forge](https://github.com/ianarawjo/ChainForge?utm_source=tldrai) A data flow prompt engineering environment for evaluating ana analyzing LLM responses
-
+- ！[Chain Forge](https://github.com/ianarawjo/ChainForge) A data flow prompt engineering environment for evaluating ana analyzing LLM responses
+- [EmbedChain](https://github.com/embedchain/embedchain) Creates embeddings for bots to be used. 
 
 
 
@@ -436,7 +436,7 @@ Boosted Prompting: few shot prompts that progressively solve more of the problem
 https://adapterhub.ml/
 
 ### Vector databases
-
+- [Vector Databases (primer by Pinecone.io)](https://www.pinecone.io/learn/vector-database/)
 Use embeddings to create query vector databases such as:
    Pinecone, Qdrant, Weaviate, Chroma as well as the incumbents Faiss, Redis, Milvus, ScaNN.
 
