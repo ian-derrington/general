@@ -602,6 +602,7 @@ a constant number of encoder layers can emulate basic computing blocks, includin
 
 
 ## To sort
+r PromptLayer and Helicone
 - ‼️ [FastChat Covnersation]( https://github.com/lm-sys/FastChat/blob/main/fastchat/conversation.py) This very nice 'multi model' chat interface class allows for effective translation between different models. 
 - ‼️ ‼️ [Quiver](https://github.com/StanGirard/quiv) A LLM for self Second brain. 
 - [Chatall](https://github.com/sunner/ChatALL) To interact with multiple chatbots at the same time.
