@@ -26,7 +26,8 @@ List of tools and metrics for AI - Tools for Trustworthy AI - OECD.AI
 # Services + Providers
 
 ## Competition boards
-- [Hugging Face LLM leaderboard](https://huggingface.co/spaces/HuggingFaceH4/open_llm_leaderboard) An essential chart for documenting the model peformance across multiple models. 
+- [Hugging Face LLM leaderboard](https://huggingface.co/spaces/HuggingFaceH4/open_llm_leaderboard) An essential chart for documenting the model peformance across multiple models.
+
 - [lmsys.org leader board](lmsys.org/blog/2023-05-10-leaderboard)
 - [Foundation model Providers EU AI compliance](https://crfm.stanford.edu/2023/06/15/eu-ai-act.html)
 
@@ -125,7 +126,7 @@ StackExchange
 - ‼️[llm-chain](https://docs.llm-chain.xyz/docs/introduction) ChatGPT and Alpaca support. Agentic with bash commands.
 
 ### Llama index
-- [llama index](https://github.com/jerryjliu/llama_index)
+- [llama index](https://www.llamaindex.ai/) and [Github](https://github.com/jerryjliu/llama_index) for integrating data ingestion and models. 
 - [LlamaHub (community library of data loaders)](https://llamahub.ai)
 - [LlamaLab (cutting-edge AGI projects using LlamaIndex)](https://github.com/run-llama/llama-lab)
 
@@ -189,6 +190,10 @@ StackExchange
 
 ## Transformers
 - [Amazing Presentation on Transformers](https://docs.google.com/presentation/d/1ZXFIhYczos679r70Yu8vV9uO6B1J0ztzeDxbnBxD1S0/mobilepresent?fbclid=IwAR18pR_Mf46mkZ1_E3NFOwYY2wVx0aATficgfh_GWZd29c_lWNRa4vK5zy8&slide=id.g31364026ad_3_2)
+
+### Improvements
+- [Infinite former](https://arxiv.org/pdf/2109.00301.pdf) <img width="302" alt="image" src="https://github.com/ianderrington/general/assets/76016868/96d8efb8-46ab-4662-b62b-4763ad454a80"> Uses a representation of input sequence as a continuous signal expressed in a combination of N radial basis functions. Promising but potentially complex. Worth consideration [Github](https://github.com/
+deep-spin/infinite-former)
 
 
 ### GPT
@@ -288,6 +293,11 @@ Adapters are efficient and performant layers that can optimize performance witho
 - ‼️ [RLHF basics by hugging face](https://huggingface.co/blog/rlhf) A realy good intro to parse again.
 - [RLHF for Palm in Pytorch](https://github.com/lucidrains/PaLM-rlhf-pytorch)
 - [AligningLargeLanguageModelsthroughSyntheticFeedback](https://arxiv.org/abs/2305.13735) Using a heirarchy of systems to 
+
+### AI-enabled ranking
+
+- [Can foundation models label data like humans?](https://huggingface.co/blog/llm-leaderboard) using GPT to review model outputs produced biased results. Changing the prompt doesn't really help to de-bias it. Lots of additional considerations surrounding model evaluation
+- 
 
 ## Prompt and optimization
 - [Large Language Models Can Self Improve](https://arxiv.org/pdf/2210.11610.pdf) Using Chain of thought to provide better examples and then fine-tune the LLM. 
@@ -540,8 +550,13 @@ https://arxiv.org/pdf/2306.08640.pdf
   - https://arxiv.org/abs/2303.14100
 
 ### Science and Tech
+
 - [Emergent autonomous scientific research](https://arxiv.org/pdf/2304.05332.pdf)
 <img width="658" alt="image" src="https://github.com/ianderrington/general/assets/76016868/7fd5c4ce-9468-4cf2-a9b9-d3913b66e656">
+
+#### Healthcare
+
+- [Health system-scale language models are all-purpose prediction engines](https://www.nature.com/articles/s41586-023-06160-y) Uses LLM based system to integrate real time clinical workflows with note-writing and electronic ordering. Generally quite-performant and. a great indication of how they could be used to predict things such as readmission rates, and many other applications. 
 
 #### Biology
 
@@ -581,6 +596,8 @@ a constant number of encoder layers can emulate basic computing blocks, includin
 
 
 ## To sort
+- ‼️ [FastChat Covnersation]( https://github.com/lm-sys/FastChat/blob/main/fastchat/conversation.py) This very nice 'multi model' chat interface class allows for effective translation between different models. 
+- ‼️ ‼️ [Quiver](https://github.com/StanGirard/quiv) A LLM for self Second brain. 
 - [Chatall](https://github.com/sunner/ChatALL) To interact with multiple chatbots at the same time.
 - ‼️ [LocalAI](https://github.com/go-skynet/LocalAI) drop-in replacement REST API that’s compatible with OpenAI API specifications for local inferencing.
 - [Finance GPT](https://github.com/ai4finance-foundation/fingpt) LLMs for finance
