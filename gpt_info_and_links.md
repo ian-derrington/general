@@ -146,7 +146,9 @@ StackExchange
 
 
 # Education and Research
-
+To sort 
+Basics: [Distributed Training](https://neptune.ai/blog/distributed-training)
+https://neptune.ai/blog/distributed-training-frameworks-and-tools
 ## General
 
 - [Eight Things to Know about Large Language Models](https://cims.nyu.edu/~sbowman/eightthings.pdf?utm_source=substack&utm_medium=email)
