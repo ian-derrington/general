@@ -18,7 +18,7 @@ This will be versioned with continued publications with what we find.
 - [AI Explained](https://www.youtube.com/@ai-explained-)
 - [Yannic Kilcher](https://www.youtube.com/@YannicKilcher)
 
-List of tools and metrics for AI - Tools for Trustworthy AI - OECD.AI
+- [Understanding Large Language Models](https://magazine.sebastianraschka.com/p/understanding-large-language-models)
 
 ## Guides
 - ‼️[LLM Practical Guide](https://github.com/Mooler0410/LLMsPracticalGuide) based on [paper](https://arxiv.org/abs/2304.13712).
