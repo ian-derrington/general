@@ -19,7 +19,8 @@ This will be versioned with continued publications with what we find.
 - [Yannic Kilcher](https://www.youtube.com/@YannicKilcher)
 
 - [Understanding Large Language Models](https://magazine.sebastianraschka.com/p/understanding-large-language-models)
-
+- ‼️[Emerging Architectures for LLM Applications](https://a16z.com/2023/06/20/emerging-architectures-for-llm-applications/) A very nice high overview of the component market for LLM architectures.
+- 
 ## Guides
 - ‼️[LLM Practical Guide](https://github.com/Mooler0410/LLMsPracticalGuide) based on [paper](https://arxiv.org/abs/2304.13712).
 
