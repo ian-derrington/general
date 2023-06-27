@@ -427,7 +427,10 @@ Boosted Prompting: few shot prompts that progressively solve more of the problem
 - [SparseGPT: Massive Language Models Can Be Accurately Pruned in One-Shot](https://arxiv.org/abs/2301.00774) Remove up to ~50% parameters preserving performance
 - [Scaling Expert Language Models with Unsupervised Domain Discovery](https://arxiv.org/pdf/2303.14177.pdf) Cluster-Branch-Train-Merge (c-BTM), a new way to scale sparse expert LLMs on any dataset. 
 - [Github](https://github.com/kernelmachine/cbtm)
--  [SqueezeLLM](paper) They are able to have 2x fold in model size for equivalent performance in perplexity. They use 'Dense and SParce Quantization' [Github](https://github.com/SqueezeAILab/SqueezeLLM) 
+-  [SqueezeLLM](paper) They are able to have 2x fold in model size for equivalent performance in perplexity. They use 'Dense and SParce Quantization' [Github](https://github.com/SqueezeAILab/SqueezeLLM)
+-  (SORT) [DeepSpeed ZeRO++](https://www.microsoft.com/en-us/research/blog/deepspeed-zero-a-leap-in-speed-for-llm-and-chat-model-training-with-4x-less-communication/) A framework for accelerating model pre-training, finetuning, RLHF updating.  by minimizing communication overhead. A likely essential concept to be very familiar with. 
+
+- [ Awesome AGents]( A series https://github.com/e2b-dev/awesome-ai-agents) of nicely curated AGents that helps to understand the differences they might contain.
 
 ### Fairness Enablement
 
