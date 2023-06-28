@@ -138,7 +138,7 @@ StackExchange
 ## Others
 - ‼️[Flowise](https://github.com/FlowiseAI/Flowise)
 - ！[Chain Forge](https://github.com/ianarawjo/ChainForge) A data flow prompt engineering environment for evaluating ana analyzing LLM responses
-- [EmbedChain](https://github.com/embedchain/embedchain) Creates embeddings for bots to be used. 
+- ‼️ [EmbedChain](https://github.com/embedchain/embedchain) Creates embeddings for bots to be used. 
 
 
 
@@ -601,8 +601,22 @@ a constant number of encoder layers can emulate basic computing blocks, includin
 
 
 
-## To sort
-r PromptLayer and Helicone
+## To sort and read
+- ‼️[RL4LMs by microsoft](https://github.com/allenai/RL4LMs/tree/main) A modular RL library to fine-tune language models to human preferences. [paper](https://arxiv.org/pdf/2305.08844.pdf)
+- ‼️[Kor](https://github.com/eyurtsev/kor) For extracting strucutred data using LLMs. 
+## Agentic
+- [smolai](https://github.com/ThomasEwing04/SMOL_AI) https://www.youtube.com/watch?v=zsxyqz6SYp8&t=1s
+### Basic Transformer information
+- [Attention Is All you Need](https://proceedings.neurips.cc/paper_files/paper/2017/file/3f5ee243547dee91fbd053c1c4a845aa-Paper.pdf) Initial paper indicating that attention is very powerful and potential replacement of LLM architectures. 
+- [Neural Machine Translation by Jointly Learning to Align and Translate](https://arxiv.org/pdf/1409.0473.pdf) First paper indicating the notion of 'attention' sort of mechanism.
+
+
+- [Dataleap.xyz](Dataleap.xyz): CoPilot for research. Perhaps 'Upwork' for Ai agents...
+
+ ‼️ Utility: - [Reliable GPT](https://github.com/BerriAI/reliableGPT) A wrapper that prevents failures due to rate limiting requests. 
+Prompt management:  PromptLayer and Helicone
+- Go over all of these! https://www.promptingguide.ai/techniques
+- [A Prompt Pattern Catalog to Enhance Prompt Engineering with ChatGPT](https://arxiv.org/pdf/2302.11382.pdf)
 - ‼️ [FastChat Covnersation]( https://github.com/lm-sys/FastChat/blob/main/fastchat/conversation.py) This very nice 'multi model' chat interface class allows for effective translation between different models. 
 - ‼️ ‼️ [Quiver](https://github.com/StanGirard/quiv) A LLM for self Second brain. 
 - [Chatall](https://github.com/sunner/ChatALL) To interact with multiple chatbots at the same time.
