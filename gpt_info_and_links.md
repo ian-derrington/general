@@ -488,7 +488,10 @@ Use embeddings to create query vector databases such as:
 https://arxiv.org/pdf/2306.08640.pdf
 
 ### Agentic
+#### Overview
+- [Agents overview by Lilian Weng](https://lilianweng.github.io/posts/2023-06-23-agent)
 
+#### Results
 - [Toolformer](https://arxiv.org/pdf/2302.04761.pdf) This section describes GPT that has been enabled with more 'agency' or the ability to do better.
 - [HuggingGPT of 2023](https://arxiv.org/pdf/2303.17580.pdf) This paper describes a paradigm where ChatGPT is enabled with the ability to launch other ML models based on input. It does so by creating a Task list, then by identifying appropriate models, and then executing them.
   - ‼️ [Github repo known as JARVIS here](https://github.com/microsoft/JARVIS)
@@ -602,6 +605,7 @@ a constant number of encoder layers can emulate basic computing blocks, includin
 
 
 ## To sort and read
+- [“Textbooks are all you need”](https://arxiv.org/pdf/2306.11644.pdf) A to-be opensourced high-quality model by Microsoft revealing the importance of high-quality input data. only used 4 days on 8 A-100s to train to reach out-performing results. (It also uses a lot of simulated data). Coding-focused model. 
 - ‼️[RL4LMs by microsoft](https://github.com/allenai/RL4LMs/tree/main) A modular RL library to fine-tune language models to human preferences. [paper](https://arxiv.org/pdf/2305.08844.pdf)
 - ‼️[Kor](https://github.com/eyurtsev/kor) For extracting strucutred data using LLMs. 
 ## Agentic
