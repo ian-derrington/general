@@ -1,3 +1,4 @@
+
 This summarizes important research, tools, best practices, and (generally) state of art results and topics related to GPT-enabled technology. Please note that it will *not* focus on the topic of AI Ethics.  
 
 This will be versioned with continued publications with what we find.
@@ -633,3 +634,5 @@ Prompt management:  PromptLayer and Helicone
 - https://github.com/jerryjliu/llama_index
 - scale.com/spellbook
 - [LAION-AI](https://github.com/LAION-AI/Open-Assistant)
+
+- [Motion GPT](https://github.com/openmotionlab/motiongpt)
